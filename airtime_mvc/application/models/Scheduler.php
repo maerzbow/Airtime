@@ -20,7 +20,7 @@ class Application_Model_Scheduler
     
     private $crossfadeDuration;
 
-    private $checkUserPermissions = true;
+    //private $checkUserPermissions = true;
 
     public function __construct()
     {
@@ -40,14 +40,14 @@ class Application_Model_Scheduler
         }
 
         $this->user = Application_Model_User::getCurrentUser();
-        
+        Logging::info($this->user);
         $this->crossfadeDuration = Application_Model_Preference::GetDefaultCrossfadeDuration();
     }
 
-    public function setCheckUserPermissions($value)
+    /*public function setCheckUserPermissions($value)
     {
         $this->checkUserPermissions = $value;
-    }
+    }*/
 
     private function validateItemMove($itemsToMove, $destination)
     {
@@ -137,7 +137,8 @@ class Application_Model_Scheduler
             $id = $instance->getDbId();
             $show = $instance->getCcShow($this->con);
 
-            if ($this->checkUserPermissions && $this->user->canSchedule($show->getDbId()) === false) {
+            //if ($this->checkUserPermissions && $this->user->canSchedule($show->getDbId()) === false) {
+            if ($this->user->canSchedule($show->getDbId()) === false) {
                 throw new Exception(sprintf(_("You are not allowed to schedule show %s."), $show->getDbName()));
             }
 
@@ -905,30 +906,6 @@ class Application_Model_Scheduler
         try {
             $this->validateRequest($scheduleItems, true);
 
-            /*
-             * create array of arrays
-             * array of schedule item info
-             * (sched_id is the cc_schedule id and is set if an item is being
-             *  moved because it is already in cc_schedule)
-             * [0] = Array(
-             *     id => 1,
-             *     cliplength => 00:04:32,
-             *     cuein => 00:00:00,
-             *     cueout => 00:04:32,
-             *     fadein => 00.5,
-             *     fadeout => 00.5,
-             *     sched_id => ,
-             *     type => 0)
-             * [1] = Array(
-             *     id => 2,
-             *     cliplength => 00:05:07,
-             *     cuein => 00:00:00,
-             *     cueout => 00:05:07,
-             *     fadein => 00.5,
-             *     fadeout => 00.5,
-             *     sched_id => ,
-             *     type => 0)
-             */
             $this->insertAfter($scheduleItems, $mediaItems, null, $adjustSched);
 
             $this->con->commit();

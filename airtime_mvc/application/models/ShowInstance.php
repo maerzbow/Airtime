@@ -386,53 +386,28 @@ SQL;
     }
 
     /**
-     * Add a playlist as the last item of the current show.
-     *
-     * @param int $plId
-     *         Playlist ID.
-     */
-    /*public function addPlaylistToShow($pl_id, $checkUserPerm = true)
-    {
-        $ts = intval($this->_showInstance->getDbLastScheduled("U")) ? : 0;
-        $id = $this->_showInstance->getDbId();
-
-        $scheduler = new Application_Model_Scheduler();
-        $scheduler->scheduleAfter(
-            array(array("id" => 0, "instance"  => $id, "timestamp" => $ts)),
-            array(array("id" => $pl_id, "type" => "playlist"))
-        );
-    }*/
-
-    /**
      * Add a media file as the last item in the show.
      *
      * @param int $file_id
      */
     public function addFileToShow($file_id, $checkUserPerm = true)
     {
+        Logging::info("ADD FILE TO SHOW");
         $ts = intval($this->_showInstance->getDbLastScheduled("U")) ? : 0;
         $id = $this->_showInstance->getDbId();
 
-        $scheduler = new Application_Model_Scheduler();
+        /*$scheduler = new Application_Model_Scheduler();
         $scheduler->setCheckUserPermissions($checkUserPerm);
         $scheduler->scheduleAfter(
             array(array("id" => 0, "instance" => $id, "timestamp" => $ts)),
             array(array("id" => $file_id, "type" => "audioclip"))
+        );*/
+        $service_scheduler = new Application_Service_SchedulerService();
+        $service_scheduler->insertAfter(
+            array(array("id" => 0, "instance" => $id, "timestamp" => $ts)),
+            array(array("id" => $file_id, "type" => "audioclip"))
         );
     }
-
-    /**
-     * Add the given playlists to the show.
-     *
-     * @param array $plIds
-     *         An array of playlist IDs.
-     */
-    /*public function scheduleShow($plIds)
-    {
-        foreach ($plIds as $plId) {
-            $this->addPlaylistToShow($plId);
-        }
-    }*/
 
     public function clearShow()
     {
