@@ -15,8 +15,9 @@ class Application_Service_SchedulerService
 
     private $epochNow;
     private $nowDT;
-    private $currentUser;
-    private $checkUserPermissions = true;
+    //private $currentUser;
+    private $crossfadeDuration;
+    //private $checkUserPermissions = true;
 
     public function __construct()
     {
@@ -35,8 +36,10 @@ class Application_Service_SchedulerService
             $this->nowDT = DateTime::createFromFormat("U", time(), new DateTimeZone("UTC"));
         }
 
-        $user_service = new Application_Service_UserService();
-        $this->currentUser = $user_service->getCurrentUser();
+        //$user_service = new Application_Service_UserService();
+        //$this->currentUser = $user_service->getCurrentUser();
+
+        $this->crossfadeDuration = Application_Model_Preference::GetDefaultCrossfadeDuration();
     }
 
     /**
@@ -383,6 +386,146 @@ class Application_Service_SchedulerService
         } catch (Exception $e) {
             Logging::info($e->getMessage());
             return false;
+        }
+    }
+
+    public function insertAfter(
+        $scheduleItems,
+        $mediaItems,
+        $filesToInsert = null,
+        $adjustSched = true,
+        $moveAction = false)
+    {
+        $this->con->beginTransaction();
+
+        try {
+            $this->validateRequest($scheduleItems, true);
+
+            //$this->insertAfter($scheduleItems, $mediaItems, null, $adjustSched);
+
+            $this->con->commit();
+
+            Application_Model_RabbitMq::PushSchedule();
+        } catch (Exception $e) {
+            $this->con->rollback();
+            throw $e;
+        }
+    }
+
+    private function organizeRequestData($items) {
+        $schedInfo = array();
+        $instanceInfo = array();
+
+        foreach ($items as $item) {
+            $id = $item["id"];
+
+            //could be added to the beginning of a show, which sends id = 0;
+            if ($id > 0) {
+                $schedInfo[$id] = $item["instance"];
+            }
+
+            //format is instance_id => timestamp
+            $instanceInfo[$item["instance"]] = $item["timestamp"];
+        }
+
+        return array($schedInfo, $instanceInfo);
+    }
+
+    /**
+     * 
+     * Enter description here ...
+     * @param $items array containing pks of cc_schedule items
+     * @param $addAction
+     */
+    private function validateRequest($items, $addAction=false)
+    {
+        list($schedInfo, $instanceInfo) = $this->organizeRequestData($items);
+Logging::info($schedInfo);
+Logging::info($instanceInfo);
+
+        if (count($instanceInfo) === 0) {
+            throw new Exception("Invalid Request.");
+        }
+
+        $schedIds = array();
+        if (count($schedInfo) > 0) {
+            $schedIds = array_keys($schedInfo);
+        }
+        $schedItems = CcScheduleQuery::create()->findPKs($schedIds, $this->con);
+        $instanceIds = array_keys($instanceInfo);
+        $showInstances = CcShowInstancesQuery::create()->findPKs($instanceIds, $this->con);
+
+        //an item has been deleted
+        if (count($schedIds) !== count($schedItems)) {
+            throw new OutDatedScheduleException(_("The schedule you're viewing is out of date! (sched mismatch)"));
+        }
+
+        //a show has been deleted
+        if (count($instanceIds) !== count($showInstances)) {
+            throw new OutDatedScheduleException(_("The schedule you're viewing is out of date! (instance mismatch)"));
+        }
+
+        foreach ($schedItems as $schedItem) {
+            $id = $schedItem->getDbId();
+            $instance = $schedItem->getCcShowInstances($this->con);
+
+            if (intval($schedInfo[$id]) !== $instance->getDbId()) {
+                throw new OutDatedScheduleException(_("The schedule you're viewing is out of date!"));
+            }
+        }
+
+        //$service_user = new Application_Service_UserService();
+        //$currentUser = $service_user->getCurrentUser();
+        $currentUser = Application_Model_User::getCurrentUser();
+Logging::info($currentUser);
+        foreach ($showInstances as $instance) {
+
+            $id = $instance->getDbId();
+            $show = $instance->getCcShow($this->con);
+
+            //if ($this->checkUserPermissions && $this->user->canSchedule($show->getDbId()) === false) {
+            if ($currentUser->canSchedule($show->getDbId()) === false) {
+                throw new Exception(sprintf(_("You are not allowed to schedule show %s."), $show->getDbName()));
+            }
+
+            if ($instance->getDbRecord()) {
+                throw new Exception(_("You cannot add files to recording shows."));
+            }
+
+            $showEndEpoch = floatval($instance->getDbEnds("U.u"));
+
+            if ($showEndEpoch < $this->epochNow) {
+                throw new OutDatedScheduleException(sprintf(_("The show %s is over and cannot be scheduled."), $show->getDbName()));
+            }
+
+            $ts = intval($instanceInfo[$id]);
+            $lastSchedTs = intval($instance->getDbLastScheduled("U")) ? : 0;
+            if ($ts < $lastSchedTs) {
+                Logging::info("ts {$ts} last sched {$lastSchedTs}");
+                throw new OutDatedScheduleException(sprintf(_("The show %s has been previously updated!"), $show->getDbName()));
+            }
+
+            /*
+             * Does the afterItem belong to a show that is linked AND
+             * currently playing?
+             * If yes, throw an exception
+             */
+            if ($addAction) {
+                $ccShow = $instance->getCcShow();
+                if ($ccShow->isLinked()) {
+                    //get all the linked shows instances and check if
+                    //any of them are currently playing
+                    $ccShowInstances = $ccShow->getCcShowInstancess();
+                    $timeNowUTC = gmdate("Y-m-d H:i:s");
+                    foreach ($ccShowInstances as $ccShowInstance) {
+
+                        if ($ccShowInstance->getDbStarts() <= $timeNowUTC &&
+                            $ccShowInstance->getDbEnds() > $timeNowUTC) {
+                            throw new Exception(_("Content in linked shows must be scheduled before or after any one is broadcasted"));
+                        }
+                    }
+                }
+            }
         }
     }
 }
