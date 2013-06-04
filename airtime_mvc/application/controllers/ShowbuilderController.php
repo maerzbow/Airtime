@@ -288,8 +288,10 @@ class ShowbuilderController extends Zend_Controller_Action
         $scheduledItems = $request->getParam("schedIds", array());
 
         try {
-            $scheduler = new Application_Model_Scheduler();
-            $scheduler->scheduleAfter($scheduledItems, $mediaItems);
+            //$scheduler = new Application_Model_Scheduler();
+            //$scheduler->scheduleAfter($scheduledItems, $mediaItems);
+            $scheduler_service = new Application_Service_SchedulerService();
+            $scheduler_service->insertAfter($scheduledItems, $mediaItems);
         } catch (OutDatedScheduleException $e) {
             $this->view->error = $e->getMessage();
             Logging::info($e->getMessage());
