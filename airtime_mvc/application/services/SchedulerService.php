@@ -15,9 +15,16 @@ class Application_Service_SchedulerService
 
     private $epochNow;
     private $nowDT;
-    //private $currentUser;
+    private $scheduleLocations = array();
+    private $ccShow;
+    private $insertValues = array();
+
+    // Schedule position within each show instance. We need to keep track of
+    // this in case shows are linked so we know where to insert items across
+    // linked shows
+    private $position;
+
     private $crossfadeDuration;
-    //private $checkUserPermissions = true;
 
     public function __construct()
     {
@@ -35,9 +42,6 @@ class Application_Service_SchedulerService
             // In PHP 5.3.3 (Ubuntu 10.10), this has been fixed.
             $this->nowDT = DateTime::createFromFormat("U", time(), new DateTimeZone("UTC"));
         }
-
-        //$user_service = new Application_Service_UserService();
-        //$this->currentUser = $user_service->getCurrentUser();
 
         $this->crossfadeDuration = Application_Model_Preference::GetDefaultCrossfadeDuration();
     }
@@ -401,7 +405,76 @@ class Application_Service_SchedulerService
         try {
             $this->validateRequest($scheduleItems, true);
 
-            //$this->insertAfter($scheduleItems, $mediaItems, null, $adjustSched);
+            $affectedShowInstances = array();
+            $excludePositions = array();
+            $instance = null;
+
+            /* Items in shows are ordered by position number. We need to know
+             * the position when adding/moving items in linked shows so they are
+             * added or moved in the correct position
+             */
+            $pos = 0;
+
+            foreach ($scheduleItems as $schedule) {
+                $id = intval($schedule["id"]);
+                $instanceId = $schedule["instance"];
+
+                if ($this->isDuplicateScheduleLocation($id, $instanceId)) {
+                    continue;
+                }
+
+                foreach ($this->getInstances($instanceId) as &$instance) {
+                    $instanceId = $instance["id"];
+
+                    list($nextStartDT, $applyCrossfades) = $this->getInstances(
+                        $id);
+
+                    if (!in_array($instanceId, $affectedShowInstances)) {
+                        $affectedShowInstances[] = $instanceId;
+                    }
+
+                    /*
+                     * $adjustSched is true if there are schedule items
+                     * following the item just inserted, per show instance
+                     */
+                    if ($adjustSched === true) {
+                        if ($applyCrossfades) {
+                            $initalStartDT = clone $this->findTimeDifference(
+                                $nextStartDT, $this->crossfadeDuration);
+                        } else {
+                            $initalStartDT = clone $nextStartDT;
+                        }
+                    }
+
+                    if (is_null($filesToInsert)) {
+                        $filesToInsert = array();
+                        foreach ($mediaItems as $media) {
+                            $filesToInsert = array_merge($filesToInsert,
+                                $this->retrieveMediaFiles($media["id"], $media["type"]));
+                        }
+                    }
+
+                    $doInsert = false;
+                    unset($this->insertValues);
+                    Logging::info($this->insertValues);
+
+                    foreach ($filesToInsert as &$file) {
+                        if (isset($file['sched_id'])) {
+                            $file = $this->prepareMovedItem($file);
+                        } else {
+                            $doInsert = true;
+                        }
+
+                        $file = $this->prepareScheduleData($file, $applyCrossfades,
+                            $doInsert);
+                    }
+                    if ($doInsert) {
+                        $this->doScheduleInsert();
+                    }
+
+                }//foreach instance
+
+            }//foreach scheduled item
 
             $this->con->commit();
 
@@ -412,7 +485,404 @@ class Application_Service_SchedulerService
         }
     }
 
-    private function organizeRequestData($items) {
+    private function doScheduleInsert()
+    {
+        $insert_sql = "INSERT INTO cc_schedule ".
+            "(starts, ends, cue_in, cue_out, fade_in, fade_out, ".
+            "clip_length, position, instance_id, file_id, stream_id) VALUES ".
+            implode($values, ",")." RETURNING id";
+
+        $stmt = $this->con->prepare($insert_sql);
+        if ($stmt->execute()) {
+            foreach ($stmt->fetchAll() as $row) {
+                $excludeIds[] = $row["id"];
+            }
+        };
+    }
+
+    private function prepareScheduleData($file, $applyCrossfades, $doInsert)
+    {
+        $file['fadein'] = Application_Common_DateHelper::secondsToPlaylistTime(
+            $file['fadein']);
+        $file['fadeout'] = Application_Common_DateHelper::secondsToPlaylistTime(
+            $file['fadeout']);
+
+        switch ($file["type"]) {
+            case 0:
+                $fileId = $file["id"];
+                $streamId = "null";
+                break;
+            case 1:
+                $streamId = $file["id"];
+                $fileId = "null";
+                break;
+            default: break;
+        }
+
+        if ($applyCrossfades) {
+            $nextStartDT = $this->findTimeDifference($nextStartDT,
+                $this->crossfadeDuration);
+            $endTimeDT = $this->findEndTime($nextStartDT, $file['cliplength']);
+            $endTimeDT = $this->findTimeDifference($endTimeDT, $this->crossfadeDuration);
+            /* Set it to false because the rest of the crossfades
+             * will be applied after we insert each item
+             */
+            $applyCrossfades = false;
+        }
+
+        $endTimeDT = $this->findEndTime($nextStartDT, $file['cliplength']);
+
+        if ($doInsert) {
+            $values[] = "(".
+                "'{$nextStartDT->format("Y-m-d H:i:s")}', ".
+                "'{$endTimeDT->format("Y-m-d H:i:s")}', ".
+                "'{$file["cuein"]}', ".
+                "'{$file["cueout"]}', ".
+                "'{$file["fadein"]}', ".
+                "'{$file["fadeout"]}', ".
+                "'{$file["cliplength"]}', ".
+                "{$pos}, ".
+                "{$instanceId}, ".
+                "{$fileId}, ".
+                "{$streamId})";
+
+        } else {
+            $update_sql = "UPDATE cc_schedule SET ".
+                "starts = '{$nextStartDT->format("Y-m-d H:i:s")}', ".
+                "ends = '{$endTimeDT->format("Y-m-d H:i:s")}', ".
+                "cue_in = '{$file["cuein"]}', ".
+                "cue_out = '{$file["cueout"]}', ".
+                "fade_in = '{$file["fadein"]}', ".
+                "fade_out = '{$file["fadeout"]}', ".
+                "clip_length = '{$file["cliplength"]}', ".
+                "position = {$pos} ".
+                "WHERE id = {$sched["id"]}";
+
+            Application_Common_Database::prepareAndExecute(
+                $update_sql, array(), Application_Common_Database::EXECUTE);
+        }
+
+        $nextStartDT = $this->findTimeDifference($endTimeDT, $this->crossfadeDuration);
+        $pos++;
+    }
+
+    private function prepareMovedItem($file)
+    {
+        $movedItem_sql = "SELECT * FROM cc_schedule ".
+            "WHERE id = ".$file["sched_id"];
+        $sched = Application_Common_Database::prepareAndExecute(
+            $movedItem_sql, array(), Application_Common_Database::SINGLE);
+
+        /* We need to keep a record of the original positon a track
+         * is being moved from so we can use it to retrieve the correct
+         * items in linked instances
+         */
+        if (!isset($originalPosition)) {
+            $originalPosition = $sched["position"];
+        }
+
+        /* If we are moving an item in a linked show we need to get
+         * the relative item to move in each instance. We know what the
+         * relative item is by its position
+         */
+        if ($linked) {
+            $movedItem_sql = "SELECT * FROM cc_schedule ".
+                "WHERE position = {$originalPosition} ".
+                "AND instance_id = {$instanceId}";
+
+            $sched = Application_Common_Database::prepareAndExecute(
+                $movedItem_sql, array(), Application_Common_Database::SINGLE);
+        }
+        $excludeIds[] = intval($sched["id"]);
+
+        $file["cliplength"] = $sched["clip_length"];
+        $file["cuein"] = $sched["cue_in"];
+        $file["cueout"] = $sched["cue_out"];
+        $file["fadein"] = $sched["fade_in"];
+        $file["fadeout"] = $sched["fade_out"];
+
+        return $file;
+    }
+
+    /**
+     * 
+     * This function ensures we are not making duplicate schedule entries.
+     * This can happen when the user is trying to schedule items in two or
+     * more show instances that are linked.
+     * We keep track of the schedule locations with a unique id, which is made
+     * up by the show id and the schedule position. If the show instances are
+     * empty we use a character instead of the schedule position.
+     * 
+     * @param $id cc_schedule id
+     * @param $instanceId
+     */
+    private function isDuplicateScheduleLocation($id, $instanceId)
+    {
+        if ($id != 0) {
+            $schedule_sql = "SELECT * FROM cc_schedule WHERE id = ".$id;
+            $ccSchedule = Application_Common_Database::prepareAndExecute(
+                $schedule_sql, array(), Application_Common_Database::SINGLE);
+
+            $this->position = $ccSchedule["position"];
+
+            $show_sql = "SELECT * FROM cc_show WHERE id IN (".
+                "SELECT show_id FROM cc_show_instances WHERE id = ".
+                $ccSchedule["instance_id"].")";
+
+            $ccShow = Application_Common_Database::prepareAndExecute(
+                $show_sql, array(), Application_Common_Database::SINGLE);
+
+            $this->ccShow = $ccShow;
+            if ($this->ccShow["linked"]) {
+                $unique = $ccShow["id"] . $ccSchedule["position"];
+                if (!in_array($unique, $this->scheduleLocations)) {
+                    $this->scheduleLocations[] = $unique;
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        } else {
+            // first item in show so start position counter at 0
+            $this->position = 0;
+
+            $show_sql = "SELECT * FROM cc_show WHERE id IN (".
+                "SELECT show_id FROM cc_show_instances WHERE id = ".
+                $instanceId.")";
+
+            $ccShow = Application_Common_Database::prepareAndExecute(
+                $show_sql, array(), Application_Common_Database::SINGLE);
+
+            $this->ccShow = $ccShow;
+            if ($this->ccShow["linked"]) {
+                $unique = $ccShow["id"] . "a";
+                if (!in_array($unique, $this->scheduleLocations)) {
+                    $this->scheduleLocations[] = $unique;
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        }
+    }
+
+    /**
+     * 
+     * If the show where the cursor position is located is linked this function
+     * returns all the instances belonging to that show. Otherwise it returns
+     * the single instance.
+     */
+    private function getInstances($instanceId)
+    {
+        if ($this->ccShow["linked"]) {
+            $instance_sql = "SELECT * FROM cc_show_instances ".
+                "WHERE show_id = ".$this->ccShow["id"];
+            $instances = Application_Common_Database::prepareAndExecute(
+                $instance_sql);
+        } else {
+            $instance_sql = "SELECT * FROM cc_show_instances ".
+                "WHERE id = ".$instanceId;
+            $instances = Application_Common_Database::prepareAndExecute(
+                $instance_sql);
+        }
+
+        return $instances;
+    }
+
+    /**
+     * 
+     * Enter description here ...
+     * @param $id cc_schedule id
+     */
+    private function getNextStartTime($id)
+    {
+        if ($id !== 0) {
+
+            $linkedItem_sql = "SELECT ends FROM cc_schedule ".
+                "WHERE instance_id = {$instanceId} ".
+                "AND position = {$this->position} ".
+                "AND playout_status != -1";
+            $linkedItemEnds = Application_Common_Database::prepareAndExecute(
+                $linkedItem_sql, array(), Application_Common_Database::COLUMN);
+
+            $this->position++;
+
+            $nextStartDT = $this->findNextStartTime(
+                new DateTime($linkedItemEnds, new DateTimeZone("UTC")),
+                $instanceId);
+
+            /* Return true here because show is not empty so we need to apply
+             * crossfades for the first inserted item
+             */
+            return array($nextStartDT, true);
+        }
+        //selected empty row to add after
+        else {
+            $nextStartDT = $this->findNextStartTime(
+                new DateTime($instance["starts"], new DateTimeZone("UTC")),
+                $instanceId);
+
+            /* Return false here because show is empty so we don't need to
+             * calculate crossfades for the first inserted item
+             */
+            return array($nextStartDT, false);
+        }
+    }
+
+    private function retrieveMediaFiles($id, $type)
+    {
+        $files = array();
+
+        if ($type === "audioclip") {
+            $file = CcFilesQuery::create()->findPK($id, $this->con);
+            $storedFile = new Application_Model_StoredFile($file, $this->con);
+
+            if (is_null($file) || !$file->visible()) {
+                throw new Exception(_("A selected File does not exist!"));
+            } else {
+                $data = $this->fileInfo;
+                $data["id"] = $id;
+                $data["cliplength"] = $storedFile->getRealClipLength(
+                    $file->getDbCuein(),
+                    $file->getDbCueout());
+
+                $data["cuein"] = $file->getDbCuein();
+                $data["cueout"] = $file->getDbCueout();
+
+                //fade is in format SS.uuuuuu
+                $data["fadein"] = Application_Model_Preference::GetDefaultFadeIn();
+                $data["fadeout"] = Application_Model_Preference::GetDefaultFadeOut();
+
+                $files[] = $data;
+            }
+        } elseif ($type === "playlist") {
+            $pl = new Application_Model_Playlist($id);
+            $contents = $pl->getContents();
+
+            foreach ($contents as $plItem) {
+                if ($plItem['type'] == 0) {
+                    $data["id"] = $plItem['item_id'];
+                    $data["cliplength"] = $plItem['length'];
+                    $data["cuein"] = $plItem['cuein'];
+                    $data["cueout"] = $plItem['cueout'];
+                    $data["fadein"] = $plItem['fadein'];
+                    $data["fadeout"] = $plItem['fadeout'];
+                    $data["type"] = 0;
+                    $files[] = $data;
+                } elseif ($plItem['type'] == 1) {
+                    $data["id"] = $plItem['item_id'];
+                    $data["cliplength"] = $plItem['length'];
+                    $data["cuein"] = $plItem['cuein'];
+                    $data["cueout"] = $plItem['cueout'];
+                    $data["fadein"] = "00.500000";//$plItem['fadein'];
+                    $data["fadeout"] = "00.500000";//$plItem['fadeout'];
+                    $data["type"] = 1;
+                    $files[] = $data;
+                } elseif ($plItem['type'] == 2) {
+                    // if it's a block
+                    $bl = new Application_Model_Block($plItem['item_id']);
+                    if ($bl->isStatic()) {
+                        foreach ($bl->getContents() as $track) {
+                            $data["id"] = $track['item_id'];
+                            $data["cliplength"] = $track['length'];
+                            $data["cuein"] = $track['cuein'];
+                            $data["cueout"] = $track['cueout'];
+                            $data["fadein"] = $track['fadein'];
+                            $data["fadeout"] = $track['fadeout'];
+                            $data["type"] = 0;
+                            $files[] = $data;
+                        }
+                    } else {
+                        $defaultFadeIn = Application_Model_Preference::GetDefaultFadeIn();
+                        $defaultFadeOut = Application_Model_Preference::GetDefaultFadeOut();
+                        $dynamicFiles = $bl->getListOfFilesUnderLimit();
+                        foreach ($dynamicFiles as $f) {
+                            $fileId = $f['id'];
+                            $file = CcFilesQuery::create()->findPk($fileId);
+                            if (isset($file) && $file->visible()) {
+                                $data["id"] = $file->getDbId();
+                                $data["cuein"] = $file->getDbCuein();
+                                $data["cueout"] = $file->getDbCueout();
+
+                                $cuein = Application_Common_DateHelper::calculateLengthInSeconds($data["cuein"]);
+                                $cueout = Application_Common_DateHelper::calculateLengthInSeconds($data["cueout"]);
+                                $data["cliplength"] = Application_Common_DateHelper::secondsToPlaylistTime($cueout - $cuein);
+                                
+                                //fade is in format SS.uuuuuu
+                                $data["fadein"] = $defaultFadeIn;
+                                $data["fadeout"] = $defaultFadeOut;
+                                
+                                $data["type"] = 0;
+                                $files[] = $data;
+                            }
+                        }
+                    }
+                }
+            }
+        } elseif ($type == "stream") {
+            //need to return
+             $stream = CcWebstreamQuery::create()->findPK($id, $this->con);
+
+            if (is_null($stream)) {
+                throw new Exception(_("A selected File does not exist!"));
+            } else {
+                $data = $this->fileInfo;
+                $data["id"] = $id;
+                $data["cliplength"] = $stream->getDbLength();
+                $data["cueout"] = $stream->getDbLength();
+                $data["type"] = 1;
+
+                //fade is in format SS.uuuuuu
+                $data["fadein"] = Application_Model_Preference::GetDefaultFadeIn();
+                $data["fadeout"] = Application_Model_Preference::GetDefaultFadeOut();
+
+                $files[] = $data;
+            }
+        } elseif ($type == "block") {
+            $bl = new Application_Model_Block($id);
+            if ($bl->isStatic()) {
+                foreach ($bl->getContents() as $track) {
+                    $data["id"] = $track['item_id'];
+                    $data["cliplength"] = $track['length'];
+                    $data["cuein"] = $track['cuein'];
+                    $data["cueout"] = $track['cueout'];
+                    $data["fadein"] = $track['fadein'];
+                    $data["fadeout"] = $track['fadeout'];
+                    $data["type"] = 0;
+                    $files[] = $data;
+                }
+            } else {
+                $defaultFadeIn = Application_Model_Preference::GetDefaultFadeIn();
+                $defaultFadeOut = Application_Model_Preference::GetDefaultFadeOut();
+                $dynamicFiles = $bl->getListOfFilesUnderLimit();
+                foreach ($dynamicFiles as $f) {
+                    $fileId = $f['id'];
+                    $file = CcFilesQuery::create()->findPk($fileId);
+                    if (isset($file) && $file->visible()) {
+                        $data["id"] = $file->getDbId();
+                        $data["cuein"] = $file->getDbCuein();
+                        $data["cueout"] = $file->getDbCueout();
+
+                        $cuein = Application_Common_DateHelper::calculateLengthInSeconds($data["cuein"]);
+                        $cueout = Application_Common_DateHelper::calculateLengthInSeconds($data["cueout"]);
+                        $data["cliplength"] = Application_Common_DateHelper::secondsToPlaylistTime($cueout - $cuein);
+                        
+                        //fade is in format SS.uuuuuu
+                		$data["fadein"] = $defaultFadeIn;
+                		$data["fadeout"] = $defaultFadeOut;
+                		
+                        $data["type"] = 0;
+                        $files[] = $data;
+                    }
+                }
+            }
+        }
+
+        return $files;
+    }
+
+    private function organizeRequestData($items)
+    {
         $schedInfo = array();
         $instanceInfo = array();
 
@@ -440,8 +910,6 @@ class Application_Service_SchedulerService
     private function validateRequest($items, $addAction=false)
     {
         list($schedInfo, $instanceInfo) = $this->organizeRequestData($items);
-Logging::info($schedInfo);
-Logging::info($instanceInfo);
 
         if (count($instanceInfo) === 0) {
             throw new Exception("Invalid Request.");
@@ -474,17 +942,15 @@ Logging::info($instanceInfo);
             }
         }
 
-        //$service_user = new Application_Service_UserService();
-        //$currentUser = $service_user->getCurrentUser();
-        $currentUser = Application_Model_User::getCurrentUser();
-Logging::info($currentUser);
+        $service_user = new Application_Service_UserService();
+        $currentUser = $service_user->getCurrentUser();
+
         foreach ($showInstances as $instance) {
 
             $id = $instance->getDbId();
             $show = $instance->getCcShow($this->con);
 
-            //if ($this->checkUserPermissions && $this->user->canSchedule($show->getDbId()) === false) {
-            if ($currentUser->canSchedule($show->getDbId()) === false) {
+            if (!$currentUser->isAdminOrPM() && !$currentUser->isHostOfShow($show->getDbId())) {
                 throw new Exception(sprintf(_("You are not allowed to schedule show %s."), $show->getDbName()));
             }
 

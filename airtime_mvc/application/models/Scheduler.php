@@ -40,7 +40,6 @@ class Application_Model_Scheduler
         }
 
         $this->user = Application_Model_User::getCurrentUser();
-        Logging::info($this->user);
         $this->crossfadeDuration = Application_Model_Preference::GetDefaultCrossfadeDuration();
     }
 
@@ -189,7 +188,7 @@ class Application_Model_Scheduler
      *
      * @return $files
      */
-    private function retrieveMediaFiles($id, $type)
+    /*private function retrieveMediaFiles($id, $type)
     {
         $files = array();
 
@@ -283,7 +282,7 @@ class Application_Model_Scheduler
             //need to return
              $stream = CcWebstreamQuery::create()->findPK($id, $this->con);
 
-            if (is_null($stream) /* || !$file->visible() */) {
+            if (is_null($stream)) {
                 throw new Exception(_("A selected File does not exist!"));
             } else {
                 $data = $this->fileInfo;
@@ -339,7 +338,7 @@ class Application_Model_Scheduler
         }
 
         return $files;
-    }
+    }*/
     
     /*
      * @param DateTime startDT in UTC
@@ -512,7 +511,7 @@ class Application_Model_Scheduler
     private function insertAfter($scheduleItems, $mediaItems, $filesToInsert=null, $adjustSched=true, $moveAction=false)
     {
         try {
-            $affectedShowInstances = array();
+            /*$affectedShowInstances = array();
 
             //dont want to recalculate times for moved items
             //only moved items have a sched_id
@@ -521,18 +520,18 @@ class Application_Model_Scheduler
             $startProfile = microtime(true);
 
             $temp = array();
-            $instance = null;
+            $instance = null;*/
 
             /* Items in shows are ordered by position number. We need to know
              * the position when adding/moving items in linked shows so they are
              * added or moved in the correct position
              */
-            $pos = 0;
+            /*$pos = 0;
 
-            $linked = false;
+            $linked = false;*/
 
             foreach ($scheduleItems as $schedule) {
-                $id = intval($schedule["id"]);
+                //$id = intval($schedule["id"]);
 
                 /* Find out if the show where the cursor position (where an item will
                  * be inserted) is located is linked or not. If the show is linked,
@@ -540,7 +539,7 @@ class Application_Model_Scheduler
                  * linked shows. If there is that will cause a duplication, in the least,
                  * of inserted items
                  */
-                if ($id != 0) {
+                /*if ($id != 0) {
                     $schedule_sql = "SELECT * FROM cc_schedule WHERE id = ".$id;
                     $ccSchedule = Application_Common_Database::prepareAndExecute(
                         $schedule_sql, array(), Application_Common_Database::SINGLE);
@@ -574,13 +573,13 @@ class Application_Model_Scheduler
                             continue;
                         }
                     }
-                }
+                }*/
 
                 /* If the show where the cursor position is located is linked
                  * we need to insert the items for each linked instance belonging
                  * to that show
                  */
-                if ($linked) {
+                /*if ($linked) {
                     $instance_sql = "SELECT * FROM cc_show_instances ".
                         "WHERE show_id = ".$ccShow["id"];
                     $instances = Application_Common_Database::prepareAndExecute(
@@ -590,16 +589,16 @@ class Application_Model_Scheduler
                         "WHERE id = ".$schedule["instance"];
                     $instances = Application_Common_Database::prepareAndExecute(
                         $instance_sql);
-                }
+                }*/
 
-                $excludePositions = array();
+                //$excludePositions = array();
                 foreach($instances as &$instance) {
-                    $instanceId = $instance["id"];
-                    if ($id !== 0) {
+                    //$instanceId = $instance["id"];
+                    //if ($id !== 0) {
                         /* We use the selected cursor's position to find the same
                          * positions in every other linked instance
                          */
-                        $pos = $ccSchedule["position"];
+                        /*$pos = $ccSchedule["position"];
 
                         $linkedItem_sql = "SELECT ends FROM cc_schedule ".
                             "WHERE instance_id = {$instanceId} ".
@@ -612,36 +611,36 @@ class Application_Model_Scheduler
                             new DateTime($linkedItemEnds, new DateTimeZone("UTC")),
                             $instanceId);
 
-                        $pos++;
+                        $pos++;*/
 
                         /* Show is not empty so we need to apply crossfades
                          * for the first inserted item
                          */
-                        $applyCrossfades = true;
-                    }
+                        //$applyCrossfades = true;
+                    //}
                     //selected empty row to add after
-                    else {
-                        $showStartDT = new DateTime($instance["starts"], new DateTimeZone("UTC"));
-                        $nextStartDT = $this->findNextStartTime($showStartDT, $instanceId);
+                    //else {
+                        /*$showStartDT = new DateTime($instance["starts"], new DateTimeZone("UTC"));
+                        $nextStartDT = $this->findNextStartTime($showStartDT, $instanceId);*/
 
                         //first item in show so start position counter at 0
-                        $pos = 0;
+                        //$pos = 0;
 
                         /* Show is empty so we don't need to calculate crossfades
                          * for the first inserted item
                          */
-                        $applyCrossfades = false;
-                    }
+                        //$applyCrossfades = false;
+                    //}
 
-                    if (!in_array($instanceId, $affectedShowInstances)) {
+                    /*if (!in_array($instanceId, $affectedShowInstances)) {
                         $affectedShowInstances[] = $instanceId;
-                    }
+                    }*/
 
                     /*
                      * $adjustSched is true if there are schedule items
                      * following the item just inserted, per show instance
                      */
-                    if ($adjustSched === true) {
+                    /*if ($adjustSched === true) {
 
                         $pstart = microtime(true);
 
@@ -655,45 +654,44 @@ class Application_Model_Scheduler
                         $pend = microtime(true);
                         Logging::debug("finding all following items.");
                         Logging::debug(floatval($pend) - floatval($pstart));
-                    }
+                    }*/
 
-                    if (is_null($filesToInsert)) {
+                    /*if (is_null($filesToInsert)) {
                         $filesToInsert = array();
                         foreach ($mediaItems as $media) {
                             $filesToInsert = array_merge($filesToInsert,
                                 $this->retrieveMediaFiles($media["id"], $media["type"]));
                         }
-                    }
+                    }*/
 
-                    $doInsert = false;
+                    /*$doInsert = false;
                     $doUpdate = false;
-                    $values = array();
+                    $values = array();*/
 
                     foreach ($filesToInsert as &$file) {
                         //item existed previously and is being moved.
                         //need to keep same id for resources if we want REST.
-                        if (isset($file['sched_id'])) {
-                            $adjustFromDT = clone $nextStartDT;
+                        /*if (isset($file['sched_id'])) {
                             $doUpdate = true;
 
                             $movedItem_sql = "SELECT * FROM cc_schedule ".
                                 "WHERE id = ".$file["sched_id"];
                             $sched = Application_Common_Database::prepareAndExecute(
-                                $movedItem_sql, array(), Application_Common_Database::SINGLE);
+                                $movedItem_sql, array(), Application_Common_Database::SINGLE);*/
 
                             /* We need to keep a record of the original positon a track
                              * is being moved from so we can use it to retrieve the correct
                              * items in linked instances
                              */
-                            if (!isset($originalPosition)) {
+                            /*if (!isset($originalPosition)) {
                                 $originalPosition = $sched["position"];
-                            }
+                            }*/
 
                             /* If we are moving an item in a linked show we need to get
                              * the relative item to move in each instance. We know what the
                              * relative item is by its position
                              */
-                            if ($linked) {
+                            /*if ($linked) {
                                 $movedItem_sql = "SELECT * FROM cc_schedule ".
                                     "WHERE position = {$originalPosition} ".
                                     "AND instance_id = {$instanceId}";
@@ -710,11 +708,11 @@ class Application_Model_Scheduler
                             $file["fadeout"] = $sched["fade_out"];
                         } else {
                             $doInsert = true;
-                        }
+                        }*/
 
                         // default fades are in seconds
                         // we need to convert to '00:00:00' format
-                        $file['fadein'] = Application_Common_DateHelper::secondsToPlaylistTime($file['fadein']);
+                        /*$file['fadein'] = Application_Common_DateHelper::secondsToPlaylistTime($file['fadein']);
                         $file['fadeout'] = Application_Common_DateHelper::secondsToPlaylistTime($file['fadeout']);
 
                         switch ($file["type"]) {
@@ -727,20 +725,20 @@ class Application_Model_Scheduler
                                 $fileId = "null";
                                 break;
                             default: break;
-                        }
+                        }*/
 
-                        if ($applyCrossfades) {
+                        /*if ($applyCrossfades) {
                             $nextStartDT = $this->findTimeDifference($nextStartDT,
                                 $this->crossfadeDuration);
                             $endTimeDT = $this->findEndTime($nextStartDT, $file['cliplength']);
-                            $endTimeDT = $this->findTimeDifference($endTimeDT, $this->crossfadeDuration);
+                            $endTimeDT = $this->findTimeDifference($endTimeDT, $this->crossfadeDuration);*/
                             /* Set it to false because the rest of the crossfades
                              * will be applied after we insert each item
                              */
-                            $applyCrossfades = false;
-                        }
+                            /*$applyCrossfades = false;
+                        }*/
 
-                        $endTimeDT = $this->findEndTime($nextStartDT, $file['cliplength']);
+                        /*$endTimeDT = $this->findEndTime($nextStartDT, $file['cliplength']);
                         if ($doInsert) {
                             $values[] = "(".
                                 "'{$nextStartDT->format("Y-m-d H:i:s")}', ".
@@ -772,10 +770,10 @@ class Application_Model_Scheduler
                         }
 
                         $nextStartDT = $this->findTimeDifference($endTimeDT, $this->crossfadeDuration);
-                        $pos++;
+                        $pos++;*/
 
                     }//all files have been inserted/moved
-                    if ($doInsert) {
+                    /*if ($doInsert) {
                         $insert_sql = "INSERT INTO cc_schedule ".
                             "(starts, ends, cue_in, cue_out, fade_in, fade_out, ".
                             "clip_length, position, instance_id, file_id, stream_id) VALUES ".
@@ -787,7 +785,7 @@ class Application_Model_Scheduler
                                 $excludeIds[] = $row["id"];
                             }
                         };
-                    }
+                    }*/
                     // update is_scheduled flag for each cc_file
                     $fileIds = array();
                     foreach ($filesToInsert as &$file) {
