@@ -416,18 +416,18 @@ class Application_Service_SchedulerService
             $pos = 0;
 
             foreach ($scheduleItems as $schedule) {
-                $id = intval($schedule["id"]);
+                $scheduleId = intval($schedule["id"]);
                 $instanceId = $schedule["instance"];
 
-                if ($this->isDuplicateScheduleLocation($id, $instanceId)) {
+                if ($this->isDuplicateScheduleLocation($scheduleId, $instanceId)) {
                     continue;
                 }
 
-                foreach ($this->getInstances($instanceId) as &$instance) {
+                foreach ($this->getInstances($instanceId) as $instance) {
                     $instanceId = $instance["id"];
 
-                    list($nextStartDT, $applyCrossfades) = $this->getInstances(
-                        $id);
+                    list($nextStartDT, $applyCrossfades) = $this->getRelativeStartTime(
+                        $scheduleId, $instance);
 
                     if (!in_array($instanceId, $affectedShowInstances)) {
                         $affectedShowInstances[] = $instanceId;
@@ -691,15 +691,19 @@ class Application_Service_SchedulerService
 
     /**
      * 
-     * Enter description here ...
-     * @param $id cc_schedule id
+     * This function finds the inserted item's start time. It is relative
+     * if the user is inserting into a linked show because we have to use
+     * the "after item's" position to find the linked instances insert location
+     * 
+     * @param $scheduleId cc_schedule id
+     * @param $instance cc_show_instance
      */
-    private function getNextStartTime($id)
+    private function getRelativeStartTime($scheduleId, $instance)
     {
-        if ($id !== 0) {
+        if ($scheduleId !== 0) {
 
             $linkedItem_sql = "SELECT ends FROM cc_schedule ".
-                "WHERE instance_id = {$instanceId} ".
+                "WHERE instance_id = {$instance["id"]} ".
                 "AND position = {$this->position} ".
                 "AND playout_status != -1";
             $linkedItemEnds = Application_Common_Database::prepareAndExecute(
@@ -727,6 +731,37 @@ class Application_Service_SchedulerService
              */
             return array($nextStartDT, false);
         }
+    }
+
+    private function findNextStartTime($DT, $instanceId)
+    {
+        $sEpoch = $DT->format("U.u");
+        $nEpoch = $this->epochNow;
+
+        //check for if the show has started.
+        if (bccomp( $nEpoch , $sEpoch , 6) === 1) {
+            //need some kind of placeholder for cc_schedule.
+            //playout_status will be -1.
+            $nextDT = $this->nowDT;
+
+            $length = bcsub($nEpoch , $sEpoch , 6);
+            $cliplength = Application_Common_DateHelper::secondsToPlaylistTime($length);
+
+            //fillers are for only storing a chunk of time space that has already passed.
+            $filler = new CcSchedule();
+            $filler->setDbStarts($DT)
+                ->setDbEnds($this->nowDT)
+                ->setDbClipLength($cliplength)
+                ->setDbCueIn('00:00:00')
+                ->setDbCueOut('00:00:00')
+                ->setDbPlayoutStatus(-1)
+                ->setDbInstanceId($instanceId)
+                ->save($this->con);
+        } else {
+            $nextDT = $DT;
+        }
+
+        return $nextDT;
     }
 
     private function retrieveMediaFiles($id, $type)
