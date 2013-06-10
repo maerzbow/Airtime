@@ -470,7 +470,7 @@ class Application_Service_SchedulerService
                     }
 
                     if ($doInsert) {
-                        $this->excludeIds = $this->doScheduleInsert();
+                        $this->doScheduleInsert();
                     }
 
                     $this->updateFileScheduledFlag($filesToInsert);
@@ -565,14 +565,12 @@ class Application_Service_SchedulerService
 
     private function doScheduleInsert()
     {
-        $insertedIds = array();
-
         $insert_sql = "INSERT INTO cc_schedule ".
             "(starts, ends, cue_in, cue_out, fade_in, fade_out, ".
             "clip_length, position, instance_id, file_id, stream_id) VALUES ".
-            implode($this->insertValues, ",")." RETURNING id";
-
+            implode($values, ",")." RETURNING id";
         $stmt = $this->con->prepare($insert_sql);
+
         if ($stmt->execute()) {
             foreach ($stmt->fetchAll() as $row) {
                 $this->excludeIds[] = $row["id"];
