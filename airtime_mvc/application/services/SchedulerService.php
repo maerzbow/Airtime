@@ -18,6 +18,7 @@ class Application_Service_SchedulerService
     private $scheduleLocations = array();
     private $ccShow;
     private $insertValues = array();
+    private $excludeIds = array();
 
     // Schedule position within each show instance. We need to keep track of
     // this in case shows are linked so we know where to insert items across
@@ -439,10 +440,10 @@ class Application_Service_SchedulerService
                      */
                     if ($adjustSched === true) {
                         if ($applyCrossfades) {
-                            $initalStartDT = clone $this->findTimeDifference(
+                            $initialStartDT = clone $this->applyCrossfades(
                                 $nextStartDT, $this->crossfadeDuration);
                         } else {
-                            $initalStartDT = clone $nextStartDT;
+                            $initialStartDT = clone $nextStartDT;
                         }
                     }
 
@@ -456,7 +457,6 @@ class Application_Service_SchedulerService
 
                     $doInsert = false;
                     unset($this->insertValues);
-                    Logging::info($this->insertValues);
 
                     foreach ($filesToInsert as &$file) {
                         if (isset($file['sched_id'])) {
@@ -468,8 +468,23 @@ class Application_Service_SchedulerService
                         $file = $this->prepareScheduleData($file, $applyCrossfades,
                             $doInsert);
                     }
+
                     if ($doInsert) {
-                        $this->doScheduleInsert();
+                        $this->excludeIds = $this->doScheduleInsert();
+                    }
+
+                    $this->updateFileScheduledFlag($filesToInsert);
+
+                    /* Reset files to insert so we can get a new set of files. We have
+                     * to do this in case we are inserting a dynamic block
+                     */
+                    if (!$moveAction) {
+                        $filesToInsert = null;
+                    }
+
+                    if ($adjustSched === true) {
+                        $this->adjustSchedule($initialStartDT, $instanceId,
+                            $nextStartDT);
                     }
 
                 }//foreach instance
@@ -485,17 +500,82 @@ class Application_Service_SchedulerService
         }
     }
 
+    private function adjustSchedule($initialStartDT, $instanceId, $nextStartDT)
+    {
+        $followingItems_sql = "SELECT * FROM cc_schedule ".
+            "WHERE starts >= '{$initialStartDT->format("Y-m-d H:i:s.u")}' ".
+            "AND instance_id = {$instanceId} ";
+        if (count($excludeIds) > 0) {
+            $followingItems_sql .= "AND id NOT IN (". implode($this->excludeIds, ",").") ";
+        }
+        $followingItems_sql .= "ORDER BY starts";
+        $followingSchedItems = Application_Common_Database::prepareAndExecute(
+            $followingItems_sql);
+
+        $pstart = microtime(true);
+
+        //recalculate the start/end times after the inserted items.
+        foreach ($followingSchedItems as $item) {
+            $endTimeDT = $this->findEndTime($nextStartDT, $item["clip_length"]);
+            $endTimeDT = $this->applyCrossfades($endTimeDT, $this->crossfadeDuration);
+            $update_sql = "UPDATE cc_schedule SET ".
+                "starts = '{$nextStartDT->format("Y-m-d H:i:s")}', ".
+                "ends = '{$endTimeDT->format("Y-m-d H:i:s")}', ".
+                "position = {$pos} ".
+                "WHERE id = {$item["id"]}";
+            Application_Common_Database::prepareAndExecute(
+                $update_sql, array(), Application_Common_Database::EXECUTE);
+
+            $nextStartDT = $this->applyCrossfades($endTimeDT, $this->crossfadeDuration);
+            $pos++;
+        }
+    }
+
+    private function updateFileScheduledFlag($filesToInsert)
+    {
+        $fileIds = array();
+        foreach ($filesToInsert as &$file) {
+            $fileIds[] = $file["id"];
+        }
+        $selectCriteria = new Criteria();
+        $selectCriteria->add(CcFilesPeer::ID, $fileIds, Criteria::IN);
+        $selectCriteria->addAnd(CcFilesPeer::IS_SCHEDULED, false);
+        $updateCriteria = new Criteria();
+        $updateCriteria->add(CcFilesPeer::IS_SCHEDULED, true);
+        BasePeer::doUpdate($selectCriteria, $updateCriteria, $this->con);
+    }
+
+    private function applyCrossfades($startDT, $seconds)
+    {
+        $startEpoch = $startDT->format("U.u");
+
+        //add two float numbers to 6 subsecond precision
+        //DateTime::createFromFormat("U.u") will have a problem if there is no decimal in the resulting number.
+        $newEpoch = bcsub($startEpoch , (string) $seconds, 6);
+
+        $dt = DateTime::createFromFormat("U.u", $newEpoch, new DateTimeZone("UTC"));
+
+        if ($dt === false) {
+            //PHP 5.3.2 problem
+            $dt = DateTime::createFromFormat("U", intval($newEpoch), new DateTimeZone("UTC"));
+        }
+
+        return $dt;
+    }
+
     private function doScheduleInsert()
     {
+        $insertedIds = array();
+
         $insert_sql = "INSERT INTO cc_schedule ".
             "(starts, ends, cue_in, cue_out, fade_in, fade_out, ".
             "clip_length, position, instance_id, file_id, stream_id) VALUES ".
-            implode($values, ",")." RETURNING id";
+            implode($this->insertValues, ",")." RETURNING id";
 
         $stmt = $this->con->prepare($insert_sql);
         if ($stmt->execute()) {
             foreach ($stmt->fetchAll() as $row) {
-                $excludeIds[] = $row["id"];
+                $this->excludeIds[] = $row["id"];
             }
         };
     }
@@ -520,10 +600,10 @@ class Application_Service_SchedulerService
         }
 
         if ($applyCrossfades) {
-            $nextStartDT = $this->findTimeDifference($nextStartDT,
+            $nextStartDT = $this->applyCrossfades($nextStartDT,
                 $this->crossfadeDuration);
             $endTimeDT = $this->findEndTime($nextStartDT, $file['cliplength']);
-            $endTimeDT = $this->findTimeDifference($endTimeDT, $this->crossfadeDuration);
+            $endTimeDT = $this->applyCrossfades($endTimeDT, $this->crossfadeDuration);
             /* Set it to false because the rest of the crossfades
              * will be applied after we insert each item
              */
@@ -533,7 +613,7 @@ class Application_Service_SchedulerService
         $endTimeDT = $this->findEndTime($nextStartDT, $file['cliplength']);
 
         if ($doInsert) {
-            $values[] = "(".
+            $this->insertValues[] = "(".
                 "'{$nextStartDT->format("Y-m-d H:i:s")}', ".
                 "'{$endTimeDT->format("Y-m-d H:i:s")}', ".
                 "'{$file["cuein"]}', ".
@@ -562,7 +642,7 @@ class Application_Service_SchedulerService
                 $update_sql, array(), Application_Common_Database::EXECUTE);
         }
 
-        $nextStartDT = $this->findTimeDifference($endTimeDT, $this->crossfadeDuration);
+        $nextStartDT = $this->applyCrossfades($endTimeDT, $this->crossfadeDuration);
         $pos++;
     }
 
@@ -593,7 +673,7 @@ class Application_Service_SchedulerService
             $sched = Application_Common_Database::prepareAndExecute(
                 $movedItem_sql, array(), Application_Common_Database::SINGLE);
         }
-        $excludeIds[] = intval($sched["id"]);
+        $this->excludeIds[] = intval($sched["id"]);
 
         $file["cliplength"] = $sched["clip_length"];
         $file["cuein"] = $sched["cue_in"];

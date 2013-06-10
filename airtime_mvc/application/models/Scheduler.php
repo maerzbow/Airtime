@@ -787,7 +787,7 @@ class Application_Model_Scheduler
                         };
                     }*/
                     // update is_scheduled flag for each cc_file
-                    $fileIds = array();
+                    /*$fileIds = array();
                     foreach ($filesToInsert as &$file) {
                         $fileIds[] = $file["id"];
                     }
@@ -796,14 +796,14 @@ class Application_Model_Scheduler
                     $selectCriteria->addAnd(CcFilesPeer::IS_SCHEDULED, false);
                     $updateCriteria = new Criteria();
                     $updateCriteria->add(CcFilesPeer::IS_SCHEDULED, true);
-                    BasePeer::doUpdate($selectCriteria, $updateCriteria, $this->con);
+                    BasePeer::doUpdate($selectCriteria, $updateCriteria, $this->con);*/
 
                     /* Reset files to insert so we can get a new set of files. We have
                      * to do this in case we are inserting a dynamic block
                      */
-                    if (!$moveAction) {
+                    /*if (!$moveAction) {
                         $filesToInsert = null;
-                    }
+                    }*/
 
                     if ($adjustSched === true) {
 
