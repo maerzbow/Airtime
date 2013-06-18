@@ -1,0 +1,20 @@
+<?php $ids = Application_Model_StreamSetting::getEnabledStreamIds(); ?>
+<form>
+	<select id="stream-select">
+	<?php
+	foreach($ids as $id) {
+		$streamData = Application_Model_StreamSetting::getStreamData($id);
+		$url = "http://".$streamData["${id}_host"].":".$streamData["${id}_port"]."/".$streamData["${id}_mount"];
+		$type = $streamData["${id}_type"];
+		$serverType = $streamData["${id}_output"];
+		
+		if ($type == "ogg") {
+			$type = "oga";
+		}
+
+		$label = "(".$streamData["${id}_host"].") ".$streamData["${id}_description"]." - ".$streamData["${id}_bitrate"]." kbit/s";
+		echo sprintf("<option class='stream' value='%s' data-url='%s' data-type='%s' server-type='%s'>%s</option>", $id, $url, $type, $serverType, $label);
+	}
+	?>
+	</select>
+</form>
