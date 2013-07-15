@@ -1,0 +1,2438 @@
+# AUSTRIAN (de_AT) translation for Airtime.
+# Copyright (C) 2013 Sourcefabric
+# This file is distributed under the same license as the Airtime package.
+# Sourcefabric <contact@sourcefabric.org>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Airtime 2.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-05-29 15:27-0400\n"
+"PO-Revision-Date: 2013-05-30 14:55+0100\n"
+"Last-Translator: Daniel James <daniel.james@sourcefabric.org>\n"
+"Language-Team: Austrian Localization <contact@sourcefabric.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+
+msgid " to "
+msgstr " να "
+
+msgid "%d files queued"
+msgstr "%d αρχεία σε αναμονή"
+
+msgid "%s contains nested watched directory: %s"
+msgstr "%s περιέχει ένθετο ευρετήριο προβεβλημένων: %s"
+
+msgid "%s doesn't exist in the watched list."
+msgstr "%s δεν υπάρχει στη λίστα προβεβλημένων."
+
+msgid "%s is already set as the current storage dir or in the watched folders list"
+msgstr "%s έχει ήδη οριστεί ως το τρέχον ευρετήριο αποθήκευσης ή βρίσκεται στη λίστα προβεβλημένων φακέλων"
+
+msgid "%s is already set as the current storage dir or in the watched folders list."
+msgstr "%s έχει ήδη οριστεί ως το τρέχον ευρετήριο αποθήκευσης ή βρίσκεται στη λίστα προβεβλημένων φακέλων."
+
+msgid "%s is already watched."
+msgstr "%s έχει ήδη προβληθεί."
+
+msgid "%s is nested within existing watched directory: %s"
+msgstr "%s βρίσκεται σε υποκατηγορία υπάρχωντος ευρετηρίου προβεβλημμένων: %s"
+
+msgid "%s is not a valid directory."
+msgstr "%s μη έγκυρο ευρετήριο."
+
+msgid "%s not found"
+msgstr "%s δεν βρέθηκε"
+
+msgid "%s's Settings"
+msgstr "%s's Ρυθμίσεις"
+
+msgid "%s-%s-%s is not a valid date"
+msgstr "%s-%s-%s δεν αποτελεί έγκυρη ημερομηνία"
+
+msgid "%s:%s:%s is not a valid time"
+msgstr "%s : %s : %s δεν αποτελεί έγκυρη ώρα"
+
+msgid "%sAirtime%s %s, the open radio software for scheduling and remote station management. %s"
+msgstr "%sΤο Airtime%s %s, το ανοικτού κώδικα λογισμικό για προγραμματισμό και διαχείριση ραδιοφωνικών σταθμών εξ αποστάσεως. %s"
+
+msgid "%sPrint view%sPlease use your browser's print function to print this table. Press escape when finished."
+msgstr "%sΕκτύπωση προβολής%sΠαρακαλούμε να χρησιμοποιείσετε την λειτουργία εκτύπωσης του περιηγητή σας για να τυπώσετε τον πίνακα. Όταν τελειώσετε πατήστε escape"
+
+msgid "%sSourcefabric%s o.p.s. Airtime is distributed under the %sGNU GPL v.3%s"
+msgstr "%s Sourcefabric%s o.p.s. Το Airtime διανέμεται υπό %s GNU GPL v.3 %s"
+
+msgid "'%value%' does not fit the date format '%format%'"
+msgstr "'%value%' δεν ταιριάζει με τη μορφή ημερομηνίας '%format%'"
+
+msgid "'%value%' does not fit the time format 'HH:mm'"
+msgstr "'%value%' δεν ταιριάζει με τη μορφή της ώρας 'ΩΩ:λλ'"
+
+msgid "'%value%' is less than %min% characters long"
+msgstr "'%value%' είναι λιγότερο από %min% χαρακτήρες "
+
+msgid "'%value%' is more than %max% characters long"
+msgstr "'%value%' είναι περισσότερο από  %max% χαρακτήρες "
+
+msgid "'%value%' is no valid email address in the basic format local-part@hostname"
+msgstr "'%value%' δεν αποτελεί έγκυρη διεύθυνση ηλεκτρονικού ταχυδρομείου στη βασική μορφή local-part@hostname"
+
+msgid "'%value%' is not between '%min%' and '%max%', inclusively"
+msgstr "'%value%' δεν είναι μεταξύ '%min%' και '%max%', συνολικά"
+
+msgid "'Length' should be in '00:00:00' format"
+msgstr "Το «Μήκος» θα πρέπει να είναι σε υπό μορφής  '00:00:00'"
+
+msgid "(In order to promote your station, 'Send support feedback' must be enabled)."
+msgstr "(Για να προωθήσετε τον σταθμό σας, η 'Αποστολή σχολίων υποστήριξης» πρέπει να είναι ενεργοποιημένη)."
+
+msgid "(Required)"
+msgstr "(Απαιτείται)"
+
+msgid "(Your radio station website)"
+msgstr "(Ιστοσελίδα του Ραδιοφωνικού σταθμού)"
+
+msgid "(for verification purposes only, will not be published)"
+msgstr "(Μόνο για σκοπούς επαλήθευσης, δεν θα δημοσιευθεί)"
+
+msgid "(hh:mm:ss.t)"
+msgstr "(ωω:λλ:δδ.t)"
+
+msgid "(ss.t)"
+msgstr "(Ss.t)"
+
+msgid "1 - Mono"
+msgstr "1 - Mono"
+
+msgid "10m"
+msgstr "10λ"
+
+msgid "15m"
+msgstr "15λ"
+
+msgid "1m"
+msgstr "1λ"
+
+msgid "2 - Stereo"
+msgstr "2 - Stereo"
+
+msgid "30m"
+msgstr "30λ"
+
+msgid "500 is the max item limit value you can set"
+msgstr "Το 500 είναι η μέγιστη οριακή τιμή σημείου, που μπορείτε να ορίσετε"
+
+msgid "5m"
+msgstr "5λ"
+
+msgid "60m"
+msgstr "60λ"
+
+msgid "A dynamic smart block will only save the criteria. The block content will get generated upon adding it to a show. You will not be able to view and edit the content in the Library."
+msgstr "Ένα στατικό smart block θα αποθηκεύσει μόνο τα κριτήρια. Το περιεχόμενο του block θα δημιουργηθεί κατά την προσθήκη του σε μια εκπομπή. Δεν θα μπορείτε να δείτε και να επεξεργαστείτε το περιεχόμενο στη Βιβλιοθήκη."
+
+msgid "A selected File does not exist!"
+msgstr "Ένα επιλεγμένο αρχείο δεν υπάρχει!"
+
+msgid "A static smart block will save the criteria and generate the block content immediately. This allows you to edit and view it in the Library before adding it to a show."
+msgstr "Ένα στατικό smart block θα αποθηκεύσει τα κριτήρια και θα δημιουργήσει αμέσως το περιεχόμενο του block. Αυτό σας επιτρέπει να το επεξεργαστείτε και να το προβάλεται στη Βιβλιοθήκη πριν το προσθέσετε σε μια εκπομπή."
+
+msgid "About"
+msgstr "Σχετικά"
+
+msgid "Access playout history"
+msgstr "Πρόσβαση στην ιστορία playout"
+
+msgid "Add"
+msgstr "Προσθήκη"
+
+msgid "Add / Remove Content"
+msgstr "Προσθήκη / Αφαίρεση Περιεχομένου"
+
+msgid "Add Files"
+msgstr "Προσθήκη Αρχείων"
+
+msgid "Add Media"
+msgstr "Προσθήκη Πολυμέσων"
+
+msgid "Add files"
+msgstr "Προσθήκη αρχείων"
+
+msgid "Add files to the upload queue and click the start button."
+msgstr "Προσθέστε αρχεία στην ουρά ανεβάσματος και κάντε κλίκ στο κουμπί έναρξης"
+
+msgid "Add media to the show by going to your show in the Schedule calendar, left-clicking on it and selecting 'Add / Remove Content'"
+msgstr "Προσθέστε πολυμέσα στην εκπομπή σας πηγαίνοντας στο Ημερολόγιο προγραμματισμού, κάνοντας αριστερό κλικ πάνω στην εκπομπή και επιλέγοντας 'Προσθήκη / Αφαίρεση Περιεχομένου'"
+
+msgid "Add this show"
+msgstr "Προσθήκη αυτής της εκπομπής "
+
+msgid "Add to Playlist"
+msgstr "Προσθήκη στη λίστα αναπαραγωγής"
+
+msgid "Add to Smart Block"
+msgstr "Προσθήκη στο Smart Block"
+
+msgid "Add to current playlist"
+msgstr "Προσθήκη στην τρέχουσα λίστα αναπαραγωγής"
+
+msgid "Add to current smart block"
+msgstr "Προσθήκη στο τρέχον smart block"
+
+msgid "Add to selected show"
+msgstr "Προσθήκη στην επιλεγμένη εκπομπή"
+
+msgid "Adding %s Items"
+msgstr "Προσθήκη %s στοιχείου/ων"
+
+msgid "Adding 1 Item"
+msgstr "Προσθήκη 1 Στοιχείου"
+
+msgid "Additional Options"
+msgstr "Πρόσθετες επιλογές"
+
+msgid "Admin"
+msgstr "Διαχειριστής"
+
+msgid "Admin Password"
+msgstr "Κωδικός πρόσβασης Διαχειριστή"
+
+msgid "Admin User"
+msgstr "Διαχειριστής Χρήστης"
+
+msgid "Admins can do the following:"
+msgstr "ΟΙ Διαχειριστές μπορούν να κάνουν τα παρακάτω:"
+
+msgid "Advanced Search Options"
+msgstr "Προηγμένες Επιλογές Αναζήτησης"
+
+msgid "Airtime Copyright &copy;Sourcefabric o.p.s. All rights reserved.%sMaintained and distributed under GNU GPL v.3 by %sSourcefabric o.p.s%s"
+msgstr "Airtime Copyright &copy;Sourcefabric o.p.s. Διατήρηση όλων των δικαιωμάτων.%sΣυντήρηση και διανομή από GNU GPL v.3 by %sSourcefabric o.p.s%s"
+
+msgid "Airtime Password Reset"
+msgstr "Επαναφορά κωδικού πρόσβασης Airtime"
+
+msgid "Airtime Version"
+msgstr "Έκδοση Airtime"
+
+msgid "Airtime is unsure about the status of this file. This can happen when the file is on a remote drive that is unaccessible or the file is in a directory that isn't 'watched' anymore."
+msgstr "To Airtime είναι αβέβαιο για την κατάσταση αυτού του αρχείου. Αυτό μπορεί να συμβεί όταν το αρχείο είναι σε μια απομακρυσμένη μονάδα δίσκου που είναι απροσπέλαστη ή το αρχείο είναι σε ευρετήριο που δεν «προβάλλεται» πια."
+
+msgid "Album"
+msgstr "Album"
+
+msgid "Album:"
+msgstr "Album:"
+
+msgid "All"
+msgstr "Όλα"
+
+msgid "All My Shows:"
+msgstr "Όλες οι Εκπομπές μου:"
+
+msgid "All rights are reserved"
+msgstr "Διατήρηση όλων των δικαιωμάτων"
+
+msgid "Allow Remote Websites To Access \"Schedule\" Info?%s (Enable this to make front-end widgets work.)"
+msgstr "Επιτρέψτε την Πρόσβαση \"Πρόγραμμα\" Πληροφορίες;%s σε Ιστοσελίδες με Απομακρυσμένη Πρόσβαση (Ενεργοποιήστε το για να λειτουργήσουν τα front-end widgets.)"
+
+msgid "Allow Repeat Tracks:"
+msgstr "Επιτρέψτε την επανάληψη κομματιών:"
+
+msgid "An email has been sent"
+msgstr "Το e-mail εστάλη"
+
+msgid "Application error"
+msgstr "Σφάλμα εφαρμογής"
+
+msgid "Apr"
+msgstr "Απρ"
+
+msgid "April"
+msgstr "Απρίλης"
+
+msgid "Are you sure you want to change the storage folder?\nThis will remove the files from your Airtime library!"
+msgstr "Είστε βέβαιοι ότι θέλετε να αλλάξετε το φάκελο αποθήκευσης;\nΑυτό θα αφαιρέσει τα αρχεία από τη βιβλιοθήκη του Airtime!"
+
+msgid "Are you sure you want to delete the selected item(s)?"
+msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε το επιλεγμένο στοιχείο/α;"
+
+msgid "Are you sure you want to delete the selected item?"
+msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε το επιλεγμένο στοιχείο;"
+
+msgid "Are you sure you want to remove the watched folder?"
+msgstr "Είστε βέβαιοι ότι θέλετε να αφαιρέσετε το φάκελο που προβάλλεται;"
+
+msgid "Artist - Title"
+msgstr "Καλλιτέχνης - Τίτλος"
+
+msgid "Audio Player"
+msgstr "Αναπαραγωγή ήχου"
+
+msgid "Audio Track"
+msgstr "Κομμάτι Ήχου"
+
+msgid "Aug"
+msgstr "Αυγ"
+
+msgid "August"
+msgstr "Αύγουστος"
+
+msgid "Auto Switch Off"
+msgstr "Αυτόματη Απενεργοποίηση"
+
+msgid "Auto Switch On"
+msgstr "Αυτόματη Ενεργοποίηση"
+
+msgid "Automatically Mark Files \"Downloadable\" on SoundCloud"
+msgstr "Αυτόματη Σήμανση Αρχείων \"για λήψη \" στο SoundCloud"
+
+msgid "Automatically Upload Recorded Shows"
+msgstr "Αυτόματο Ανέβασμα Ηχογραφημένων Εκπομπών"
+
+msgid "BPM"
+msgstr "BPM"
+
+msgid "BPM:"
+msgstr "BPM:"
+
+msgid "Back to login screen"
+msgstr "Επιστροφή στην σελίδα εισόδου"
+
+msgid "Background Colour:"
+msgstr "Χρώμα Φόντου:"
+
+msgid "Bad request. 'mode' parameter is invalid"
+msgstr "Λανθασμένο αίτημα. Η παράμετρος «κατάσταση» δεν είναι έγκυρη"
+
+msgid "Bad request. no 'mode' parameter passed."
+msgstr "Λανθασμένο αίτημα. Η παράμετρος «κατάσταση» δεν πέρασε."
+
+msgid "Begin by adding your files to the library using the 'Add Media' menu button. You can drag and drop your files to this window too."
+msgstr "Ξεκινήστε με την προσθήκη αρχείων στη βιβλιοθήκη επιλέγοντας 'Προσθήκη Πολυμέσων' στο μενού. Μπορείτε να κάνετε και drag-and-drop στα αρχεία σας σε αυτό το παράθυρο."
+
+msgid "Bit Rate"
+msgstr "Ρυθμός Bit:"
+
+msgid "Bit Rate (Kbps)"
+msgstr "Bit Rate (Kbps)"
+
+msgid "Bit Rate:"
+msgstr "Ρυθμός Δεδομένων:"
+
+msgid "By checking this box, I agree to Sourcefabric's %sprivacy policy%s."
+msgstr "Με την επιλογή του πλαισίου, συμφωνώ με την %sπολιτική απορρήτου%s της Sourcefabric."
+
+msgid "By linking your repeating shows any media items scheduled in any repeat show will also get scheduled in the other repeat shows"
+msgstr "Κατά τη διασύνδεση επαναλαμβανόμενων εκπομπών, όλα τα προγραμματισμένα στοιχεία πολυμέσων κάθε εκπομπής θα προγραμματιστούν σε όλες τις επαναλαμβανόμενες εκπομπές"
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "Calendar"
+msgstr "Ημερολόγιο"
+
+msgid "Can not connect to the streaming server"
+msgstr "Αδύνατη η σύνδεση με τον διακομιστή streaming "
+
+msgid "Can't drag and drop repeating shows"
+msgstr "Δεν είναι δυνατό το drag and drop επαναλαμβανόμενων εκπομπών"
+
+msgid "Can't move a past show"
+msgstr "Δεν είναι δυνατή η μετακίνηση περασμένης εκπομπής"
+
+msgid "Can't move a recorded show less than 1 hour before its rebroadcasts."
+msgstr "Δεν είναι δυνατή η μετακίνηση ηχογραφημένης εκπομπής σε λιγότερο από 1 ώρα πριν από την αναμετάδοση της."
+
+msgid "Can't move show into past"
+msgstr "Δεν είναι δυνατή η μετακίνηση εκπομπής στο παρελθόν"
+
+msgid "Can't set cue in to be larger than cue out."
+msgstr "Το cue in δεν μπορεί να είναι μεγαλύτερης διάρκειας από το cue out."
+
+msgid "Can't set cue out to be greater than file length."
+msgstr "Το cue out δεν μπορεί να είναι μεγαλύτερο από το μήκος του αρχείου."
+
+msgid "Can't set cue out to be smaller than cue in."
+msgstr "Το cue out δεν μπορεί να είναι μικρότερο από το cue in."
+
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+msgid "Cancel Current Show"
+msgstr "Ακύρωση Τρέχουσας Εκπομπής"
+
+msgid "Cancel Current Show?"
+msgstr "Ακύρωση Τρέχουσας Εκπομπής;"
+
+msgid "Cancel current show"
+msgstr "Ακύρωση τρέχουσας εκπομπής"
+
+msgid "Cannot create show in the past"
+msgstr "Δεν είναι δυνατή η δημιουργία εκπομπής στο παρελθόν"
+
+msgid "Cannot have duration 00h 00m"
+msgstr "Δεν μπορεί να έχει διάρκεια 00h 00m"
+
+msgid "Cannot have duration < 0m"
+msgstr "Δεν μπορεί να έχει διάρκεια < 0m"
+
+msgid "Cannot have duration greater than 24h"
+msgstr "Δεν μπορεί να έχει διάρκεια μεγαλύτερη από 24 ώρες"
+
+msgid "Cannot modify start date/time of the show that is already started"
+msgstr "Αδύνατη η τροποποίηση ημερομηνίας/ώρας έναρξης της  εκπομπής που έχει ήδη αρχίσει"
+
+msgid "Cannot move items out of linked shows"
+msgstr "Η μετακίνηση στοιχείων εκτός συνδεδεμένων εκπομπών είναι αδύνατη."
+
+msgid "Cannot schedule outside a show."
+msgstr "Δεν είναι δυνατός ο προγραμματισμός εκτός εκπομπής."
+
+msgid "Cannot schedule overlapping shows"
+msgstr "Δεν είναι δυνατός ο προγραμματισμός αλληλοεπικαλυπτόμενων εκπομπών"
+
+msgid "Cannot schedule overlapping shows.\nNote: Resizing a repeating show affects all of its repeats."
+msgstr "Δεν είναι δυνατός ο προγραμματισμός αλληλοεπικαλυπτώμενων εκπομπών.\n Σημείωση: Η αλλαγή μεγέθους μιας εκπομπής επηρεάζει όλες τις επαναλήψεις της."
+
+msgid "Channels:"
+msgstr "Κανάλια"
+
+msgid "Check this box to automatically switch off Master/Show source upon source disconnection."
+msgstr "Επιλέξτε αυτό το πλαίσιο για να σβήσει αυτόματα η Κύρια/Εμφάνιση πηγής κατά την αποσύνδεση πηγής."
+
+msgid "Check this box to automatically switch on Master/Show source upon source connection."
+msgstr "Επιλέξτε αυτό το πλαίσιο για να ενεργοποιηθεί αυτόματα η η Κύρια/Εμφάνιση πηγής κατά την σύνδεση πηγής."
+
+msgid "Check this option to enable metadata for OGG streams (stream metadata is the track title, artist, and show name that is displayed in an audio player). VLC and mplayer have a serious bug when playing an OGG/VORBIS stream that has metadata information enabled: they will disconnect from the stream after every song. If you are using an OGG stream and your listeners do not require support for these audio players, then feel free to enable this option."
+msgstr "Τσεκάρετε αυτή την επιλογή για να ενεργοποιήσετε τα μεταδεδομένα για OGG streams (τα stream μεταδεδομένα είναι ο τίτλος του κομματιού και του καλλιτέχνη, που εμφανίζονται σε ένα audio player). VLC και mplayer προκαλούν βλάβες κατά την αναπαραγωγή ενός OGG / Vorbis stream, το οποίο έχει ενεργοποιημένες τις πληροφορίες μεταδεδομένων: θα αποσυνδέονται από το stream μετά από κάθε κομμάτι. Εάν χρησιμοποιείτε ένα OGG stream και οι ακροατές σας δεν απαιτούν υποστήριξη για αυτές τις συσκευές αναπαραγωγής ήχου, τότε μπορείτε να ενεργοποιήσετε αυτή την επιλογή."
+
+msgid "Choose Days:"
+msgstr "Επιλέξτε Ημέρες:"
+
+msgid "Choose Folder to Watch"
+msgstr "Επιλογή Φακέλου για Προβολή"
+
+msgid "Choose Storage Folder"
+msgstr "Επιλογή Φακέλου Αποθήκευσης"
+
+msgid "Choose folder"
+msgstr "Επιλέξτε φάκελο"
+
+msgid "City:"
+msgstr "Πόλη"
+
+msgid "Clear"
+msgstr "Εκκαθάριση"
+
+msgid "Click the box below to advertise your station on %sSourcefabric.org%s. In order to promote your station, 'Send support feedback' must be enabled. This data will be collected in addition to the support feedback."
+msgstr "Κάντε κλικ στο παρακάτω πλαίσιο για να διαφημίσετε το σταθμό σας στην ιστοσελίδα %s Sourcefabric.org %s . Προκειμένου να το κάνετε πρέπει η επιλογή 'Αποστολή σχολίων υποστήριξης» να είναι ενεργοποιημένη. Αυτά τα δεδομένα θα συλλέγονται μαζί με τo feedback σας."
+
+msgid "Click the box below to promote your station on %sSourcefabric.org%s."
+msgstr "Κάντε κλικ στο παρακάτω πλαίσιο για να προωθήσετε τον σταθμό σας στην ιστοσελίδα %sSourcefabric.org%s ."
+
+msgid "Close"
+msgstr "Κλείσιμο"
+
+msgid "Composer"
+msgstr "Συνθέτης"
+
+msgid "Composer:"
+msgstr "Συνθέτης:"
+
+msgid "Conductor"
+msgstr "Μαέστρος"
+
+msgid "Conductor:"
+msgstr "Μαέστρος:"
+
+msgid "Configure Mail Server"
+msgstr "Διαμόρφωση Διακομιστή Αλληλογραφίας"
+
+msgid "Confirm new password"
+msgstr "Επιβεβαίωση νέου κωδικού πρόσβασης"
+
+msgid "Connected to the streaming server"
+msgstr "Συνδέθηκε με τον διακομιστή streaming "
+
+msgid "Connection URL: "
+msgstr "URL Σύνδεσης: "
+
+msgid "Content in linked shows must be scheduled before or after any one is broadcasted"
+msgstr "Το περιεχόμενο συνδεδεμένων εκπομπών πρέπει να να προγραμματιστεί πριν ή μετά την αναμετάδοσή τους"
+
+msgid "Contents of Show"
+msgstr "Περιεχόμενα Εκπομπής"
+
+msgid "Copied %s row%s to the clipboard"
+msgstr "Αντιγράφηκαν %s σειρές%s στο πρόχειρο"
+
+msgid "Copy of %s"
+msgstr "Αντιγραφή από %s"
+
+msgid "Copyright"
+msgstr "Copyright"
+
+msgid "Copyright:"
+msgstr "Copyright:"
+
+msgid "Could not delete some scheduled files."
+msgstr "Δεν ήταν δυνατή η διαγραφή ορισμένων προγραμματισμένων αρχείων."
+
+msgid "Could not parse M3U playlist"
+msgstr "Δεν ήταν δυνατή η ανάλυση της λίστας αναπαραγωγής M3U"
+
+msgid "Could not parse PLS playlist"
+msgstr "Αδυναμία ανάλυσης λίστας αναπαραγωγής PLS"
+
+msgid "Could not parse XSPF playlist"
+msgstr "Δεν ήταν δυνατή η ανάλυση της λίστας αναπαραγωγής XSPF "
+
+msgid "Country:"
+msgstr "Χώρα"
+
+msgid "Create a show by going to 'Calendar' in the menu bar, and then clicking the '+ Show' icon. This can be either a one-time or repeating show. Only admins and program managers can add shows."
+msgstr "Δημιουργήστε μια εκπομπή πηγαίνοντας στο «Ημερολόγιο» και στη συνέχεια κάνοντας κλικ στο εικονίδιο '+Εκπομπή'. Αυτό μπορεί να είναι είτε μια ή επαναλαμβανόμενες εκπομπές. Μόνο οι διαχειριστές και οι μουσικοί παραγωγοί μπορούν να επεξεργαστούν την εκπομπή."
+
+msgid "Create playlists, smart blocks, and webstreams"
+msgstr "Δημιουργία λιστών αναπαραγωγής, smart blocks, και webstreams "
+
+msgid "Creative Commons Attribution"
+msgstr "Απόδοση Creative Commons"
+
+msgid "Creative Commons Attribution No Derivative Works"
+msgstr "Απόδοση Creative Commons Όχι Παράγωγα Έργα"
+
+msgid "Creative Commons Attribution Noncommercial"
+msgstr "Απόδοση Creative Commons Μη Εμπορική Χρήση"
+
+msgid "Creative Commons Attribution Noncommercial Non Derivate Works"
+msgstr "Απόδοση Creative Commons Μη Εμπορική Χρήση Όχι Παράγωγα Έργα"
+
+msgid "Creative Commons Attribution Noncommercial Share Alike"
+msgstr "Απόδοση Creative Commons Μη Εμπορική Χρήση Share Alike"
+
+msgid "Creative Commons Attribution Share Alike"
+msgstr "Απόδοση Creative Commons Share Alike"
+
+msgid "Creator"
+msgstr "Δημιουργός"
+
+msgid "Creator:"
+msgstr "Δημιουργός:"
+
+msgid "Cue Editor"
+msgstr "Επεξεργαστής Cue"
+
+msgid "Cue In"
+msgstr "Cue In"
+
+msgid "Cue In: "
+msgstr "Cue In: "
+
+msgid "Cue Out"
+msgstr "Cue Out"
+
+msgid "Cue Out: "
+msgstr "Cue Out: "
+
+msgid "Cue in and cue out are null."
+msgstr "Cue in και cue out είναι μηδέν."
+
+msgid "Current"
+msgstr "Τρέχουσα"
+
+msgid "Current Import Folder:"
+msgstr "Τρέχων Φάκελος Εισαγωγής:"
+
+msgid "Current Show:"
+msgstr "Τρέχουσα Εκπομπή:"
+
+msgid "Cursor"
+msgstr "Cursor"
+
+msgid "Custom Password"
+msgstr "Προσαρμοσμένος Κωδικός Πρόσβασης"
+
+msgid "Custom Username"
+msgstr "Προσαρμοσμένο Όνομα Χρήστη"
+
+msgid "DJ"
+msgstr "DJ"
+
+msgid "DJs can do the following:"
+msgstr "Οι DJ μπορούν να κάνουν τα παρακάτω"
+
+msgid "DJs:"
+msgstr "DJs:"
+
+msgid "Date End:"
+msgstr "Ημερομηνία Λήξης:"
+
+msgid "Date Start:"
+msgstr "Ημερομηνία Έναρξης:"
+
+msgid "Date/Time End:"
+msgstr "Ημερομηνία/Ώρα Λήξης:"
+
+msgid "Date/Time Start:"
+msgstr "Ημερομηνία/Ώρα Έναρξης:"
+
+msgid "Day must be specified"
+msgstr "Η μέρα πρέπει να προσδιοριστεί"
+
+msgid "Dec"
+msgstr "Δεκ"
+
+msgid "December"
+msgstr "Δεκέμβριος"
+
+msgid "Default Crossfade Duration (s):"
+msgstr "Προεπιλεγμένη Διάρκεια Crossfade (s):"
+
+msgid "Default Fade In (s):"
+msgstr "Προεπιλεγμένο Fade In (s):"
+
+msgid "Default Fade Out (s):"
+msgstr "Προεπιλεγμένο Fade Out (s):"
+
+msgid "Default Genre:"
+msgstr "Προεπιλεγμένο Είδος:"
+
+msgid "Default Interface Language"
+msgstr "Προεπιλογή Γλώσσας Interface"
+
+msgid "Default Interface Timezone"
+msgstr "Προεπιλογή Ζώνης Ώρας Interface"
+
+msgid "Default Length:"
+msgstr "Προεπιλεγμένη Διάρκεια:"
+
+msgid "Default License:"
+msgstr "Προεπιλεγμένη Άδεια :"
+
+msgid "Default Track Type:"
+msgstr "Προεπιλεγμένος Τύπος Κομματιού:"
+
+msgid "Delete"
+msgstr "Διαγραφή"
+
+msgid "Delete This Instance"
+msgstr "Διαγραφή Του Παραδείγματος"
+
+msgid "Delete This Instance and All Following"
+msgstr "Διαγράψτε Του Παραδείγματος και Όλων των Ακόλουθών του"
+
+msgid "Delete selected item(s)?"
+msgstr "Διαγραφή επιλεγμένου στοιχείου/ων;"
+
+msgid "Demo"
+msgstr "Demo"
+
+msgid "Description"
+msgstr "Περιγραφή"
+
+msgid "Description:"
+msgstr "Περιγραφή:"
+
+msgid "Deselect all"
+msgstr "Κατάργηση όλων"
+
+msgid "Deselect this page"
+msgstr "Καταργήστε αυτήν την σελίδα"
+
+msgid "Disabled"
+msgstr "Απενεργοποιημένο"
+
+msgid "Disk"
+msgstr "Δίσκος"
+
+msgid "Disk Space"
+msgstr "Χώρος δίσκου"
+
+msgid "Done"
+msgstr "Ολοκληρώθηκε"
+
+msgid "Download"
+msgstr "Λήψη"
+
+msgid "Drag files here."
+msgstr "Σύρετε αρχεία εδώ."
+
+msgid "Duplicate Playlist"
+msgstr "Αντιγραφή Λίστας Αναπαραγωγής"
+
+msgid "Duration"
+msgstr "Διάρκεια"
+
+msgid "Duration:"
+msgstr "Διάρκεια:"
+
+msgid "Dynamic"
+msgstr "Δυναμικό"
+
+msgid "Dynamic Smart Block"
+msgstr "Δυναμικά Smart Block"
+
+msgid "Dynamic Smart Block Criteria: "
+msgstr "Κριτήρια Δυναμικών Smart Block: "
+
+msgid "Dynamic block is not previewable"
+msgstr "Αδύνατη η προεπισκόπιση του δυναμικού block"
+
+msgid "E-mail"
+msgstr "E-mail"
+
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+msgid "Edit Metadata"
+msgstr "Επεξεργασία Μεταδεδομένων"
+
+msgid "Edit Show"
+msgstr "Επεξεργασία Εκπομπής"
+
+msgid "Edit This Instance"
+msgstr "Επεξεργασία της Παρουσίας"
+
+msgid "Email / Mail Server Settings"
+msgstr "Ρυθμίσεις Δακομιστή Email / Αλληλογραφίας"
+
+msgid "Email Address"
+msgstr "Διεύθυνση Ηλεκτρονικού Ταχυδρομείου"
+
+msgid "Email could not be sent. Check your mail server settings and ensure it has been configured properly."
+msgstr "Το e-mail δεν μπόρεσε να σταλεί. Ελέγξτε τις ρυθμίσεις email του διακομιστή σας και βεβαιωθείτε ότι έχει ρυθμιστεί σωστά."
+
+msgid "Email sent"
+msgstr "Το e-mail εστάλη"
+
+msgid "Email:"
+msgstr "Email:"
+
+msgid "Empty playlist"
+msgstr "Άδειασμα λίστας αναπαραγωγής"
+
+msgid "Empty playlist content"
+msgstr "Άδειασμα περιεχομένου λίστας αναπαραγωγής"
+
+msgid "Empty smart block"
+msgstr "Άδειασμα smart block"
+
+msgid "Empty smart block content"
+msgstr "Εκκαθάριση περιεχομένου του smart block"
+
+msgid "Enable Replay Gain"
+msgstr "Ενεργοποίηση Επανάληψη Κέρδους"
+
+msgid "Enable SoundCloud Upload"
+msgstr "Ενεργοποίηση Ανεβάσματος SoundCloud"
+
+msgid "Enable System Emails (Password Reset)"
+msgstr "Ενεργοποίηση Emails Συστήματος (Επαναφορά κωδικού πρόσβασης)"
+
+msgid "Enabled"
+msgstr "Ενεργοποιημένο"
+
+msgid "Enabled:"
+msgstr "Ενεργοποιημένο"
+
+msgid "Encoded By"
+msgstr "Κωδικοποιήθηκε από"
+
+msgid "End"
+msgstr "Τέλος"
+
+msgid "End date must be after start date"
+msgstr "Η ημερομηνία λήξης πρέπει να είναι μετά την ημερομηνία έναρξης"
+
+msgid "End date/time cannot be in the past"
+msgstr "Η λήξη ημερομηνίας/χρόνου δεν μπορεί να είναι στο παρελθόν"
+
+msgid "Error code: "
+msgstr "Κωδικός σφάλματος: "
+
+msgid "Error msg: "
+msgstr "Μήνυμα σφάλματος: "
+
+msgid "Error: File too large: "
+msgstr "Σφάλμα: Πολύ μεγάλο αρχείο: "
+
+msgid "Error: Invalid file extension: "
+msgstr "Σφάλμα: Μη έγκυρη προέκταση αρχείου: "
+
+msgid "Expand Dynamic Block"
+msgstr "Επέκταση Δυναμικών Block"
+
+msgid "Expand Static Block"
+msgstr "Επέκταση Στατικών Block"
+
+msgid "Fade Editor"
+msgstr "Επεξεργαστής Fade"
+
+msgid "Fade In"
+msgstr "Fade In"
+
+msgid "Fade Out"
+msgstr "Fade Out"
+
+msgid "Fade in: "
+msgstr "Fade in: "
+
+msgid "Fade out: "
+msgstr "Fade out: "
+
+msgid "Failed to create 'organize' directory."
+msgstr "Αποτυχία δημιουργίας «οργάνωση» directory."
+
+msgid "Feb"
+msgstr "Φεβ"
+
+msgid "February"
+msgstr "Φεβρουάριος"
+
+msgid "File Path:"
+msgstr "Διαδρομή Αρχείου"
+
+msgid "File count error."
+msgstr "Σφάλμα μέτρησης αρχείων."
+
+msgid "File does not exist in Airtime"
+msgstr "Το αρχείο δεν υπάρχει στο Airtime"
+
+msgid "File does not exist in Airtime."
+msgstr "Το αρχείο δεν υπάρχει στο Airtime."
+
+msgid "File doesn't exist in Airtime."
+msgstr "Το αρχείο δεν υπάρχει στο Airtime."
+
+msgid "File extension error."
+msgstr "Σφάλμα επέκτασης αρχείου."
+
+msgid "File import in progress..."
+msgstr "Εισαγωγή αρχείου σε εξέλιξη..."
+
+msgid "File size error."
+msgstr "Σφάλμα μεγέθους αρχείου."
+
+msgid "File: %f, size: %s, max file size: %m"
+msgstr "Αρχείο: %f, μέγεθος: %s, μέγιστο μέγεθος αρχείου: %m"
+
+msgid "File: %s"
+msgstr "Αρχείο: %s"
+
+msgid "Files"
+msgstr "Αρχεία"
+
+msgid "Filter By Show:"
+msgstr "Φιλτράρισμα βάσει Εκπομπών:"
+
+msgid "Filter History"
+msgstr "Φιλτράρισμα Ιστορίας"
+
+msgid "Find Shows"
+msgstr "Εύρεση Εκπομπών"
+
+msgid "First Name"
+msgstr "Όνομα"
+
+msgid "Firstname:"
+msgstr "Όνομα:"
+
+msgid "For more detailed help, read the %suser manual%s."
+msgstr "Για περισσότερες αναλυτικές οδηγίες, διαβάστε το %sεγχειρίδιο%s ."
+
+msgid "For more details, please read the %sAirtime Manual%s"
+msgstr "Για περισσότερες λεπτομέρειες, παρακαλούμε διαβάστε το %sAirtime Εγχειρίδιο%s"
+
+msgid "Fr"
+msgstr "Πα"
+
+msgid "Fri"
+msgstr "Παρ"
+
+msgid "Friday"
+msgstr "Παρασκευή"
+
+msgid "From {from} to {to}"
+msgstr "Από {από} σε {σε}"
+
+msgid "Generate"
+msgstr "Δημιουργία"
+
+msgid "Generate playlist content and save criteria"
+msgstr "Δημιουργία λίστας αναπαραγωγής περιεχομένου και αποθήκευση κριτηρίων"
+
+msgid "Generic error."
+msgstr "Γενικό σφάλμα."
+
+msgid "Genre"
+msgstr "Είδος"
+
+msgid "Genre:"
+msgstr "Είδος:"
+
+msgid "Get new password"
+msgstr "Αποκτήστε νέο κωδικό πρόσβασης"
+
+msgid "Getting Started"
+msgstr "Έναρξη"
+
+msgid "Getting information from the server..."
+msgstr "Λήψη πληροφοριών από το διακομιστή..."
+
+msgid "Given email not found."
+msgstr "Το email δεν βρέθηκε."
+
+msgid "Global Settings"
+msgstr "Γενικές ρυθμίσεις"
+
+msgid "Guest"
+msgstr "Επισκέπτης"
+
+msgid "Guests can do the following:"
+msgstr "Οι επισκέπτες μπορούν να κάνουν τα παρακάτω"
+
+msgid "HTTP Error."
+msgstr "Σφάλμα HTTP."
+
+msgid "Hardware Audio Output"
+msgstr "Έξοδος Hardware Ήχου"
+
+msgid "Help"
+msgstr "Βοήθεια"
+
+msgid "Help Airtime improve by letting Sourcefabric know how you are using it. This information will be collected regularly in order to enhance your user experience.%sClick the 'Send support feedback' box and we'll make sure the features you use are constantly improving."
+msgstr "Βοηθείστε το Airtime ενημερώνοντας τη Sourcefabric για τη χρήση που του κάνετε. Αυτές οι πληροφορίες θα συλλέγονται τακτικά, προκειμένου να ενισχύσουν την εμπειρία των χρηστών σας. %s Κάντε κλικ στο πλαίσιο Αποστολή σχολίων υποστήριξης» και θα βεβαιωθείτε ότι οι λειτουργίες που χρησιμοποιείτε βελτιώνοται συνεχώς."
+
+msgid "Help Airtime improve by letting us know how you are using it. This info will be collected regularly in order to enhance your user experience.%sClick 'Yes, help Airtime' and we'll make sure the features you use are constantly improving."
+msgstr "Βοηθείστε στη βελτίωση του Airtime, ενημερώνοντας μας για την χρήση που του κάνετε. Αυτές οι πληροφορίες θα συλλέγονται τακτικά, προκειμένου να ενισχύσουν την εμπειρία των χρηστών σας. %sΚάντε κλικ στο κουμπί 'Ναι, βοηθώ το Airtime' και θα βεβαιωθείτε ότι οι λειτουργίες που χρησιμοποιείτε συνεχώς βελτιώνεται."
+
+msgid "Here's how you can get started using Airtime to automate your broadcasts: "
+msgstr "Διαβάστε τις οδηγίες για να ξεκινήσετε να χρησιμοποιείται το Airtime, για την αυτοματοποίηση των εκπομπών σας: "
+
+msgid "Hi %s, \n\nClick this link to reset your password: "
+msgstr "Γεια σας %s , \n\nΠατήστε αυτόν τον σύνδεσμο για να επαναφέρετε τον κωδικό πρόσβασής σας: "
+
+msgid "Hour"
+msgstr "Ώρα"
+
+msgid "IO error."
+msgstr "Σφάλμα IO"
+
+msgid "ISRC"
+msgstr "ISRC"
+
+msgid "ISRC Number:"
+msgstr "Αριθμός ISRC:"
+
+msgid "Icecast Vorbis Metadata"
+msgstr "Μεταδεδομένα Icecast Vorbis "
+
+msgid "If Airtime is behind a router or firewall, you may need to configure port forwarding and this field information will be incorrect. In this case you will need to manually update this field so it shows the correct host/port/mount that your DJ's need to connect to. The allowed range is between 1024 and 49151."
+msgstr "Αν το Airtime είναι πίσω από ένα τείχος προστασίας ή router, ίσως χρειαστεί να ρυθμίσετε την προώθηση port και οι πληροφορίες πεδίου θα είναι λανθασμένες. Σε αυτή την περίπτωση θα πρέπει να ενημερώσετε αυτό το πεδίο, ώστε να δείχνει το σωστό host/port/mount που χρειάζονται οι DJ σας για να συνδεθούν. Το επιτρεπόμενο εύρος είναι μεταξύ 1024 και 49151."
+
+msgid "If you change the username or password values for an enabled stream the playout engine will be rebooted and your listeners will hear silence for 5-10 seconds. Changing the following fields will NOT cause a reboot: Stream Label (Global Settings), and Switch Transition Fade(s), Master Username, and Master Password (Input Stream Settings). If Airtime is recording, and if the change causes a playout engine restart, the recording will be interrupted."
+msgstr "Εάν αλλάξετε το όνομα χρήστη ή τον κωδικό πρόσβασης για ένα ενεργοποιημένο stream, η μηχανή playout θα πραγματοποιήσει επανεκκίνηση και οι ακροατές σας θα ακούσουν σιωπή για 5-10 δευτερόλεπτα. Με την αλλαγή των παρακάτω πεδίων ΔΕΝ θα προκληθεί επανεκκίνηση: Stream Label (Γενικές Ρυθμίσεις), και Εναλλαγή Fade(s) Μετάβασης, Κύριο Όνομα χρήστη  και Κύριος Κωδικός πρόσβασης (Ρυθμίσεις Stream Εισόδου). Αν το Airtime ηχογραφεί και αν η αλλαγή προκαλέσει επανεκκίνηση της μηχανής playout, η ηχογράφηση θα διακοπεί."
+
+msgid "If your Icecast server expects a username of 'source', this field can be left blank."
+msgstr "Εάν ο διακομιστής Icecast περιμένει ένα όνομα χρήστη από την «πηγή», αυτό το πεδίο μπορεί να μείνει κενό."
+
+msgid "If your live streaming client does not ask for a username, this field should be 'source'."
+msgstr "Εάν ο live streaming πελάτη σας δεν ζητά ένα όνομα χρήστη, το πεδίο αυτό θα πρέπει να είναι η «πηγή»."
+
+msgid "Image must be one of jpg, jpeg, png, or gif"
+msgstr "Η εικόνα πρέπει να είναι jpg, jpeg, png ή gif "
+
+msgid "Import Folder:"
+msgstr "Εισαγωγή Φακέλου:"
+
+msgid "Import media files"
+msgstr "Εισαγωγή αρχείων πολυμέσων"
+
+msgid "Init error."
+msgstr "Σφάλμα αρχικοποίησης."
+
+msgid "Input Stream Settings"
+msgstr "Ρυθμίσεις Stream Εισόδου"
+
+msgid "Input must be a number"
+msgstr "Το input πρέπει να είναι αριθμός"
+
+msgid "Input must be a positive number"
+msgstr "Το input πρέπει να είναι θετικός αριθμός"
+
+msgid "Input must be in the format: hh:mm:ss.t"
+msgstr "Το input πρέπει να είναι υπό μορφής: ωω: λλ: ss.t"
+
+msgid "Input must be in the format: yyyy-mm-dd"
+msgstr "Το input πρέπει να είναι υπό μορφής: εεεε-μμ-ηη"
+
+msgid "Invalid character entered"
+msgstr "Εισαγωγή άκυρου χαρακτήρα"
+
+msgid "Invalid form values."
+msgstr "Άκυρες μορφές αξίας."
+
+msgid "Invalid webstream - This appears to be a file download."
+msgstr "Μη έγκυρο webstream - Αυτό φαίνεται να αποτελεί αρχείο λήψης."
+
+msgid "Isrc Number:"
+msgstr "Αριθμός ISRC:"
+
+msgid "Jabber:"
+msgstr "Jabber"
+
+msgid "Jan"
+msgstr "Ιαν"
+
+msgid "January"
+msgstr "Ιανουάριος"
+
+msgid "Jul"
+msgstr "Ιουλ"
+
+msgid "July"
+msgstr "Ιούλιος"
+
+msgid "Jump to the current playing track"
+msgstr "Μετάβαση στο τρέχον κομμάτι "
+
+msgid "Jun"
+msgstr "Ιουν"
+
+msgid "June"
+msgstr "Ιούνιος"
+
+msgid "Label"
+msgstr "Εταιρεία"
+
+msgid "Label:"
+msgstr "Δισκογραφική:"
+
+msgid "Language"
+msgstr "Γλώσσα"
+
+msgid "Language:"
+msgstr "Γλώσσα:"
+
+msgid "Last Modified"
+msgstr "Τελευταία τροποποίηση"
+
+msgid "Last Name"
+msgstr "Επώνυμο"
+
+msgid "Last Played"
+msgstr "Τελευταία αναπαραγωγή"
+
+msgid "Lastname:"
+msgstr "Επώνυμο:"
+
+msgid "Length"
+msgstr "Διάρκεια"
+
+msgid "Length needs to be greater than 0 minutes"
+msgstr "Το μήκος πρέπει να είναι μεγαλύτερο από 0 λεπτά"
+
+msgid "Length should be of form \"00h 00m\""
+msgstr "Το μήκος πρέπει να είναι υπό μορφής \"00h 00m\""
+
+msgid "Length:"
+msgstr "Διάρκεια:"
+
+msgid "Library"
+msgstr "Βιβλιοθήκη"
+
+msgid "Limit cannot be empty or smaller than 0"
+msgstr "Το όριο δεν μπορεί να είναι κενό ή μικρότερο από 0"
+
+msgid "Limit cannot be more than 24 hrs"
+msgstr "Το όριο δεν μπορεί να είναι ξεπερνάει τις 24 ώρες"
+
+msgid "Limit to"
+msgstr "Όριο για"
+
+msgid "Limit to "
+msgstr "Όριο για "
+
+msgid "Limit to: "
+msgstr "Όριο για: "
+
+msgid "Link:"
+msgstr "Σύνδεσμος"
+
+msgid "Listen"
+msgstr "Ακούστε!"
+
+msgid "Listener Count Over Time"
+msgstr "Καταμέτρηση Ακροατών με την Πάροδου Χρόνου"
+
+msgid "Listener Count on %s: %s"
+msgstr "Καταμέτρηση Ακροατών για %s : %s"
+
+msgid "Listener Stats"
+msgstr "Στατιστικές Ακροατών"
+
+msgid "Live"
+msgstr "Live"
+
+msgid "Live Stream"
+msgstr "Live Stream"
+
+msgid "Live Stream Input"
+msgstr "Είσοδος Live Stream "
+
+msgid "Live stream"
+msgstr "Ζωντανό Stream"
+
+msgid "Loading..."
+msgstr "Φόρτωση..."
+
+msgid "Login"
+msgstr "Σύνδεση"
+
+msgid "Login name is not unique."
+msgstr "Το όνομα εισόδου δεν είναι μοναδικό."
+
+msgid "Logout"
+msgstr "Έξοδος"
+
+msgid "Look in"
+msgstr "Κοιτάξτε σε"
+
+msgid "Looks like the page you were looking for doesn't exist!"
+msgstr "Η σελίδα που ψάχνατε δεν υπάρχει!"
+
+msgid "Loop"
+msgstr "Loop"
+
+msgid "Mail Server"
+msgstr "Διακομιστής Αλληλογραφίας"
+
+msgid "Manage Media Folders"
+msgstr "Διαχείριση Φακέλων Πολυμέσων"
+
+msgid "Manage Users"
+msgstr "Διαχείριση Χρηστών"
+
+msgid "Manage all library content"
+msgstr "Διαχείριση όλου του περιεχομένου βιβλιοθήκης"
+
+msgid "Manage assigned show content"
+msgstr "Διαχείριση ανατεθημένου περιεχομένου εκπομπής"
+
+msgid "Manage preferences"
+msgstr "Διαχείριση προτιμήσεων"
+
+msgid "Manage their own library content"
+msgstr "Διαχείριση δικού τους περιεχομένου βιβλιοθήκης"
+
+msgid "Manage users"
+msgstr "Διαχείριση Χρηστών"
+
+msgid "Manage watched folders"
+msgstr "Διαχείριση προβεβλημένων φακέλων "
+
+msgid "Mar"
+msgstr "Μαρ"
+
+msgid "March"
+msgstr "Μάρτιος"
+
+msgid "Master Password"
+msgstr "Κύριος Κωδικός Πρόσβασης"
+
+msgid "Master Source"
+msgstr "Κύρια Πηγή "
+
+msgid "Master Source Connection URL"
+msgstr "URL Σύνδεσης Κύριας Πηγής "
+
+msgid "Master Source Connection URL:"
+msgstr "URL Σύνδεσης Κυρίαρχης Πηγής:"
+
+msgid "Master Source Mount Point"
+msgstr "Κύριο Σημείο Προσάρτησης Πηγής"
+
+msgid "Master Source Port"
+msgstr "Κύριο Port Πηγής"
+
+msgid "Master Stream"
+msgstr "Κύριο Stream"
+
+msgid "Master Username"
+msgstr "Κύριο Όνομα Χρήστη"
+
+msgid "May"
+msgstr "Μάιος"
+
+msgid "Media Folders"
+msgstr "Φάκελοι Πολυμέσων"
+
+msgid "Memory"
+msgstr "Μνήμη"
+
+msgid "Mime"
+msgstr "Μίμος"
+
+msgid "Minute"
+msgstr "Λεπτό"
+
+msgid "Mo"
+msgstr "Δε"
+
+msgid "Mobile Phone:"
+msgstr "Κινητό Τηλέφωνο:"
+
+msgid "Mon"
+msgstr "Δευ"
+
+msgid "Monday"
+msgstr "Δευτέρα"
+
+msgid "Mood"
+msgstr "Διάθεση"
+
+msgid "Mood:"
+msgstr "Διάθεση:"
+
+msgid "Mount Point"
+msgstr "Σημείο Προσάρτησης"
+
+msgid "Mount cannot be empty with Icecast server."
+msgstr "Η προσάρτηση δεν μπορεί να είναι κενή με διακομιστή Icecast."
+
+msgid "Moving %s Items"
+msgstr "Μετακίνηση Στοιχείων %s"
+
+msgid "Moving 1 Item"
+msgstr "Μετακίνηση 1 Στοιχείου"
+
+msgid "Must wait 1 hour to rebroadcast."
+msgstr "Πρέπει να περιμένετε 1 ώρα για την αναμετάδοση."
+
+msgid "Must wait at least 1 hour to rebroadcast"
+msgstr "Πρέπει να περιμένετε τουλάχιστον 1 ώρα για την αναμετάδοση"
+
+msgid "My Account"
+msgstr "Ο λογαριασμός μου"
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid "Name"
+msgstr "Ονομασία"
+
+msgid "Name:"
+msgstr "Όνομα:"
+
+msgid "New"
+msgstr "Νέο"
+
+msgid "New Playlist"
+msgstr "Νέα λίστα αναπαραγωγής"
+
+msgid "New Smart Block"
+msgstr "Νέο Smart Block"
+
+msgid "New User"
+msgstr "Νέος Χρήστης"
+
+msgid "New Webstream"
+msgstr "Νέο Webstream"
+
+msgid "New password"
+msgstr "Νέος κωδικός πρόσβασης"
+
+msgid "New version available: "
+msgstr "Νέα έκδοση διαθέσιμη: "
+
+msgid "Next:"
+msgstr "Επόμενο"
+
+msgid "No End?"
+msgstr "Χωρίς Τέλος;"
+
+msgid "No MIME type found for webstream."
+msgstr "Δεν βρέθηκε τύπος MIME για webstream."
+
+msgid "No Records"
+msgstr "Κανένα Αρχείο"
+
+msgid "No action available"
+msgstr "Καμία διαθέσιμη δράση"
+
+msgid "No open playlist"
+msgstr "Καμία ανοικτή λίστα αναπαραγωγής"
+
+msgid "No open smart block"
+msgstr "Κανένα ανοικτό smart block "
+
+msgid "No result found"
+msgstr "Δεν βρέθηκαν αποτελέσματα"
+
+msgid "No webstream"
+msgstr "Κανένα webstream"
+
+msgid "Not a valid Directory"
+msgstr "Μη έγκυρο Ευρετήριο"
+
+msgid "Note: Anything larger than 600x600 will be resized."
+msgstr "Σημείωση: Οτιδήποτε μεγαλύτερο από 600x600 θα αλλάξει μέγεθος."
+
+msgid "Nothing Scheduled"
+msgstr "Τίποτα δεν έχει προγραμματιστεί"
+
+msgid "Nov"
+msgstr "Νοε"
+
+msgid "November"
+msgstr "Νοέμβριος"
+
+msgid "Now Playing"
+msgstr "Αναπαραγωγή σε Εξέλιξη"
+
+msgid "OK"
+msgstr "ΟΚ"
+
+msgid "ON AIR"
+msgstr "ON AIR"
+
+msgid "Oct"
+msgstr "Οκτ"
+
+msgid "October"
+msgstr "Οκτώβριος"
+
+msgid "Off Air Metadata"
+msgstr "Μεταδεδομένα Off Air"
+
+msgid "Ok"
+msgstr "Οκ"
+
+msgid "One Shot Sample"
+msgstr "Δείγμα Shot"
+
+msgid "Only numbers are allowed."
+msgstr "Επιτρέπονται μόνο αριθμοί."
+
+msgid "Open"
+msgstr "Άνοιγμα"
+
+msgid "Open Media Builder"
+msgstr "Άνοιγμα Δημιουργού Πολυμέσων"
+
+msgid "Open library to add or remove content"
+msgstr "Άνοιγμα βιβλιοθήκης για προσθήκη ή αφαίρεση περιεχομένου"
+
+msgid "Original"
+msgstr "Πρώτυπο"
+
+msgid "Original Length:"
+msgstr "Αρχική Διάρκεια:"
+
+msgid "Other"
+msgstr "Άλλο"
+
+msgid "Output Stream Settings"
+msgstr "Ρυθμίσεις Stream Εξόδου"
+
+msgid "Output Type"
+msgstr "Τύπος Εξόδου"
+
+msgid "Override"
+msgstr "Παράκαμψη"
+
+msgid "Owner"
+msgstr "Ιδιοκτήτης"
+
+msgid "Page not found"
+msgstr "Η σελίδα δεν βρέθηκε"
+
+msgid "Page not found!"
+msgstr "Η σελίδα δεν βρέθηκε!"
+
+msgid "Password"
+msgstr "Κωδικός πρόσβασης"
+
+msgid "Password confirmation does not match your password."
+msgstr "Η επιβεβαίωση κωδικού δεν ταιριάζει με τον κωδικό πρόσβασής σας."
+
+msgid "Password field cannot be empty."
+msgstr "Το πεδίο 'Κωδικός Πρόσβασης' δεν μπορεί να είναι κενό."
+
+msgid "Password:"
+msgstr "Κωδικός πρόσβασης:"
+
+msgid "Passwords do not match"
+msgstr "Οι κωδικοί πρόσβασης δεν συμπίπτουν"
+
+msgid "Permission denied"
+msgstr "Δεν έχετε δικαίωμα πρόσβασης"
+
+msgid "Phone:"
+msgstr "Τηλέφωνο:"
+
+msgid "Play"
+msgstr "Αναπαραγωγή"
+
+msgid "Played"
+msgstr "Παίχτηκε"
+
+msgid "Playlist / Block"
+msgstr "Λίστα αναπαραγωγής/ Block"
+
+msgid "Playlist Contents: "
+msgstr "Περιεχόμενα Λίστας Αναπαραγωγής: "
+
+msgid "Playlist crossfade"
+msgstr "Crossfade λίστας αναπαραγωγής"
+
+msgid "Playlist saved"
+msgstr "Οι λίστες αναπαραγωγής αποθηκεύτηκαν"
+
+msgid "Playlist shuffled"
+msgstr "Ανασχηματισμός λίστας αναπαραγωγής"
+
+msgid "Playlists"
+msgstr "Λίστες αναπαραγωγής"
+
+msgid "Playout History"
+msgstr "Ιστορία Playout"
+
+msgid "Please enter and confirm your new password in the fields below."
+msgstr "Παρακαλώ εισάγετε και επαληθεύστε τον νέο κωδικό πρόσβασής σας στα παρακάτω πεδία. "
+
+msgid "Please enter your account e-mail address. You will receive a link to create a new password via e-mail."
+msgstr "Παρακαλώ εισάγετε τη διεύθυνση e-mail σας. Θα λάβετε ένα σύνδεσμο για να δημιουργήσετε έναν νέο κωδικό πρόσβασης μέσω e-mail."
+
+msgid "Please enter your user name and password"
+msgstr "Παρακαλώ εισάγετε το όνομα χρήστη και τον κωδικό πρόσβασής σας"
+
+msgid "Please make sure admin user/password is correct on System->Streams page."
+msgstr "Παρακαλούμε σιγουρευτείτε ότι ο χρήστης/κωδικός πρόσβασης διαχειριστή είναι σωστός στη σελίδα Σύστημα>Streams."
+
+msgid "Please select a cursor position on timeline."
+msgstr "Παρακαλούμε επιλέξτε μια θέση δρομέα στο χρονοδιάγραμμα."
+
+msgid "Please selection an option"
+msgstr "Παρακαλούμε επιλέξτε μια επιλογή"
+
+msgid "Please upgrade to "
+msgstr "Παρακαλούμε να αναβαθμίσετε σε "
+
+msgid "Podcast"
+msgstr "Podcast"
+
+msgid "Port"
+msgstr "Θύρα"
+
+msgid "Port %s is not available"
+msgstr "Μη διαθέσιμο Port %s "
+
+msgid "Port cannot be empty."
+msgstr "Το Port δεν μπορεί να είναι κενό."
+
+msgid "Preferences"
+msgstr "Προτιμήσεις"
+
+msgid "Preferences updated."
+msgstr "Οι προτιμήσεις ενημερώθηκαν."
+
+msgid "Preview"
+msgstr "Προεπισκόπηση"
+
+msgid "Previous:"
+msgstr "Προηγούμενο"
+
+msgid "Problem with Liquidsoap..."
+msgstr "Πρόβλημα με Liquidsoap ..."
+
+msgid "Processing..."
+msgstr "Επεξεργασία..."
+
+msgid "Progam Managers can do the following:"
+msgstr "Οι Μάνατζερ Προγράμματος μπορούν να κάνουν τα παρακάτω:"
+
+msgid "Program Manager"
+msgstr "Διευθυντής Προγράμματος"
+
+msgid "Promote my station on Sourcefabric.org"
+msgstr "Προώθηση του σταθμού μου στην ιστοσελίδα  Sourcefabric.org"
+
+msgid "Purchase your copy of Airtime"
+msgstr "Αγοράστε το δικό σας αντίγραφο του Airtime"
+
+msgid "RESET"
+msgstr "ΕΠΑΝΑΦΟΡΑ"
+
+msgid "Re-upload to SoundCloud"
+msgstr "Επαναφόρτωση σε SoundCloud"
+
+msgid "Rebroadcast of %s from %s"
+msgstr "Αναμετάδοση του %s από %s"
+
+msgid "Rebroadcast of show %s from %s at %s"
+msgstr "Αναμετάδοση της εκπομπής %s από %s σε %s"
+
+msgid "Rebroadcast?"
+msgstr "Αναμετάδοση;"
+
+msgid "Record & Rebroadcast"
+msgstr "Εγγραφή και Αναμετάδοση"
+
+msgid "Record from Line In?"
+msgstr "Ηχογράφηση από Line In;"
+
+msgid "Recording"
+msgstr "Εγγραφή"
+
+msgid "Recording From Line In"
+msgstr "Ηχογράφηση Από Line In"
+
+msgid "Recording:"
+msgstr "Εγγραφή"
+
+msgid "Register Airtime"
+msgstr "Εγγραφή σε Airtime"
+
+msgid "Remind me in 1 week"
+msgstr "Υπενθύμιση σε 1 εβδομάδα"
+
+msgid "Remind me never"
+msgstr "Καμία υπενθύμιση"
+
+msgid "Remix"
+msgstr "Remix"
+
+msgid "Remove"
+msgstr "Αφαίρεση"
+
+msgid "Remove All Content"
+msgstr "Αφαίρεση Όλου του Περιεχομένου"
+
+msgid "Remove all content?"
+msgstr "Αφαίρεση όλου του περιεχομένου;"
+
+msgid "Remove cursor"
+msgstr "Αφαίρεση cursor"
+
+msgid "Remove overbooked tracks"
+msgstr "Αφαίρεση υπεράριθμων κρατήσεων κομματιών"
+
+msgid "Remove selected scheduled items"
+msgstr "Αφαίρεση επιλεγμένων προγραμματισμένων στοιχείων "
+
+msgid "Remove watched directory"
+msgstr "Αφαίρεση προβεβλημμένου ευρετηρίου"
+
+msgid "Repeat By:"
+msgstr "Επανάληψη από:"
+
+msgid "Repeat Days:"
+msgstr "Επανάληψη Ημερών:"
+
+msgid "Repeat Type:"
+msgstr "Τύπος Επανάληψης:"
+
+msgid "Repeats?"
+msgstr "Επαναλήψεις;"
+
+msgid "Replay Gain"
+msgstr "Κέρδος Επανάληψης"
+
+msgid "Replay Gain Modifier"
+msgstr "Τροποποιητής Επανάληψης Κέρδους"
+
+msgid "Requires Authentication"
+msgstr "Απαιτείται Έλεγχος Ταυτότητας"
+
+msgid "Rescan watched directory (This is useful if it is network mount and may be out of sync with Airtime)"
+msgstr "Επανασάρωση προβεβλημμένου ευρετηρίου (Αυτό είναι χρήσιμο αν το δίκτυο στήριξης είναι εκτός συγχρονισμού με το Airtime)"
+
+msgid "Reset Password 'From' Email"
+msgstr "Επαναφορά Κωδικού πρόσβασης 'Από' E-mail"
+
+msgid "Reset password"
+msgstr "Επαναφορά κωδικού πρόσβασης"
+
+msgid "Restore password"
+msgstr "Επαναφορά κωδικού πρόσβασης"
+
+msgid "Retreiving data from the server..."
+msgstr "Ανάκτηση δεδομένων από το διακομιστή..."
+
+msgid "Retrieving data from the server..."
+msgstr "Ανάκτηση δεδομένων από τον διακομιστή..."
+
+msgid "Sa"
+msgstr "Σα"
+
+msgid "Sample Rate"
+msgstr "Ρυθμός δειγματοληψίας"
+
+msgid "Sample Rate (kHz)"
+msgstr "Ρυθμός Δειγματοληψίας (kHz)"
+
+msgid "Sample Rate:"
+msgstr "Ρυθμός δειγματοληψίας:"
+
+msgid "Sat"
+msgstr "Σαβ"
+
+msgid "Saturday"
+msgstr "Σάββατο"
+
+msgid "Save"
+msgstr "Αποθήκευση"
+
+msgid "Save playlist"
+msgstr "Αποθήκευση λίστας αναπαραγωγής"
+
+msgid "Schedule shows"
+msgstr "Πρόγραμμα εκπομπών"
+
+msgid "Scheduled"
+msgstr "Προγραμματισμένο"
+
+msgid "Scheduled Play"
+msgstr "Πρόγραμμα"
+
+msgid "Search Users:"
+msgstr "Αναζήτηση Χρηστών:"
+
+msgid "Security error."
+msgstr "Σφάλμα ασφάλειας."
+
+msgid "Select"
+msgstr "Επιλογή"
+
+msgid "Select Country"
+msgstr "Επιλέξτε Χώρα"
+
+msgid "Select Days:"
+msgstr "Επιλέξτε Ημέρες:"
+
+msgid "Select all"
+msgstr "Επιλογή όλων"
+
+msgid "Select criteria"
+msgstr "Επιλέξτε κριτήρια"
+
+msgid "Select cursor"
+msgstr "Επιλέξτε cursor"
+
+msgid "Select files"
+msgstr "Επιλογή αρχείων"
+
+msgid "Select modifier"
+msgstr "Επιλέξτε τροποποιητή"
+
+msgid "Select none"
+msgstr "Καμία Επιλογή"
+
+msgid "Select stream:"
+msgstr "Επιλέξτε stream:"
+
+msgid "Select this page"
+msgstr "Επιλέξτε αυτή τη σελίδα"
+
+msgid "Select your media from the left pane and drag them to your show in the right pane."
+msgstr "Επιλέξτε τα πολυμέσα σας από το αριστερό τμήμα του παραθύρου και σύρετέ τα στην εκπομπή σας στο δεξιό τμήμα."
+
+msgid "Send support feedback"
+msgstr "Αποστολή Σχολίων Υποστήριξης"
+
+msgid "Sep"
+msgstr "Σεπ"
+
+msgid "September"
+msgstr "Σεπτέμβριος"
+
+msgid "Server"
+msgstr "Διακομιστής"
+
+msgid "Server cannot be empty."
+msgstr "Ο διακομιστής δεν μπορεί να είναι κενός."
+
+msgid "Service"
+msgstr "Εξυπηρέτηση"
+
+msgid "Service Type:"
+msgstr "Τύπος Υπηρεσίας:"
+
+msgid "Set"
+msgstr "Ορισμός"
+
+msgid "Set Cue In"
+msgstr "Ρύθμιση Cue In"
+
+msgid "Set Cue Out"
+msgstr "Ρύθμιση Cue Out"
+
+msgid "Set smart block type:"
+msgstr "Ορισμός τύπου smart block:"
+
+msgid "Settings updated successfully!"
+msgstr "Οι ρυθμίσεις ενημερώθηκαν επιτυχώς!"
+
+msgid "Share"
+msgstr "Μοιραστείτε"
+
+msgid "Should not overlap shows"
+msgstr "Αδύνατη η αλληλοεπικάλυψη εκπομπών"
+
+msgid "Show"
+msgstr "Εκπομπή"
+
+msgid "Show - Artist - Title"
+msgstr "Εκπομπή - Καλλιτέχνης - Τίτλος"
+
+msgid "Show / hide columns"
+msgstr "Εμφάνιση / απόκρυψη στηλών"
+
+msgid "Show Content"
+msgstr "Εμφάνιση Περιεχομένου"
+
+msgid "Show Empty"
+msgstr "Η εκπομπή είναι άδεια"
+
+msgid "Show Source"
+msgstr "Εμφάνιση Πηγής "
+
+msgid "Show Source Connection URL"
+msgstr "Εμφάνιση URL Σύνδεσης Πηγής "
+
+msgid "Show Source Connection URL:"
+msgstr "Εμφάνιση Πηγής URL Σύνδεσης:"
+
+msgid "Show Source Mount Point"
+msgstr "Εμφάνιση Σημείου Προσάρτησης Πηγής"
+
+msgid "Show Source Port"
+msgstr "Εμφάνιση Port Πηγής"
+
+msgid "Show Waveform"
+msgstr "Εμφάνιση κυμματοειδούς μορφής"
+
+msgid "Show is empty"
+msgstr "Η εκπομπή είναι άδεια"
+
+msgid "Show me what I am sending "
+msgstr "Δείξε μου τι στέλνω "
+
+msgid "Show was deleted because recorded show does not exist!"
+msgstr "Η εκπομπή διεγράφη επειδή δεν υπάρχει ηχογραφημένη εκπομπή!"
+
+msgid "Show:"
+msgstr "Εκπομπή:"
+
+msgid "Shows can have a max length of 24 hours."
+msgstr "Η μέγιστη διάρκει εκπομπών είναι 24 ώρες."
+
+msgid "Shows longer than their scheduled time will be cut off by a following show."
+msgstr "Εκπομπές μεγαλύτερες από την προγραμματισμένη διάρκειά τους θα διακόπτονται από την επόμενη εκπομπή."
+
+msgid "Shuffle"
+msgstr "Shuffle"
+
+msgid "Shuffle playlist"
+msgstr "Shuffle λίστα αναπαραγωγής"
+
+msgid "Shuffle playlist content"
+msgstr "Περιεχόμενο λίστας Shuffle "
+
+msgid "Skype:"
+msgstr "Skype"
+
+msgid "Smart Block Options"
+msgstr "Επιλογές Smart Block"
+
+msgid "Smart Blocks"
+msgstr "Smart Blocks"
+
+msgid "Smart block generated and criteria saved"
+msgstr "Το Smart block δημιουργήθηκε και τα κριτήρια αποθηκεύτηκαν"
+
+msgid "Smart block saved"
+msgstr "Το Smart block αποθηκεύτηκε"
+
+msgid "Smart block shuffled"
+msgstr "Smart block shuffled"
+
+msgid "Some stream types require extra configuration. Details about enabling %sAAC+ Support%s or %sOpus Support%s are provided."
+msgstr "Κάποιοι τύποι stream απαιτούν επιπλέον ρυθμίσεις. Λεπτομέρειες για την ενεργοποίηση %sAAC+ Support%s ή %sOpus Support%s παρέχονται."
+
+msgid "Something went wrong."
+msgstr "Κάτι πήγε στραβά."
+
+msgid "Sound Effect"
+msgstr "Εφέ Ήχου"
+
+msgid "SoundCloud Email"
+msgstr "SoundCloud Email"
+
+msgid "SoundCloud Password"
+msgstr "Κωδικός πρόσβασης SoundCloud"
+
+msgid "SoundCloud Settings"
+msgstr "Ρυθμίσεις SoundCloud"
+
+msgid "SoundCloud Tags: (separate tags with spaces)"
+msgstr "SoundCloud Ετικέτες: (διαχωρίσετε ετικέτες με κενά)"
+
+msgid "Soundcloud"
+msgstr "Soundcloud"
+
+msgid "Source Streams"
+msgstr "Πηγή Streams"
+
+msgid "Sourcefabric Privacy Policy"
+msgstr "Πολιτική Προστασίας Προσωπικών Δεδομένων της Sourcefabric"
+
+msgid "Specify custom authentication which will work only for this show."
+msgstr "Καθορίστε την προσαρμόσιμη πιστοποίηση, η οποία θα λειτουργήσει μόνο για αυτή την εκπομπή."
+
+msgid "Spoken"
+msgstr "Ομιλούμενο"
+
+msgid "Start"
+msgstr "Έναρξη"
+
+msgid "Start upload"
+msgstr "Έναρξη ανεβάσματος"
+
+msgid "Static"
+msgstr "Στατικό"
+
+msgid "Static Smart Block"
+msgstr "Στατικά Smart Block"
+
+msgid "Static Smart Block Contents: "
+msgstr "Περιεχόμενα Στατικών Smart Block : "
+
+msgid "Station Description:"
+msgstr "Περιγραφή Σταθμού:"
+
+msgid "Station Logo:"
+msgstr "Λογότυπο Σταθμού:"
+
+msgid "Station Name"
+msgstr "Όνομα Σταθμού"
+
+msgid "Station Web Site:"
+msgstr "Ιστοσελίδα Σταθμού:"
+
+msgid "Station name - Show name"
+msgstr "Όνομα Σταθμού - Όνομα Εκπομπής"
+
+msgid "Station time"
+msgstr "Χρόνος σταθμού"
+
+msgid "Status"
+msgstr "Κατάσταση"
+
+msgid "Stem"
+msgstr "Στέλεχος"
+
+msgid "Stop"
+msgstr "Παύση"
+
+msgid "Stop Upload"
+msgstr "Στάση Ανεβάσματος"
+
+msgid "Stop recording current show?"
+msgstr "Πάυση ηχογράφησης τρέχουσας εκπομπής;"
+
+msgid "Stream "
+msgstr "Stream  "
+
+msgid "Stream Label:"
+msgstr "Stream Label:"
+
+msgid "Stream Setting Updated."
+msgstr "Η Ρύθμιση Stream Ενημερώθηκε."
+
+msgid "Stream Settings"
+msgstr "Ρυθμίσεις Stream"
+
+msgid "Stream Type:"
+msgstr "Τύπος Stream:"
+
+msgid "Stream URL:"
+msgstr "URL Stream:"
+
+msgid "Stream URL: "
+msgstr "URL Stream: "
+
+msgid "Streams"
+msgstr "Streams"
+
+msgid "Style"
+msgstr "Στυλ"
+
+msgid "Su"
+msgstr "Κυ"
+
+msgid "Sun"
+msgstr "Κυρ"
+
+msgid "Sunday"
+msgstr "Κυριακή"
+
+msgid "Support Feedback"
+msgstr "Σχόλια Υποστήριξης"
+
+msgid "Support setting updated."
+msgstr "Η ρύθμιση υποστήριξης ενημερώθηκε."
+
+msgid "Switch Transition Fade (s)"
+msgstr "Διακόπτης Fade Μετάβασης (s)"
+
+msgid "System"
+msgstr "Σύστημα"
+
+msgid "Terms and Conditions"
+msgstr "Όροι και Προϋποθέσεις"
+
+msgid "Text Colour:"
+msgstr "Χρώμα Κειμένου:"
+
+msgid "Th"
+msgstr "Πε"
+
+msgid "The desired block length will not be reached if Airtime cannot find enough unique tracks to match your criteria. Enable this option if you wish to allow tracks to be added multiple times to the smart block."
+msgstr "Η επιθυμητή διάρκεια του block δεν θα επιτευχθεί αν το Airtime δεν μπορέσει να βρεί αρκετά μοναδικά κομμάτια που να ταιριάζουν στα κριτήριά σας. Ενεργοποιήστε αυτή την επιλογή αν θέλετε να επιτρέψετε την πολλαπλή προσθήκη κομματιών στο smart block."
+
+msgid "The file was not uploaded, there is %s MB of disk space left and the file you are uploading has a size of %s MB."
+msgstr "Το αρχείο δεν ανέβηκε, υπάρχει %s MB ελεύθερου χώρου στο δίσκο και το αρχείο που ανεβάζετε έχει μέγεθος %s MB."
+
+msgid "The file was not uploaded, this error can occur if the computer hard drive does not have enough disk space or the stor directory does not have correct write permissions."
+msgstr "Το αρχείο δεν ανέβηκε, αυτό το σφάλμα μπορεί να προκύψει είτε διότι ο σκληρός δίσκος του υπολογιστή δεν έχει αρκετό χώρο ή διότι ο directory αποθήκευσης δεν έχει έγγυρες άδειες εγγραφής."
+
+msgid "The following info will be displayed to listeners in their media player:"
+msgstr "Η παρακάτω πληροφορία θα εμφανίζεται στις συσκευές αναπαραγωγής πολυμέσων των ακροατών σας:"
+
+msgid "The schedule you're viewing is out of date!"
+msgstr "Το πρόγραμμα που βλέπετε δεν είναι ενημερωμένο!"
+
+msgid "The schedule you're viewing is out of date! (instance mismatch)"
+msgstr "Το πρόγραμμα που βλέπετε δεν είναι ενημερωμένο! (αναντιστοιχία παραδείγματος)"
+
+msgid "The schedule you're viewing is out of date! (sched mismatch)"
+msgstr "Το πρόγραμμα που βλέπετε δεν είναι έγκυρο! (αναντιστοιχία προγράμματος)"
+
+msgid "The show %s has been previously updated!"
+msgstr "Η εκπομπή %s έχει ενημερωθεί πρόσφατα!"
+
+msgid "The show %s is over and cannot be scheduled."
+msgstr "Η εκπομπή %s έχει τελειώσει και δεν μπορεί να προγραμματιστεί."
+
+msgid "The show instance doesn't exist anymore!"
+msgstr "Η εκπομπή δεν υπάρχει πια!"
+
+msgid "The soundcloud id for this file is: "
+msgstr "Η ταυτότητα SoundCloud για αυτό το αρχείο είναι: "
+
+msgid "The stream is disabled"
+msgstr "Το stream είναι απενεργοποιημένο"
+
+msgid "The value has to be numeric"
+msgstr "Η τιμή πρέπει να είναι αριθμός"
+
+msgid "The value should be an integer"
+msgstr "Η τιμή πρέπει να είναι ακέραιος αριθμός"
+
+msgid "The value should be in timestamp format (e.g. 0000-00-00 or 0000-00-00 00:00:00)"
+msgstr "Η τιμή θα πρέπει να είναι υπο μορφής ώρας (π.χ. 0000-00-00 ή 0000-00-00 00:00:00)"
+
+msgid "The value should be less than %s characters"
+msgstr "Η τιμή πρέπει να είναι μικρότερη από %s χαρακτήρες"
+
+msgid "The value should be less then 2147483648"
+msgstr "Η τιμή πρέπει να είναι μικρότερη από 2147483648"
+
+msgid "The work is in the public domain"
+msgstr "Εργασία δημόσιας χρήσης"
+
+msgid "The year %s must be within the range of 1753 - 9999"
+msgstr "Το έτος %s πρέπει να είναι εντός του εύρους 1753 - 9999"
+
+msgid "Then you're good to go!"
+msgstr "Και είστε έτοιμοι!"
+
+msgid "There is no source connected to this input."
+msgstr "Δεν υπάρχει καμία πηγή που είναι συνδεδεμένη σε αυτή την είσοδο."
+
+msgid "There was an error while uploading to soundcloud."
+msgstr "Υπήρξε ένα σφάλμα κατά το ανέβασμα στο SoundCloud."
+
+msgid "This file appears to be corrupted and will not be added to media library."
+msgstr "Αυτό το αρχείο φαίνεται να είναι κατεστραμμένο και δεν θα προστεθεί στη βιβλιοθήκη πολυμέσων."
+
+msgid "This follows the same security pattern for the shows: only users assigned to the show can connect."
+msgstr "Αυτό ακολουθεί το ίδιο πρότυπο ασφαλείας για τις εκπομπές: μόνο οι χρήστες της συγκεκριμένης εκπομπής μπορούν να συνδεθούν."
+
+msgid "This is the admin username and password for Icecast/SHOUTcast to get listener statistics."
+msgstr "Αυτό είναι το Icecast/SHOUTcast όνομα χρήστη και ο κωδικός πρόσβασης διαχειριστή για τις στατιστικές ακροατών."
+
+msgid "This path is currently not accessible."
+msgstr "Αυτή η διαδρομή δεν είναι προς το παρόν προσβάσιμη."
+
+msgid "This show has no scheduled content."
+msgstr "Αυτή η εκπομπή δεν έχει προγραμματισμένο περιεχόμενο."
+
+msgid "This show is not completely filled with content."
+msgstr "Η εκπομπή δεν εντελώς γεμάτη με περιεχόμενο "
+
+msgid "This version is no longer supported."
+msgstr "Αυτή η έκδοση δεν υποστηρίζεται πλέον."
+
+msgid "This version will soon be obsolete."
+msgstr "Αυτή η έκδοση θα παρωχηθεί σύντομα."
+
+msgid "Thu"
+msgstr "Πεμ"
+
+msgid "Thursday"
+msgstr "Πέμπτη"
+
+msgid "Time must be specified"
+msgstr "Η ώρα πρέπει να προσδιοριστεί"
+
+msgid "Timezone:"
+msgstr "Ζώνη Ώρας"
+
+msgid "Title"
+msgstr "Τίτλος"
+
+msgid "Title:"
+msgstr "Τίτλος:"
+
+msgid "To play the media you will need to either update your browser to a recent version or update your %sFlash plugin%s."
+msgstr "Για να παίξετε τα πολυμέσα θα πρέπει είτε να αναβαθμίστε το πρόγραμμα περιήγησηής σας σε μια πρόσφατη έκδοση ή να ενημέρώσετε το %sFlash plugin %s σας."
+
+msgid "Track Number"
+msgstr "Αριθμός Κομματιού"
+
+msgid "Track preview"
+msgstr "Προεπισκόπηση κομματιού"
+
+msgid "Track:"
+msgstr "Κομμάτι:"
+
+msgid "Tu"
+msgstr "Τρ"
+
+msgid "Tue"
+msgstr "Τρι"
+
+msgid "Tuesday"
+msgstr "Τρίτη"
+
+msgid "Type the characters you see in the picture below."
+msgstr "Πληκτρολογήστε τους χαρακτήρες που βλέπετε στην παρακάτω εικόνα."
+
+msgid "URL"
+msgstr "Διεύθυνση URL:"
+
+msgid "URL should be 512 characters or less"
+msgstr "Το URL πρέπει να αποτελέιται από μέχρι και 512 χαρακτήρες "
+
+msgid "URL should be of form \"http://domain\""
+msgstr "Το URL θα πρέπει να είναι υπό μορφής \"http://domain \""
+
+msgid "URL:"
+msgstr "Διεύθυνση URL:"
+
+msgid "Unknown Playlist"
+msgstr "Άγνωστη λίστα αναπαραγωγής"
+
+msgid "Unknown type: "
+msgstr "Άγνωστος τύπος: "
+
+msgid "Unrecognized stream type: %s"
+msgstr "Άγνωστος τύπος stream: %s"
+
+msgid "Untitled Playlist"
+msgstr "Λίστα Αναπαραγωγλης χωρίς Τίτλο"
+
+msgid "Untitled Show"
+msgstr "Εκπομπή χωρίς Τίτλο"
+
+msgid "Untitled Smart Block"
+msgstr "Smart Block χωρίς Τίτλο"
+
+msgid "Untitled Webstream"
+msgstr "Webstream χωρίς Τίτλο"
+
+msgid "Update Required"
+msgstr "Απαιτείται Ενημέρωση "
+
+msgid "Update show"
+msgstr "Ενημέρωση εκπομπής"
+
+msgid "Upload URL might be wrong or doesn't exist"
+msgstr "Το URL είτε είναι λάθος ή δεν υφίσταται"
+
+msgid "Upload to SoundCloud"
+msgstr "Ανέβασμα σε SoundCloud"
+
+msgid "Uploaded"
+msgstr "Φορτώθηκε"
+
+msgid "Uploaded %d/%d files"
+msgstr "Ανέβηκαν %d/%d αρχεία"
+
+msgid "Uploading in progress..."
+msgstr "Ανέβασμα σε εξέλιξη..."
+
+msgid "Uptime"
+msgstr "Χρόνος λειτουργίας"
+
+msgid "Use Airtime Authentication:"
+msgstr "Ταυτοποίηση Χρήστη Airtime:"
+
+msgid "Use Custom Authentication:"
+msgstr "Χρήση Προσαρμοσμένης Ταυτοποίησης:"
+
+msgid "User Manual"
+msgstr "Εγχειρίδιο Χρήστη"
+
+msgid "User Type"
+msgstr "Τύπος Χρήστη"
+
+msgid "User Type:"
+msgstr "Τύπος Χρήστη:"
+
+msgid "User added successfully!"
+msgstr "Ο χρήστης προστέθηκε επιτυχώς!"
+
+msgid "User updated successfully!"
+msgstr "Ο χρήστης ενημερώθηκε με επιτυχία!"
+
+msgid "Username"
+msgstr "Όνομα Χρήστη"
+
+msgid "Username field cannot be empty."
+msgstr "Το πεδίο 'Όνομα Χρήστη' δεν μπορεί να είναι κενό."
+
+msgid "Username:"
+msgstr "Όνομα Χρήστη:"
+
+msgid "Users"
+msgstr "Xρήστες"
+
+msgid "Value cannot be empty"
+msgstr "Η αξία δεν μπορεί να είναι κενή"
+
+msgid "Value is required and can't be empty"
+msgstr "Απαιτείται αξία και δεν μπορεί να είναι κενή"
+
+msgid "Verify Password:"
+msgstr "Επαλήθευση κωδικού πρόσβασης"
+
+msgid "View / edit description"
+msgstr "Προβολή / επεξεργασία περιγραφής"
+
+msgid "View Recorded File Metadata"
+msgstr "Προβολή εγγεγραμμένων Αρχείων Μεταδεδομένων "
+
+msgid "View and manage show content"
+msgstr "Προβολή και διαχείριση περιεχομένου εκπομπής"
+
+msgid "View listener stats"
+msgstr "Προβολή στατιστικών των ακροατών"
+
+msgid "View on Soundcloud"
+msgstr "Προβολή σε Soundcloud"
+
+msgid "View schedule"
+msgstr "Προβολή Προγράμματος"
+
+msgid "View show content"
+msgstr "Προβολή περιεχομένου εκπομπής"
+
+msgid "View system status"
+msgstr "Προβολή κατάστασης συστήματος"
+
+msgid "Warning: Shows cannot be re-linked"
+msgstr "Προειδοποίηση: οι εκπομπές δεν μπορούν να συνδεθούν εκ νέου"
+
+msgid "Watched Folders:"
+msgstr "Παροβεβλημμένοι Φάκελοι:"
+
+msgid "Waveform features are available in a browser supporting the Web Audio API"
+msgstr "Τα χαρακτηριστικά της κυμματοειδούς μορφής είναι διαθέσιμα σε πρόγραμμα πλοήγησης που υποστηρίζει Web Audio API"
+
+msgid "We"
+msgstr "Τε"
+
+msgid "Web Stream"
+msgstr "Web Stream"
+
+msgid "Web Streams"
+msgstr "Web Streams"
+
+msgid "Website"
+msgstr "Ιστοσελίδα"
+
+msgid "Website:"
+msgstr "Ιστοσελίδα:"
+
+msgid "Webstream name cannot be empty"
+msgstr "Το όνομα του webstream δεν μπορεί να είναι κενό"
+
+msgid "Webstream saved."
+msgstr "Το Webstream αποθηκεύτηκε."
+
+msgid "Wed"
+msgstr "Τετ"
+
+msgid "Wednesday"
+msgstr "Τετάρτη"
+
+msgid "Week Starts On"
+msgstr "Η Εβδομάδα αρχίζει "
+
+msgid "Welcome to Airtime!"
+msgstr "Καλώς ήρθατε στο Airtime!"
+
+msgid "Welcome to the online Airtime demo! You can log in using the username 'admin' and the password 'admin'."
+msgstr "Καλώς ήρθατε στο online demo του Airtime! Μπορείτε να συνδεθείτε χρησιμοποιώντας το όνομα χρήστη «admin» και τον κωδικό πρόσβασης «admin»."
+
+msgid "What"
+msgstr "Τι"
+
+msgid "When"
+msgstr "Πότε"
+
+msgid "Who"
+msgstr "Ποιός"
+
+msgid "Work in progress"
+msgstr "Εργασία σε εξέλιξη"
+
+msgid "Wrong username or password provided. Please try again."
+msgstr "Άκυρο όνομα χρήστη ή κωδικός πρόσβασης. Παρακαλώ δοκιμάστε ξανά."
+
+msgid "Year"
+msgstr "Έτος"
+
+msgid "Year:"
+msgstr "Έτος"
+
+msgid "Yes, help Airtime"
+msgstr "Ναι, βοηθώ το Airtime"
+
+msgid "You are currently uploading files. %sGoing to another screen will cancel the upload process. %sAre you sure you want to leave the page?"
+msgstr "Προς το παρόν ανεβάζετε αρχεία. %sΠηγαίνοντας σε μια άλλη οθόνη θα ακυρώσετε τη διαδικασία του ανεβάσματος.%sΕίστε σίγουροι ότι θέλετε να εγκαταλείψετε τη σελίδα;"
+
+msgid "You are not allowed to access this resource."
+msgstr "Δεν έχετε δικαίωμα πρόσβασης σε αυτό το βοήθημα"
+
+msgid "You are not allowed to access this resource. "
+msgstr "Δεν έχετε δικαίωμα πρόσβασης σε αυτό το βοήθημα. "
+
+msgid "You are not allowed to schedule show %s."
+msgstr "Δεν έχετε δικαίωμα προγραμματισμού εκπομπής%s.."
+
+msgid "You are not watching any media folders."
+msgstr "Δεν παρακολουθείτε κανέναν φάκελο πολυμέσων."
+
+msgid "You are running the latest version"
+msgstr "Χρησιμοποιείτε την τελευταία έκδοση"
+
+msgid "You are viewing an older version of %s"
+msgstr "Βλέπετε μια παλαιότερη έκδοση του %s"
+
+msgid "You can only add tracks to smart block."
+msgstr "Μπορείτε να προσθέσετε κομμάτια μόνο σε smart block."
+
+msgid "You can only add tracks to smart blocks."
+msgstr "Μπορείτε να προσθέσετε μόνο κομμάτια στα smart blocks."
+
+msgid "You can only add tracks, smart blocks, and webstreams to playlists."
+msgstr "Μπορείτε να προσθέσετε μόνο κομμάτια, smart blocks και webstreams σε λίστες αναπαραγωγής."
+
+msgid "You cannot add files to recording shows."
+msgstr "Δεν μπορείτε να προσθεσετε αρχεία σε ηχογραφημένες εκπομπές."
+
+msgid "You cannot add tracks to dynamic blocks."
+msgstr "Δεν μπορείτε να προσθέσετε κομμάτια σε δυναμικά blocks."
+
+msgid "You cannot use same port as Master DJ port."
+msgstr "Δεν μπορείτε να χρησιμοποιήσετε το ίδιο port ως Master DJ Show port."
+
+msgid "You don't have permission to delete selected %s(s)."
+msgstr "Δεν έχετε άδεια διαγραφής επιλεγμένων %s(s)."
+
+msgid "You don't have permission to delete selected items."
+msgstr "Δεν έχετε άδεια διαγραφής των επιλεγμένων στοιχείων."
+
+msgid "You don't have permission to disconnect source."
+msgstr "Δεν έχετε άδεια για αποσύνδεση πηγής."
+
+msgid "You don't have permission to switch source."
+msgstr "Δεν έχετε άδεια για αλλαγή πηγής."
+
+msgid "You have to agree to privacy policy."
+msgstr "Πρέπει να συμφωνείτε με την πολιτική προστασίας προσωπικών δεδομένων."
+
+msgid "You must select Criteria and Modifier"
+msgstr "Θα πρέπει να επιλέξετε Κριτήρια και Τροποποιητή"
+
+msgid "Your browser does not support playing this file type: "
+msgstr "Ο περιηγητής ιστού σας δεν υποστηρίζει την αναπαραγωγή αρχείων αυτού του τύπου: "
+
+msgid "Your trial expires in"
+msgstr "Το δοκιμαστικό λήγει σε"
+
+msgid "Zend Framework Default Application"
+msgstr "Εφαρμογή Προεπιλεγμένου Πλαισίου Zend "
+
+msgid "and"
+msgstr "και"
+
+msgid "bi-weekly"
+msgstr "δύο φορές την εβδομάδα"
+
+msgid "can't resize a past show"
+msgstr "Δεν είναι δυνατή η αλλαγή μεγέθους παρελθοντικής εκπομπής"
+
+msgid "contains"
+msgstr "περιέχει"
+
+msgid "dB"
+msgstr "βΔ"
+
+msgid "day"
+msgstr "ημέρα"
+
+msgid "day of the month"
+msgstr "ημέρα του μήνα"
+
+msgid "day of the week"
+msgstr "ημέρα της εβδομάδας"
+
+msgid "days"
+msgstr "ημέρες"
+
+msgid "does not contain"
+msgstr "δεν περιέχει"
+
+msgid "ends with"
+msgstr "τελειώνει με"
+
+msgid "enter a time in seconds 00{.000000}"
+msgstr "εισάγετε την ώρα σε δευτερόλεπτα 00{.000000}"
+
+msgid "enter a time in seconds 0{.0}"
+msgstr "εισάγετε ένα χρόνο σε δευτερόλεπτα 0{.0}"
+
+msgid "file meet the criteria"
+msgstr "το αρχείο πληρεί τα κριτήρια"
+
+msgid "files meet the criteria"
+msgstr "τα αρχεία πληρούν τα κριτήρια"
+
+msgid "hh:mm:ss.t"
+msgstr "ωω:λλ:δδ.t"
+
+msgid "hours"
+msgstr "ώρες"
+
+msgid "id"
+msgstr "ταυτότητα"
+
+msgid "in use"
+msgstr "σε χρήση"
+
+msgid "is"
+msgstr "είναι"
+
+msgid "is greater than"
+msgstr "είναι μεγαλύτερος από"
+
+msgid "is in the range"
+msgstr "είναι στην κλίμακα"
+
+msgid "is less than"
+msgstr "είναι μικρότερος από"
+
+msgid "is not"
+msgstr "δεν είναι"
+
+msgid "items"
+msgstr "στοιχεία"
+
+msgid "kHz"
+msgstr "kHz"
+
+msgid "kbps"
+msgstr "Kbps"
+
+msgid "max volume"
+msgstr "μέγιστη ένταση"
+
+msgid "minutes"
+msgstr "λεπτά"
+
+msgid "month"
+msgstr "μήνας"
+
+msgid "monthly"
+msgstr "μηνιαία"
+
+msgid "mute"
+msgstr "Σίγαση"
+
+msgid "next"
+msgstr "επόμενο"
+
+msgid "or"
+msgstr "ή"
+
+msgid "path should be specified"
+msgstr "η διαδρομή πρέπει να καθοριστεί"
+
+msgid "pause"
+msgstr "παύση"
+
+msgid "play"
+msgstr "αναπαραγωγή"
+
+msgid "please put in a time '00:00:00 (.0)'"
+msgstr "παρακαλούμε εισάγετε τιμή ώρας '00:00:00 (.0)'"
+
+msgid "please put in a time in seconds '00 (.0)'"
+msgstr "παρακαλούμε εισάγετε τιμή ώρας σε δευτερόλεπτα '00 (0,0)'"
+
+msgid "previous"
+msgstr "προηγούμενο"
+
+msgid "show does not exist"
+msgstr "η εκπομπή δεν υπάρχει"
+
+msgid "starts with"
+msgstr "ξεκινά με"
+
+msgid "stop"
+msgstr "στάση"
+
+msgid "today"
+msgstr "σήμερα"
+
+msgid "unmute"
+msgstr "Κατάργηση σίγασης"
+
+msgid "week"
+msgstr "εβδομάδα"
+
+msgid "weekly"
+msgstr "εβδομαδιαία"
+
+msgid "yyyy-mm-dd"
+msgstr "εεεε-μμ-ηη"
