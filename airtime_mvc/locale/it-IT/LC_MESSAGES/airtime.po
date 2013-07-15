@@ -1,0 +1,2147 @@
+# AUSTRIAN (de_AT) translation for Airtime.
+# Copyright (C) 2013 Sourcefabric
+# This file is distributed under the same license as the Airtime package.
+# Sourcefabric <contact@sourcefabric.org>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Airtime 2.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-05-29 15:27-0400\n"
+"PO-Revision-Date: 2013-05-30 14:55+0100\n"
+"Last-Translator: Daniel James <daniel.james@sourcefabric.org>\n"
+"Language-Team: Austrian Localization <contact@sourcefabric.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+
+msgid " to "
+msgstr "a"
+
+msgid "%s contains nested watched directory: %s"
+msgstr "%s contiene una sotto directory giÃ  visionata: %s"
+
+msgid "%s doesn't exist in the watched list."
+msgstr "%s non esiste nella lista delle cartelle visionate."
+
+msgid "%s is already set as the current storage dir or in the watched folders list"
+msgstr "%s Ã¨ giÃ  impostato come attuale cartella archivio o appartiene alle cartelle visionate"
+
+msgid "%s is already set as the current storage dir or in the watched folders list."
+msgstr "%s Ã¨ giÃ  impostato come attuale cartella archivio o appartiene alle cartelle visionate."
+
+msgid "%s is already watched."
+msgstr "%s Ã¨ giÃ  stato visionato."
+
+msgid "%s is nested within existing watched directory: %s"
+msgstr "%s annidato con una directory giÃ  visionata: %s"
+
+msgid "%s is not a valid directory."
+msgstr "%s non Ã¨ una directory valida."
+
+msgid "%s not found"
+msgstr "%s non trovato"
+
+msgid "%s-%s-%s is not a valid date"
+msgstr "%s-%s-%s non Ã¨ una data valida"
+
+msgid "%s:%s:%s is not a valid time"
+msgstr "%s:%s:%s non Ã¨ un ora valida"
+
+msgid "%sAirtime%s %s, the open radio software for scheduling and remote station management. %s"
+msgstr "%sAirtime%s %s, il software di radio aperto per elencare e gestione di stazione remota. %s"
+
+msgid "%sSourcefabric%s o.p.s. Airtime is distributed under the %sGNU GPL v.3%s"
+msgstr "%sSourcefabric%s o.p.s. Airtime Ã¨ distribuito da %sGNU GPL v.%s"
+
+msgid "'%value%' does not fit the date format '%format%'"
+msgstr "'%value%' non va bene con il formato data '%formato%'"
+
+msgid "'%value%' does not fit the time format 'HH:mm'"
+msgstr "'%value%' non si adatta al formato dell'ora 'HH:mm'"
+
+msgid "'%value%' is less than %min% characters long"
+msgstr "'%value%' Ã¨ piÃ¹ corto di %min% caratteri"
+
+msgid "'%value%' is more than %max% characters long"
+msgstr "'%value%' Ã¨ piÃ¹ lungo di %max% caratteri"
+
+msgid "'%value%' is no valid email address in the basic format local-part@hostname"
+msgstr "'%value%' non Ã¨ valido l'indirizzo e-mail nella forma base local-part@hostname"
+
+msgid "'%value%' is not between '%min%' and '%max%', inclusively"
+msgstr "'%value%' non Ã¨ tra '%min%' e '%max%' compresi"
+
+msgid "'Length' should be in '00:00:00' format"
+msgstr "La lunghezza deve essere nel formato '00:00:00'"
+
+msgid "(In order to promote your station, 'Send support feedback' must be enabled)."
+msgstr "(Per promuovere la sua stazione, 'Spedisca aderenza feedback' deve essere abilitato)."
+
+msgid "(Required)"
+msgstr "(Richiesto)"
+
+msgid "(Your radio station website)"
+msgstr "(Il sito della tua radio)"
+
+msgid "(for verification purposes only, will not be published)"
+msgstr "(per scopi di verifica, non ci saranno pubblicazioni)"
+
+msgid "(hh:mm:ss.t)"
+msgstr "(hh:mm:ss.t)"
+
+msgid "(ss.t)"
+msgstr "(ss.t)"
+
+msgid "1 - Mono"
+msgstr "1 - Mono"
+
+msgid "10m"
+msgstr "10min"
+
+msgid "15m"
+msgstr "15min"
+
+msgid "1m"
+msgstr "1min"
+
+msgid "2 - Stereo"
+msgstr "2 - Stereo"
+
+msgid "30m"
+msgstr "30min"
+
+msgid "500 is the max item limit value you can set"
+msgstr "500 Ã¨ il limite massimo di elementi che puÃ² inserire"
+
+msgid "5m"
+msgstr "5min"
+
+msgid "60m"
+msgstr "60min"
+
+msgid "A dynamic smart block will only save the criteria. The block content will get generated upon adding it to a show. You will not be able to view and edit the content in the Library."
+msgstr "Un dinamico blocco intelligente salverÃ  i criteri. Il contenuto del blocco sarÃ  generato per aggiungerlo ad un show. Non riuscirÃ  a vedere e modificare il contenuto della Biblioteca."
+
+msgid "A selected File does not exist!"
+msgstr "Il File selezionato non esiste!"
+
+msgid "A static smart block will save the criteria and generate the block content immediately. This allows you to edit and view it in the Library before adding it to a show."
+msgstr "Uno statico blocco intelligente salverÃ  i criteri e genererÃ  il blocco del contenuto immediatamente. Questo permette di modificare e vedere la biblioteca prima di aggiungerla allo show."
+
+msgid "About"
+msgstr "Chi siamo"
+
+msgid "Add"
+msgstr "Aggiungi "
+
+msgid "Add / Remove Content"
+msgstr "Aggiungi/Rimuovi contenuto"
+
+msgid "Add Media"
+msgstr "Aggiungi Media"
+
+msgid "Add media to the show by going to your show in the Schedule calendar, left-clicking on it and selecting 'Add / Remove Content'"
+msgstr "Aggiunga media allo show selezionando il suo show nel calendario, cliccando sul sinistro e selezionando 'Aggiungi/Rimuovi Contenuto'"
+
+msgid "Add this show"
+msgstr "Aggiungi show"
+
+msgid "Add to Playlist"
+msgstr "Aggiungi a playlist"
+
+msgid "Add to Smart Block"
+msgstr "Aggiungi al blocco intelligente"
+
+msgid "Add to current playlist"
+msgstr "Aggiungi all'attuale playlist"
+
+msgid "Add to current smart block"
+msgstr "Aggiungi all' attuale blocco intelligente"
+
+msgid "Add to selected show"
+msgstr "Aggiungi agli show selezionati"
+
+msgid "Adding %s Items"
+msgstr "Aggiunte %s voci"
+
+msgid "Adding 1 Item"
+msgstr "Sto aggiungendo un elemento"
+
+msgid "Additional Options"
+msgstr "Opzioni aggiuntive"
+
+msgid "Admin"
+msgstr "Amministratore "
+
+msgid "Advanced Search Options"
+msgstr "Opzioni di ricerca avanzate"
+
+msgid "Airtime Copyright &copy;Sourcefabric o.p.s. All rights reserved.%sMaintained and distributed under GNU GPL v.3 by %sSourcefabric o.p.s%s"
+msgstr "Airtime Copyright &copy;Sourcefabric o.p.s.Tutti i diritti riservati.%sMantenuto e distribuito sotto GNU GPL v.3 da %sSourcefabric o.p.s%s"
+
+msgid "Airtime Password Reset"
+msgstr "Reimposta la password di Airtime"
+
+msgid "Airtime Version"
+msgstr "Versione Airtime"
+
+msgid "Airtime is unsure about the status of this file. This can happen when the file is on a remote drive that is unaccessible or the file is in a directory that isn't 'watched' anymore."
+msgstr "Airtime Ã¨ insicuro sullo stato del file. Â°Questo puÃ² accadere quando il file Ã¨ su un drive remoto che non Ã¨ accessibile o il file Ã¨ su un elenco che non viene piÃ¹ visionato."
+
+msgid "Album"
+msgstr "Album"
+
+msgid "Album:"
+msgstr "Album:"
+
+msgid "All"
+msgstr "Tutto"
+
+msgid "All My Shows:"
+msgstr "Tutti i miei show:"
+
+msgid "All rights are reserved"
+msgstr "Tutti i diritti riservati"
+
+msgid "Allow Remote Websites To Access \"Schedule\" Info?%s (Enable this to make front-end widgets work.)"
+msgstr "Permetti alla connessione remota dei siti di accedere\"Programma\" Info? %s(Abilita i widgets frontali.)"
+
+msgid "Allow Repeat Tracks:"
+msgstr "Permetti ripetizione tracce"
+
+msgid "An email has been sent"
+msgstr "Una e-mail Ã¨ stata inviata"
+
+msgid "Application error"
+msgstr "Errore applicazione "
+
+msgid "Apr"
+msgstr "Apr"
+
+msgid "April"
+msgstr "Aprile"
+
+msgid "Are you sure you want to change the storage folder?\nThis will remove the files from your Airtime library!"
+msgstr "E' sicuro di voler cambiare l'archivio delle cartelle?\n Questo rimuoverÃ  i file dal suo archivio Airtime!"
+
+msgid "Are you sure you want to delete the selected item(s)?"
+msgstr "E' sicuro di voler eliminare la/e voce/i selezionata/e?"
+
+msgid "Are you sure you want to delete the selected item?"
+msgstr "Sei sicuro di voler eliminare gli elementi selezionati?"
+
+msgid "Are you sure you want to remove the watched folder?"
+msgstr "E' sicuro di voler rimuovere le cartelle guardate?"
+
+msgid "Artist - Title"
+msgstr "Artista - Titolo"
+
+msgid "Audio Player"
+msgstr "Audio Player"
+
+msgid "Audio Track"
+msgstr "Traccia audio"
+
+msgid "Aug"
+msgstr "Ago"
+
+msgid "August"
+msgstr "Agosto"
+
+msgid "Auto Switch Off"
+msgstr "Spegnimento automatico"
+
+msgid "Auto Switch On"
+msgstr "Accensione automatica"
+
+msgid "Automatically Mark Files \"Downloadable\" on SoundCloud"
+msgstr "File contrassegnati automaticamente\"Scaricabili\" da SoundCloud"
+
+msgid "Automatically Upload Recorded Shows"
+msgstr "Caricamento automatico Show registrati"
+
+msgid "BPM"
+msgstr "BPM"
+
+msgid "BPM:"
+msgstr "BPM:"
+
+msgid "Back to login screen"
+msgstr "Indietro a schermo login"
+
+msgid "Background Colour:"
+msgstr "Colore sfondo:"
+
+msgid "Bad request. 'mode' parameter is invalid"
+msgstr "Richiesta errata. 'modalitÃ ' parametro non valido"
+
+msgid "Bad request. no 'mode' parameter passed."
+msgstr "Richiesta errata.  'modalitÃ ' parametro non riuscito."
+
+msgid "Begin by adding your files to the library using the 'Add Media' menu button. You can drag and drop your files to this window too."
+msgstr "Cominci aggiungendo i suoi file alla biblioteca usando 'Aggiunga Media'. PuÃ² trascinare e trasportare i suoi file in questa finestra."
+
+msgid "Bit Rate"
+msgstr "VelocitÃ  di trasmissione"
+
+msgid "Bit Rate (Kbps)"
+msgstr "Bit Rate (kbps)"
+
+msgid "Bit Rate:"
+msgstr "VelocitÃ  di trasmissione: "
+
+msgid "By checking this box, I agree to Sourcefabric's %sprivacy policy%s."
+msgstr "Spuntando questo box, acconsento il trattamento dei miei dati personali attraverso la %sprivacy policy%s di Sourcefabric."
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "Calendar"
+msgstr "Calendario"
+
+msgid "Can not connect to the streaming server"
+msgstr "Non puÃ² connettersi al server di streaming"
+
+msgid "Can't drag and drop repeating shows"
+msgstr "Non puoi spostare show ripetuti"
+
+msgid "Can't move a past show"
+msgstr "Non puoi spostare uno show passato"
+
+msgid "Can't move a recorded show less than 1 hour before its rebroadcasts."
+msgstr "Non puoi spostare uno show registrato meno di un'ora prima che sia ritrasmesso."
+
+msgid "Can't move show into past"
+msgstr "Non puoi spostare uno show nel passato"
+
+msgid "Can't set cue in to be larger than cue out."
+msgstr "Il cue in non puÃ² essere piÃ¹ grande del cue out."
+
+msgid "Can't set cue out to be greater than file length."
+msgstr "Il cue out non puÃ² essere piÃ¹ grande della lunghezza del file."
+
+msgid "Can't set cue out to be smaller than cue in."
+msgstr "Il cue out non puÃ² essere piÃ¹ piccolo del cue in."
+
+msgid "Cancel"
+msgstr "Cancella"
+
+msgid "Cancel Current Show"
+msgstr "Cancella show attuale"
+
+msgid "Cancel Current Show?"
+msgstr "Cancellare lo show attuale?"
+
+msgid "Cancel current show"
+msgstr "Cancella show attuale"
+
+msgid "Cannot create show in the past"
+msgstr "Non creare show al passato"
+
+msgid "Cannot have duration 00h 00m"
+msgstr "Non ci puÃ² essere una durata 00h 00m"
+
+msgid "Cannot have duration < 0m"
+msgstr "Non ci puÃ² essere  una durata <0m"
+
+msgid "Cannot have duration greater than 24h"
+msgstr "Non ci puÃ² essere una durata superiore a 24h"
+
+msgid "Cannot modify start date/time of the show that is already started"
+msgstr "Non modificare data e ora di inizio degli slot in eseguzione"
+
+msgid "Cannot schedule outside a show."
+msgstr "Non puÃ² programmare fuori show."
+
+msgid "Cannot schedule overlapping shows"
+msgstr "Non puoi sovrascrivere gli show"
+
+msgid "Cannot schedule overlapping shows.\nNote: Resizing a repeating show affects all of its repeats."
+msgstr "Non  si possono programmare show sovrapposti.\n Note: Ridimensionare uno slot a ripetizione colpisce tutte le sue ripetizioni."
+
+msgid "Channels:"
+msgstr "Canali:"
+
+msgid "Check this box to automatically switch off Master/Show source upon source disconnection."
+msgstr "Controlli questo spazio per uscire automaticamente dalla fonte Master/Show."
+
+msgid "Check this box to automatically switch on Master/Show source upon source connection."
+msgstr "Controlli questo spazio per accendere automaticamente alla fonte di Master / Show su collegamento di fonte."
+
+msgid "Check this option to enable metadata for OGG streams (stream metadata is the track title, artist, and show name that is displayed in an audio player). VLC and mplayer have a serious bug when playing an OGG/VORBIS stream that has metadata information enabled: they will disconnect from the stream after every song. If you are using an OGG stream and your listeners do not require support for these audio players, then feel free to enable this option."
+msgstr "Controllo questa opzione per abilitare metadata per  le stream OGG (lo stream metadata Ã¨ il titolo della traccia,artista, e nome dello show esposto in un audio player). VLC e mplayer riscontrano un grave errore nel eseguire le stream OGG/VORBIS che ha abilitata l'informazione metadata:si disconnetterÃ  lo stream dopo ogni canzone. Se sta usando uno stream OGG ed i suoi ascoltatori non richiedono supporto nelle eseguzionu audio, puÃ² scegliere di abilitare questa opzione."
+
+msgid "Choose Days:"
+msgstr "Scegli giorni:"
+
+msgid "Choose Folder to Watch"
+msgstr "Scelga le cartelle da guardare"
+
+msgid "Choose Storage Folder"
+msgstr "Scelga l'archivio delle cartelle"
+
+msgid "Choose folder"
+msgstr "Scegli cartella"
+
+msgid "City:"
+msgstr "CittÃ :"
+
+msgid "Click the box below to advertise your station on %sSourcefabric.org%s. In order to promote your station, 'Send support feedback' must be enabled. This data will be collected in addition to the support feedback."
+msgstr "Clicchi sotto per pubblicare la sua stazione su %sSourcefabric.org%s. Per promuovere la sua stazione, 'Spedisca aderenza feedback' deve essere abilitato. Questi dati saranno raccolti."
+
+msgid "Click the box below to promote your station on %sSourcefabric.org%s."
+msgstr "Clicchi sotto per promuovere la sua Stazione su %sSourcefabric.org%s."
+
+msgid "Close"
+msgstr "Chiudi"
+
+msgid "Composer"
+msgstr "Compositore"
+
+msgid "Composer:"
+msgstr "Compositore:"
+
+msgid "Conductor"
+msgstr "Conduttore"
+
+msgid "Conductor:"
+msgstr "Conduttore:"
+
+msgid "Configure Mail Server"
+msgstr "Configura Mail del Server"
+
+msgid "Confirm new password"
+msgstr "Conferma nuova password"
+
+msgid "Connected to the streaming server"
+msgstr "Connesso al server di streaming."
+
+msgid "Connection URL: "
+msgstr "Connessioni URL:"
+
+msgid "Contents of Show"
+msgstr "Contenuti dello Show"
+
+msgid "Copyright"
+msgstr "Copyright"
+
+msgid "Copyright:"
+msgstr "Copyright:"
+
+msgid "Could not delete some scheduled files."
+msgstr "Non puÃ² cancellare i file programmati."
+
+msgid "Could not parse M3U playlist"
+msgstr "Non Ã¨ possibile analizzare le playlist M3U"
+
+msgid "Could not parse PLS playlist"
+msgstr "Non Ã¨ possibile analizzare le playlist PLS"
+
+msgid "Could not parse XSPF playlist"
+msgstr "Non Ã¨ possibile analizzare le playlist  XSPF "
+
+msgid "Country:"
+msgstr "Paese:"
+
+msgid "Create a show by going to 'Calendar' in the menu bar, and then clicking the '+ Show' icon. This can be either a one-time or repeating show. Only admins and program managers can add shows."
+msgstr "Crea show cliccando su 'Calendario' nel menu e cliccando l'icona 'Show'. Questo puÃ² essere uno show di una volta o a ripetizione. Solamente l'amministratore e il direttore del programma possono aggiungere show."
+
+msgid "Creative Commons Attribution"
+msgstr "Creative Commons Attribution"
+
+msgid "Creative Commons Attribution No Derivative Works"
+msgstr "Creative Commons Attribution No Derivate Works"
+
+msgid "Creative Commons Attribution Noncommercial"
+msgstr "Creative Commons Attribution Noncommercial"
+
+msgid "Creative Commons Attribution Noncommercial Non Derivate Works"
+msgstr "Creative Commons Attribution Noncommercial Non Derivate Works"
+
+msgid "Creative Commons Attribution Noncommercial Share Alike"
+msgstr "Creative Commons Attribution Noncommercial Share Alike"
+
+msgid "Creative Commons Attribution Share Alike"
+msgstr "Creative Commons Attribution Share Alike"
+
+msgid "Creator"
+msgstr "Creatore"
+
+msgid "Creator:"
+msgstr "Creatore:"
+
+msgid "Cue In"
+msgstr "Cue In"
+
+msgid "Cue In: "
+msgstr "Cue in:"
+
+msgid "Cue Out"
+msgstr "Cue Out"
+
+msgid "Cue Out: "
+msgstr "Cue Out:"
+
+msgid "Cue in and cue out are null."
+msgstr "Cue in e cue out sono nulli."
+
+msgid "Current"
+msgstr "Attuale"
+
+msgid "Current Import Folder:"
+msgstr "Importa cartelle:"
+
+msgid "Current Show:"
+msgstr "Show attuale:"
+
+msgid "Custom Password"
+msgstr "Personalizza Password"
+
+msgid "Custom Username"
+msgstr "Personalizza nome utente "
+
+msgid "DJ"
+msgstr "DJ"
+
+msgid "DJs:"
+msgstr "Dj:"
+
+msgid "Date End:"
+msgstr "Data fine:"
+
+msgid "Date Start:"
+msgstr "Data inizio:"
+
+msgid "Date/Time End:"
+msgstr "Data/Ora fine:"
+
+msgid "Date/Time Start:"
+msgstr "Data/Ora inizio:"
+
+msgid "Day must be specified"
+msgstr "Il giorno deve essere specificato"
+
+msgid "Dec"
+msgstr "Dic"
+
+msgid "December"
+msgstr "Dicembre"
+
+msgid "Default Genre:"
+msgstr "Impostazione predefinita genere:"
+
+msgid "Default Length:"
+msgstr "Lunghezza predefinita:"
+
+msgid "Default License:"
+msgstr "Licenza predefinita:"
+
+msgid "Default Track Type:"
+msgstr "Impostazione predefinita tipo di traccia:"
+
+msgid "Delete"
+msgstr "Cancella"
+
+msgid "Delete This Instance"
+msgstr "Cancella esempio"
+
+msgid "Delete This Instance and All Following"
+msgstr "Cancella esempio e tutto il seguito"
+
+msgid "Delete selected item(s)?"
+msgstr "Cancellare la/e voce/i selezionata/e?"
+
+msgid "Demo"
+msgstr "Demo"
+
+msgid "Description"
+msgstr "Descrizione"
+
+msgid "Description:"
+msgstr "Descrizione:"
+
+msgid "Deselect all"
+msgstr "Deseleziona tutto"
+
+msgid "Deselect this page"
+msgstr "Deseleziona pagina"
+
+msgid "Disabled"
+msgstr "Disattivato"
+
+msgid "Disk"
+msgstr "Disco"
+
+msgid "Disk Space"
+msgstr "Spazio disco"
+
+msgid "Done"
+msgstr "Completato"
+
+msgid "Download"
+msgstr "Scarica"
+
+msgid "Duration"
+msgstr "Durata"
+
+msgid "Duration:"
+msgstr "Durata:"
+
+msgid "Dynamic"
+msgstr "Dinamico"
+
+msgid "Dynamic Smart Block"
+msgstr "Blocco intelligente e dinamico"
+
+msgid "Dynamic Smart Block Criteria: "
+msgstr "Criteri di blocco intelligenti e dinamici:"
+
+msgid "Dynamic block is not previewable"
+msgstr "Il blocco dinamico non c'Ã¨ in anteprima"
+
+msgid "E-mail"
+msgstr "E-mail"
+
+msgid "Edit"
+msgstr "Edita"
+
+msgid "Edit Metadata"
+msgstr "Edita Metadata"
+
+msgid "Edit Show"
+msgstr "Edita show"
+
+msgid "Email / Mail Server Settings"
+msgstr "Impostazioni sistema di servizio  e-mail / posta"
+
+msgid "Email Address"
+msgstr "Indirizzo e-mail"
+
+msgid "Email could not be sent. Check your mail server settings and ensure it has been configured properly."
+msgstr "L' e-mail non puÃ² essere inviata. Controlli le impostazioni della sua mail e si accerti che Ã¨ stata configurata correttamente."
+
+msgid "Email sent"
+msgstr "E-mail inviata"
+
+msgid "Email:"
+msgstr "E-mail:"
+
+msgid "Empty playlist"
+msgstr "Playlist vuota"
+
+msgid "Empty smart block"
+msgstr "Blocco intelligente vuoto"
+
+msgid "Enable SoundCloud Upload"
+msgstr "AbilitÃ  caricamento SoudCloud"
+
+msgid "Enable System Emails (Password Reset)"
+msgstr "Abilita E-mail di Sistema (reimposta password)"
+
+msgid "Enabled"
+msgstr "Abilitato"
+
+msgid "Enabled:"
+msgstr "Attiva:"
+
+msgid "Encoded By"
+msgstr "Codificato da"
+
+msgid "End"
+msgstr "Fine"
+
+msgid "End date must be after start date"
+msgstr "La data di fine deve essere posteriore  a quella di inizio"
+
+msgid "End date/time cannot be in the past"
+msgstr "L'ora e la data finale non possono precedere quelle iniziali"
+
+msgid "Error code: "
+msgstr "Errore codice:"
+
+msgid "Error msg: "
+msgstr "Errore messaggio:"
+
+msgid "Expand Dynamic Block"
+msgstr "Espandi blocco dinamico "
+
+msgid "Expand Static Block"
+msgstr "Espandi blocco statico"
+
+msgid "Fade In"
+msgstr "Dissolvenza in entrata"
+
+msgid "Fade Out"
+msgstr "Dissolvenza in uscita"
+
+msgid "Fade in: "
+msgstr "Dissolvenza in entrata:"
+
+msgid "Fade out: "
+msgstr "Dissolvenza in chiusura:"
+
+msgid "Failed to create 'organize' directory."
+msgstr "Impossibile creare 'organize' directory."
+
+msgid "Feb"
+msgstr "Feb"
+
+msgid "February"
+msgstr "Febbraio"
+
+msgid "File does not exist in Airtime"
+msgstr "Il file non esiste in Airtime"
+
+msgid "File does not exist in Airtime."
+msgstr "Il file non esiste in Airtime."
+
+msgid "File doesn't exist in Airtime."
+msgstr "Il file non esiste in Airtime."
+
+msgid "File import in progress..."
+msgstr "File importato in corso..."
+
+msgid "Files"
+msgstr "File"
+
+msgid "Filter By Show:"
+msgstr "Filtri Show:"
+
+msgid "Filter History"
+msgstr "Filtra storia"
+
+msgid "Find Shows"
+msgstr "Trova Shows"
+
+msgid "First Name"
+msgstr "Nome"
+
+msgid "Firstname:"
+msgstr "Nome:"
+
+msgid "For more detailed help, read the %suser manual%s."
+msgstr "Per aiuto dettagliato, legga %suser manual%s."
+
+msgid "For more details, please read the %sAirtime Manual%s"
+msgstr "Per maggiori informazioni, legga per favore il %sManuale Airtime%s"
+
+msgid "Fr"
+msgstr "Ven"
+
+msgid "Fri"
+msgstr "Ven"
+
+msgid "Friday"
+msgstr "VenerdÃ¬"
+
+msgid "From {from} to {to}"
+msgstr "Da {da} a {a}"
+
+msgid "Generate"
+msgstr "Genere"
+
+msgid "Generate playlist content and save criteria"
+msgstr "Genera contenuto playlist e salva criteri"
+
+msgid "Genre"
+msgstr "Genere"
+
+msgid "Genre:"
+msgstr "Genere:"
+
+msgid "Get new password"
+msgstr "Inserisci nuova password"
+
+msgid "Getting Started"
+msgstr "Iniziare"
+
+msgid "Getting information from the server..."
+msgstr "Ottenere informazioni dal server..."
+
+msgid "Given email not found."
+msgstr "E-mail inserita non trovata."
+
+msgid "Global Settings"
+msgstr "Setting globale"
+
+msgid "Guest"
+msgstr "Ospite"
+
+msgid "Hardware Audio Output"
+msgstr "Produzione Audio dell'hardware"
+
+msgid "Help"
+msgstr "Aiuto"
+
+msgid "Help Airtime improve by letting Sourcefabric know how you are using it. This information will be collected regularly in order to enhance your user experience.%sClick the 'Send support feedback' box and we'll make sure the features you use are constantly improving."
+msgstr "Aiuti Airtime a migliorare facendo sapere a  Sourcefabric come lo sta usandolo. Queste informazioni saranno raccolte regolarmente per migliorare. %s Clicchi su 'Spedisca aderenza feedback'e noi ci assicureremo che i servizi da lei usati  stanno migliorando."
+
+msgid "Help Airtime improve by letting us know how you are using it. This info will be collected regularly in order to enhance your user experience.%sClick 'Yes, help Airtime' and we'll make sure the features you use are constantly improving."
+msgstr "Aiuti Airtime a migliorare facendoci sapere come lo sta usando. Questa informazione sarÃ  raccolta regolarmente per  migliorare.%sClicchi 'Si, aiuta Airtime e noi ci assicureremo che i servizi da lei usati  migliorino."
+
+msgid "Here's how you can get started using Airtime to automate your broadcasts: "
+msgstr "PuÃ² cominciato ad usare tAirtime per automatizzare le sue trasmissioni:"
+
+msgid "Hi %s, \n\nClick this link to reset your password: "
+msgstr "Ciao %s, \n\n Clicca questo link per reimpostare la tua password:"
+
+msgid "Hour"
+msgstr "Ore"
+
+msgid "ISRC"
+msgstr "ISRC"
+
+msgid "ISRC Number:"
+msgstr "Numero ISRC :"
+
+msgid "Icecast Vorbis Metadata"
+msgstr "Icecast Vorbis Metadata"
+
+msgid "If Airtime is behind a router or firewall, you may need to configure port forwarding and this field information will be incorrect. In this case you will need to manually update this field so it shows the correct host/port/mount that your DJ's need to connect to. The allowed range is between 1024 and 49151."
+msgstr "Se Airtime Ã¨ dietro un router o firewall, puÃ² avere bisogno di configurare il trasferimento e queste informazioni di campo saranno incorrette. In questo caso avrÃ² bisogno di aggiornare  manualmente questo campo per mostrare ospite/trasferimento/installa di cui il suo Dj ha bisogno per connettersi. La serie permessa Ã¨ tra 1024 e 49151."
+
+msgid "If you change the username or password values for an enabled stream the playout engine will be rebooted and your listeners will hear silence for 5-10 seconds. Changing the following fields will NOT cause a reboot: Stream Label (Global Settings), and Switch Transition Fade(s), Master Username, and Master Password (Input Stream Settings). If Airtime is recording, and if the change causes a playout engine restart, the recording will be interrupted."
+msgstr "Se cambia in nome utente o la password per uno stream il playout sarÃ  riavviato ed i suoi ascoltatori sentiranno silenzio per 5-10 secondi.Cambiando i seguenti campi non ci sarÃ  un riavvio: Etichetta Stream (Impostazioni Globali), e Cambia dissolvenza di transizione, Nome utente e Password (Impostazioni Stream di immissione).Se Airtime sta registrando, e se il cambio provoca un nuovo inizio di motore di emissione, la registrazione sarÃ  interrotta"
+
+msgid "If your Icecast server expects a username of 'source', this field can be left blank."
+msgstr "Se il suo server Icecast si aspetta un nome utente di 'fonte', questo spazio puÃ² essere lasciato in bianco."
+
+msgid "If your live streaming client does not ask for a username, this field should be 'source'."
+msgstr "Se la live stream non risponde al nome utente, questo campo dovrebbe essere 'fonte'."
+
+msgid "Image must be one of jpg, jpeg, png, or gif"
+msgstr "L'immagine deve essere in  formato jpg, jpeg, png, oppure gif"
+
+msgid "Import Folder:"
+msgstr "Importa Folder:"
+
+msgid "Input Stream Settings"
+msgstr "Impostazioni Input Stream"
+
+msgid "Input must be a number"
+msgstr "L'ingresso deve essere un numero"
+
+msgid "Input must be a positive number"
+msgstr "L'ingresso deve essere un numero positivo"
+
+msgid "Input must be in the format: hh:mm:ss.t"
+msgstr "L'ingresso deve essere nel formato : hh:mm:ss.t"
+
+msgid "Input must be in the format: yyyy-mm-dd"
+msgstr "L'ingresso deve essere nel formato : yyyy-mm-dd"
+
+msgid "Invalid character entered"
+msgstr "Carattere inserito non valido"
+
+msgid "Invalid form values."
+msgstr "Valori non validi."
+
+msgid "Invalid webstream - This appears to be a file download."
+msgstr "Webstream non valido - Questo potrebbe essere un file scaricato."
+
+msgid "Isrc Number:"
+msgstr "Numero ISRC:"
+
+msgid "Jabber:"
+msgstr "Jabber:"
+
+msgid "Jan"
+msgstr "Gen"
+
+msgid "January"
+msgstr "Gennaio"
+
+msgid "Jul"
+msgstr "Lug"
+
+msgid "July"
+msgstr "Luglio"
+
+msgid "Jump to the current playing track"
+msgstr "Salta alla traccia dell'attuale playlist"
+
+msgid "Jun"
+msgstr "Giu"
+
+msgid "June"
+msgstr "Giugno"
+
+msgid "Label"
+msgstr "Etichetta"
+
+msgid "Label:"
+msgstr "Etichetta:"
+
+msgid "Language"
+msgstr "Lingua"
+
+msgid "Language:"
+msgstr "Lingua:"
+
+msgid "Last Modified"
+msgstr "Ultima modifica"
+
+msgid "Last Name"
+msgstr "Cognome"
+
+msgid "Last Played"
+msgstr "Ultima esecuzione"
+
+msgid "Lastname:"
+msgstr "Cognome:"
+
+msgid "Length"
+msgstr "Lunghezza"
+
+msgid "Length needs to be greater than 0 minutes"
+msgstr "La lunghezza deve superare 0 minuti"
+
+msgid "Length should be of form \"00h 00m\""
+msgstr "La lunghezza deve essere  nella forma \"00h 00m\""
+
+msgid "Length:"
+msgstr "Lunghezza"
+
+msgid "Library"
+msgstr "Biblioteca"
+
+msgid "Limit cannot be empty or smaller than 0"
+msgstr "Il margine non puÃ² essere vuoto o piÃ¹ piccolo di 0"
+
+msgid "Limit cannot be more than 24 hrs"
+msgstr "Il margine non puÃ² superare le 24ore"
+
+msgid "Limit to"
+msgstr "Limitato a "
+
+msgid "Limit to "
+msgstr "Limiti"
+
+msgid "Limit to: "
+msgstr "Limitato a:"
+
+msgid "Listen"
+msgstr "Ascolta"
+
+msgid "Listener Count Over Time"
+msgstr "Programma in ascolto troppo lungo"
+
+msgid "Listener Count on %s: %s"
+msgstr "Programma in ascolto su %s: %s"
+
+msgid "Listener Stats"
+msgstr "Statistiche ascolto"
+
+msgid "Live"
+msgstr "Live"
+
+msgid "Live Stream"
+msgstr "Live Stream"
+
+msgid "Live Stream Input"
+msgstr "Ingresso Stream diretta"
+
+msgid "Live stream"
+msgstr "Live stream"
+
+msgid "Loading..."
+msgstr "Caricamento..."
+
+msgid "Login"
+msgstr "Accedi"
+
+msgid "Login name is not unique."
+msgstr "Il nome utente esiste giÃ ."
+
+msgid "Logout"
+msgstr "Esci"
+
+msgid "Look in"
+msgstr "Cerca in"
+
+msgid "Looks like the page you were looking for doesn't exist!"
+msgstr "La pagina che stai cercando non esiste! "
+
+msgid "Loop"
+msgstr " Riprodurre a ciclo continuo"
+
+msgid "Mail Server"
+msgstr "Mail Server"
+
+msgid "Manage Media Folders"
+msgstr "Gestisci cartelle media"
+
+msgid "Manage Users"
+msgstr "Gestione utenti"
+
+msgid "Mar"
+msgstr "Mar"
+
+msgid "March"
+msgstr "Marzo"
+
+msgid "Master Password"
+msgstr "Password principale"
+
+msgid "Master Source"
+msgstr "Fonte principale"
+
+msgid "Master Source Connection URL"
+msgstr "Principale fonte di connessione URL"
+
+msgid "Master Source Connection URL:"
+msgstr "Domini di connessione alla fonte URL:"
+
+msgid "Master Source Mount Point"
+msgstr "Fonte principale Mount Point"
+
+msgid "Master Source Port"
+msgstr "Principale fonte Port"
+
+msgid "Master Stream"
+msgstr "Stream Principale"
+
+msgid "Master Username"
+msgstr "Username principale"
+
+msgid "May"
+msgstr "Maggio"
+
+msgid "Media Folders"
+msgstr "Cartelle dei Media"
+
+msgid "Memory"
+msgstr "Memoria"
+
+msgid "Mime"
+msgstr "Formato (Mime)"
+
+msgid "Minute"
+msgstr "Minuti"
+
+msgid "Mo"
+msgstr "Lun"
+
+msgid "Mobile Phone:"
+msgstr "Cellulare:"
+
+msgid "Mon"
+msgstr "Lun"
+
+msgid "Monday"
+msgstr "LunedÃ¬"
+
+msgid "Mood"
+msgstr "Genere (Mood)"
+
+msgid "Mood:"
+msgstr "Umore:"
+
+msgid "Mount Point"
+msgstr "Mount Point"
+
+msgid "Mount cannot be empty with Icecast server."
+msgstr "Mount non puÃ² essere vuoto con il server Icecast."
+
+msgid "Moving %s Items"
+msgstr "Spostamento degli elementi %s in corso"
+
+msgid "Moving 1 Item"
+msgstr "Spostamento di un elemento in corso"
+
+msgid "Must wait 1 hour to rebroadcast."
+msgstr "Devi aspettare un'ora prima di ritrasmettere."
+
+msgid "Must wait at least 1 hour to rebroadcast"
+msgstr "Aspettare almeno un'ora prima di ritrasmettere"
+
+msgid "My Account"
+msgstr "Account personale"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Name:"
+msgstr "Nome:"
+
+msgid "New"
+msgstr "Nuovo"
+
+msgid "New Playlist"
+msgstr "Nuova playlist"
+
+msgid "New Smart Block"
+msgstr "Nuovo blocca intelligente "
+
+msgid "New User"
+msgstr "Nuovo Utente"
+
+msgid "New Webstream"
+msgstr "Nuove produzioni web"
+
+msgid "New password"
+msgstr "Nuova password"
+
+msgid "New version available: "
+msgstr "Nuova versione disponibile:"
+
+msgid "Next:"
+msgstr "Successivo:"
+
+msgid "No End?"
+msgstr "Ripeti all'infinito?"
+
+msgid "No MIME type found for webstream."
+msgstr "Nessun MIME type trovato per le webstream."
+
+msgid "No Records"
+msgstr "No registrazione"
+
+msgid "No action available"
+msgstr "Nessuna azione disponibile"
+
+msgid "No open playlist"
+msgstr "Non aprire playlist"
+
+msgid "No open smart block"
+msgstr "Non aprire blocco intelligente"
+
+msgid "No result found"
+msgstr "Nessun risultato trovato"
+
+msgid "No webstream"
+msgstr "No webstream"
+
+msgid "Not a valid Directory"
+msgstr "Catalogo non valido"
+
+msgid "Note: Anything larger than 600x600 will be resized."
+msgstr "Note: La lunghezze superiori a 600x600 saranno ridimensionate."
+
+msgid "Nothing Scheduled"
+msgstr "Niente programmato"
+
+msgid "Nov"
+msgstr "Nov"
+
+msgid "November"
+msgstr "Novembre"
+
+msgid "Now Playing"
+msgstr "In esecuzione"
+
+msgid "OK"
+msgstr "Ok"
+
+msgid "ON AIR"
+msgstr "IN ONDA"
+
+msgid "Oct"
+msgstr "Ott"
+
+msgid "October"
+msgstr "Ottobre"
+
+msgid "Ok"
+msgstr "OK"
+
+msgid "One Shot Sample"
+msgstr "Campione singolo"
+
+msgid "Only numbers are allowed."
+msgstr "Solo numeri."
+
+msgid "Open"
+msgstr "Apri"
+
+msgid "Open library to add or remove content"
+msgstr "Apri biblioteca per aggiungere o rimuovere contenuto"
+
+msgid "Original"
+msgstr "Originale"
+
+msgid "Original Length:"
+msgstr "Lunghezza originale:"
+
+msgid "Other"
+msgstr "Altro"
+
+msgid "Output Stream Settings"
+msgstr "Impostazioni Output Stream"
+
+msgid "Output Type"
+msgstr "Tipo di Output"
+
+msgid "Override"
+msgstr "Sovrascrivi"
+
+msgid "Owner"
+msgstr "Proprietario"
+
+msgid "Page not found"
+msgstr "Pagina non trovata"
+
+msgid "Page not found!"
+msgstr "Pagina non trovata!"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Password confirmation does not match your password."
+msgstr "La password di conferma non corrisponde con la sua password."
+
+msgid "Password field cannot be empty."
+msgstr "Il campo della password non puÃ² rimanere vuoto."
+
+msgid "Password:"
+msgstr "Password:"
+
+msgid "Phone:"
+msgstr "Telefono:"
+
+msgid "Played"
+msgstr "Riprodotti"
+
+msgid "Playlist Contents: "
+msgstr "Contenuti playlist:"
+
+msgid "Playlist crossfade"
+msgstr "Playlist crossfade"
+
+msgid "Playlist saved"
+msgstr "Playlist salvata"
+
+msgid "Playlists"
+msgstr "Playlist"
+
+msgid "Playout History"
+msgstr "Storico playlist"
+
+msgid "Please enter and confirm your new password in the fields below."
+msgstr "Prego inserire e confermare la sua nuova password nel seguente spazio."
+
+msgid "Please enter your account e-mail address. You will receive a link to create a new password via e-mail."
+msgstr "Prego inserire la sua e-mail. RiceverÃ  un link per creare una nuova password via e-mail-"
+
+msgid "Please enter your user name and password"
+msgstr "Inserisca per favore il suo nome utente e password"
+
+msgid "Please selection an option"
+msgstr "Seleziona opzioni"
+
+msgid "Please upgrade to "
+msgstr "Per favore aggiorni"
+
+msgid "Podcast"
+msgstr "Podcast"
+
+msgid "Port"
+msgstr "Port"
+
+msgid "Port %s is not available"
+msgstr "Port %s non disponibile"
+
+msgid "Port cannot be empty."
+msgstr "Il port non puÃ² essere libero."
+
+msgid "Preferences"
+msgstr "Preferenze"
+
+msgid "Preferences updated."
+msgstr "Preferenze aggiornate."
+
+msgid "Preview"
+msgstr "Anteprima"
+
+msgid "Previous:"
+msgstr "Precedente:"
+
+msgid "Problem with Liquidsoap..."
+msgstr "Problemi con Liquidsoap..."
+
+msgid "Processing..."
+msgstr "Elaborazione in corso..."
+
+msgid "Program Manager"
+msgstr "Programma direttore"
+
+msgid "Promote my station on Sourcefabric.org"
+msgstr "Promuovi la mia stazione su Sourcefabric.org"
+
+msgid "Purchase your copy of Airtime"
+msgstr "Acquisti la sua copia Airtime"
+
+msgid "RESET"
+msgstr "Azzera"
+
+msgid "Re-upload to SoundCloud"
+msgstr "Carica su SoundCloud"
+
+msgid "Rebroadcast of %s from %s"
+msgstr "Ritrasmetti da %s a %s"
+
+msgid "Rebroadcast of show %s from %s at %s"
+msgstr "Ritrasmetti show %s da %s a %s"
+
+msgid "Rebroadcast?"
+msgstr "Ritrasmetti?"
+
+msgid "Record & Rebroadcast"
+msgstr "Registra e ritrasmetti"
+
+msgid "Record from Line In?"
+msgstr "Registra da Line In?"
+
+msgid "Recording"
+msgstr "Registra"
+
+msgid "Recording From Line In"
+msgstr "Registrando da Line In"
+
+msgid "Recording:"
+msgstr "Registra:"
+
+msgid "Register Airtime"
+msgstr "Registro Airtime"
+
+msgid "Remind me in 1 week"
+msgstr "Ricordamelo tra 1 settimana"
+
+msgid "Remind me never"
+msgstr "Non ricordarmelo"
+
+msgid "Remix"
+msgstr "Remix"
+
+msgid "Remove"
+msgstr "Rimuovi"
+
+msgid "Remove All Content"
+msgstr "Rimuovi il contenuto"
+
+msgid "Remove all content?"
+msgstr "Rimuovere tutto il contenuto?"
+
+msgid "Remove cursor"
+msgstr "Rimuovere il cursore"
+
+msgid "Remove overbooked tracks"
+msgstr "Rimuovi le tracce in eccesso"
+
+msgid "Remove selected scheduled items"
+msgstr "Rimuovi la voce selezionata"
+
+msgid "Remove watched directory"
+msgstr "Rimuovi elenco visionato"
+
+msgid "Repeat Days:"
+msgstr "Ripeti giorni:"
+
+msgid "Repeat Type:"
+msgstr "Ripeti tipo:"
+
+msgid "Repeats?"
+msgstr "Ripetizioni?"
+
+msgid "Replay Gain"
+msgstr "Ripeti"
+
+msgid "Requires Authentication"
+msgstr "Richiede l'autentificazione"
+
+msgid "Rescan watched directory (This is useful if it is network mount and may be out of sync with Airtime)"
+msgstr "Ripeti elenco visionato (Questo Ã¨ utile se c'Ã¨ da eseguire montaggio di rete e puÃ² essere fuori  sincronizzazione con Airtime)"
+
+msgid "Reset Password 'From' Email"
+msgstr "Reimposta password dalla E-mail"
+
+msgid "Reset password"
+msgstr "Reimposta password"
+
+msgid "Restore password"
+msgstr "Ripristina password"
+
+msgid "Retreiving data from the server..."
+msgstr "Recupera data dal server..."
+
+msgid "Retrieving data from the server..."
+msgstr "Dati recuperati dal server..."
+
+msgid "Sa"
+msgstr "Sab"
+
+msgid "Sample Rate"
+msgstr "VelocitÃ  campione"
+
+msgid "Sample Rate (kHz)"
+msgstr "VelocitÃ  campione (kHz)"
+
+msgid "Sample Rate:"
+msgstr "Percentuale"
+
+msgid "Sat"
+msgstr "Sab"
+
+msgid "Saturday"
+msgstr "Sabato"
+
+msgid "Save"
+msgstr "Salva"
+
+msgid "Save playlist"
+msgstr "Salva playlist"
+
+msgid "Scheduled Play"
+msgstr "Programmazione play"
+
+msgid "Search Users:"
+msgstr "Cerca utenti:"
+
+msgid "Select"
+msgstr "Seleziona"
+
+msgid "Select Country"
+msgstr "Seleziona paese"
+
+msgid "Select Days:"
+msgstr "Seleziona giorni:"
+
+msgid "Select all"
+msgstr "Seleziona tutto"
+
+msgid "Select criteria"
+msgstr "Seleziona criteri"
+
+msgid "Select cursor"
+msgstr "Seleziona cursore"
+
+msgid "Select modifier"
+msgstr "Seleziona modificatore"
+
+msgid "Select none"
+msgstr "Nessuna selezione"
+
+msgid "Select stream:"
+msgstr "Seleziona stream:"
+
+msgid "Select this page"
+msgstr "Seleziona pagina"
+
+msgid "Select your media from the left pane and drag them to your show in the right pane."
+msgstr "Selezioni i suoi media dal pannello sinistro e trascini al suo show nel pannello destro."
+
+msgid "Send support feedback"
+msgstr "Invia supporto feedback:"
+
+msgid "Sep"
+msgstr "Set"
+
+msgid "September"
+msgstr "Settembre"
+
+msgid "Server"
+msgstr "Server"
+
+msgid "Server cannot be empty."
+msgstr "Il server non Ã¨ libero."
+
+msgid "Service"
+msgstr "Servizi"
+
+msgid "Service Type:"
+msgstr "Tipo di servizio:"
+
+msgid "Set"
+msgstr "Imposta"
+
+msgid "Set smart block type:"
+msgstr "Inserisci blocco intelligente"
+
+msgid "Should not overlap shows"
+msgstr "Non si devono sovrapporre gli show"
+
+msgid "Show"
+msgstr "Show"
+
+msgid "Show - Artist - Title"
+msgstr "Show - Artista - Titolo"
+
+msgid "Show / hide columns"
+msgstr "Mostra/nascondi colonne"
+
+msgid "Show Content"
+msgstr "Contenuto show"
+
+msgid "Show Empty"
+msgstr "Show vuoto"
+
+msgid "Show Source"
+msgstr "Mostra fonte"
+
+msgid "Show Source Connection URL"
+msgstr "Mostra la connessione fonte URL"
+
+msgid "Show Source Connection URL:"
+msgstr "Mostra connessioni alla fonte URL:"
+
+msgid "Show Source Mount Point"
+msgstr "Mostra fonte Mount Point"
+
+msgid "Show Source Port"
+msgstr "Mostra fonte Port"
+
+msgid "Show is empty"
+msgstr "Lo show Ã¨ vuoto"
+
+msgid "Show me what I am sending "
+msgstr "Mostra cosa sto inviando"
+
+msgid "Show was deleted because recorded show does not exist!"
+msgstr "Lo show Ã¨ stato cancellato perchÃ© lo show registrato non esiste!"
+
+msgid "Show:"
+msgstr "Show:"
+
+msgid "Shows can have a max length of 24 hours."
+msgstr "Gli show possono avere una lunghezza massima di 24 ore."
+
+msgid "Shows longer than their scheduled time will be cut off by a following show."
+msgstr "Gli show piÃ¹ lunghi del tempo programmato saranno tagliati dallo show successivo."
+
+msgid "Shuffle"
+msgstr "Casuale"
+
+msgid "Shuffle playlist"
+msgstr "Riproduzione casuale"
+
+msgid "Shuffle playlist content"
+msgstr "Eseguzione casuale playlist"
+
+msgid "Skype:"
+msgstr "Skype:"
+
+msgid "Smart Block Options"
+msgstr "Opzioni di blocco intelligente"
+
+msgid "Smart Blocks"
+msgstr "Blocchi intelligenti"
+
+msgid "Smart block generated and criteria saved"
+msgstr "Blocco Intelligente generato ed criteri salvati"
+
+msgid "Smart block saved"
+msgstr "Blocco intelligente salvato"
+
+msgid "Smart block shuffled"
+msgstr "Blocco intelligente casuale"
+
+msgid "Something went wrong."
+msgstr "Qualcosa Ã¨ andato storto."
+
+msgid "Sound Effect"
+msgstr "Effetto sonoro"
+
+msgid "SoundCloud Email"
+msgstr "E-mail SoudCloud"
+
+msgid "SoundCloud Password"
+msgstr "Password SoudCloud"
+
+msgid "SoundCloud Settings"
+msgstr "Impostazioni SoundCloud"
+
+msgid "SoundCloud Tags: (separate tags with spaces)"
+msgstr "Tag SoundCloud: (separare i tag con uno spazio)"
+
+msgid "Soundcloud"
+msgstr "SoundCloud"
+
+msgid "Source Streams"
+msgstr "Source Streams"
+
+msgid "Sourcefabric Privacy Policy"
+msgstr "Trattamento dati Sourcefabric"
+
+msgid "Specify custom authentication which will work only for this show."
+msgstr "Imposta autenticazione personalizzata  che funzionerÃ  solo per questo show."
+
+msgid "Spoken"
+msgstr "Parlato"
+
+msgid "Start"
+msgstr "Start"
+
+msgid "Static"
+msgstr "Statico"
+
+msgid "Static Smart Block"
+msgstr "Blocco intelligente e statico"
+
+msgid "Static Smart Block Contents: "
+msgstr "Contenuto di blocco intelligente e statico:"
+
+msgid "Station Description:"
+msgstr "Descrizione stazione:"
+
+msgid "Station Logo:"
+msgstr "Logo stazione: "
+
+msgid "Station Name"
+msgstr "Nome stazione"
+
+msgid "Station Web Site:"
+msgstr "Stazione sito web:"
+
+msgid "Station name - Show name"
+msgstr "Nome stazione - Nome show"
+
+msgid "Station time"
+msgstr "Orario di stazione"
+
+msgid "Status"
+msgstr "Stato"
+
+msgid "Stem"
+msgstr "Origine"
+
+msgid "Stop recording current show?"
+msgstr "Fermare registrazione dello show attuale?"
+
+msgid "Stream "
+msgstr "Stream"
+
+msgid "Stream Label:"
+msgstr "Etichetta Stream:"
+
+msgid "Stream Setting Updated."
+msgstr "Aggiornamento impostazioni Stream."
+
+msgid "Stream Settings"
+msgstr "Impostazioni Stream"
+
+msgid "Stream Type:"
+msgstr "Tipo di stream:"
+
+msgid "Stream URL:"
+msgstr "Stream URL:"
+
+msgid "Stream URL: "
+msgstr "Stream URL:"
+
+msgid "Streams"
+msgstr "Streams"
+
+msgid "Style"
+msgstr "Stile"
+
+msgid "Su"
+msgstr "Dom"
+
+msgid "Sun"
+msgstr "Dom"
+
+msgid "Sunday"
+msgstr "Domenica"
+
+msgid "Support Feedback"
+msgstr "Support Feedback"
+
+msgid "Support setting updated."
+msgstr "Aggiornamento impostazioni assistenza."
+
+msgid "Switch Transition Fade (s)"
+msgstr "Cambia dissolvenza di transizione "
+
+msgid "System"
+msgstr "Sistema"
+
+msgid "Terms and Conditions"
+msgstr "Termini e condizioni"
+
+msgid "Text Colour:"
+msgstr "Colore testo:"
+
+msgid "Th"
+msgstr "Gio"
+
+msgid "The desired block length will not be reached if Airtime cannot find enough unique tracks to match your criteria. Enable this option if you wish to allow tracks to be added multiple times to the smart block."
+msgstr "Alla lunghezza di blocco desiderata non si arriverÃ  se Airtime non puÃ² trovare abbastanza tracce uniche per accoppiare i suoi criteri.Abiliti questa scelta se desidera permettere alle tracce di essere aggiunte molteplici volte al blocco intelligente."
+
+msgid "The file was not uploaded, there is %s MB of disk space left and the file you are uploading has a size of %s MB."
+msgstr "Il file non Ã¨ stato caricato, sono rimasti %s MB di spazio ed il file in caricamento ha una lunghezza di %s MB."
+
+msgid "The file was not uploaded, this error can occur if the computer hard drive does not have enough disk space or the stor directory does not have correct write permissions."
+msgstr "Il file non Ã¨ stato caricato, l'errore si puÃ² ripresentare se il disco rigido del computer non ha abbastanza spazio o il catalogo degli archivi non ha i giusti permessi."
+
+msgid "The following info will be displayed to listeners in their media player:"
+msgstr "La seguente informazione sarÃ  esposta agli ascoltatori nelle loro eseguzione:"
+
+msgid "The schedule you're viewing is out of date!"
+msgstr "Il programma che sta visionando Ã¨ fuori data!"
+
+msgid "The schedule you're viewing is out of date! (instance mismatch)"
+msgstr "Il programma che sta visionando Ã¨ fuori data! (disadattamento dell'esempio)"
+
+msgid "The schedule you're viewing is out of date! (sched mismatch)"
+msgstr "Il programma che sta visionando Ã¨ fuori data! (disadattamento dell'orario)"
+
+msgid "The show %s has been previously updated!"
+msgstr "Lo show  %s Ã¨ giÃ  stato aggiornato! "
+
+msgid "The show %s is over and cannot be scheduled."
+msgstr "Lo show % supera la lunghezza massima e non puÃ² essere programmato."
+
+msgid "The show instance doesn't exist anymore!"
+msgstr "L'istanza dello show non esiste piÃ¹!"
+
+msgid "The soundcloud id for this file is: "
+msgstr "L'ID soundcloud per questo file Ã¨:"
+
+msgid "The stream is disabled"
+msgstr "Stream  disattivato"
+
+msgid "The value has to be numeric"
+msgstr "Il valore deve essere numerico"
+
+msgid "The value should be an integer"
+msgstr "Il valore deve essere un numero intero"
+
+msgid "The value should be in timestamp format (e.g. 0000-00-00 or 0000-00-00 00:00:00)"
+msgstr "Il valore deve essere nel formato (es. 0000-00-00 o 0000-00-00 00:00:00)"
+
+msgid "The value should be less than %s characters"
+msgstr "Il valore deve essere inferiore a %s caratteri"
+
+msgid "The value should be less then 2147483648"
+msgstr "Il valore deve essere inferiore a 2147483648"
+
+msgid "The work is in the public domain"
+msgstr "Il lavoro Ã¨ nel dominio pubblico"
+
+msgid "The year %s must be within the range of 1753 - 9999"
+msgstr "L'anno %s deve essere compreso nella serie 1753 - 9999"
+
+msgid "Then you're good to go!"
+msgstr "PuÃ² andare!"
+
+msgid "There is no source connected to this input."
+msgstr "Nessuna fonte connessa a questo ingresso."
+
+msgid "There was an error while uploading to soundcloud."
+msgstr "Si Ã¨ presentato un errore durante il caricamento a suondcloud."
+
+msgid "This file appears to be corrupted and will not be added to media library."
+msgstr "Il file risulta corrotto e non sarÃ  aggiunto nella biblioteca."
+
+msgid "This follows the same security pattern for the shows: only users assigned to the show can connect."
+msgstr "Questo segue lo stesso modello di sicurezza per gli show: solo gli utenti assegnati allo show possono connettersi."
+
+msgid "This path is currently not accessible."
+msgstr "Questo percorso non Ã¨ accessibile attualmente."
+
+msgid "This show has no scheduled content."
+msgstr "Lo show non ha un contenuto programmato."
+
+msgid "This version is no longer supported."
+msgstr "Questa versione non Ã¨ piÃ¹ sopportata."
+
+msgid "This version will soon be obsolete."
+msgstr "Questa versione sarÃ  presto aggiornata."
+
+msgid "Thu"
+msgstr "Gio"
+
+msgid "Thursday"
+msgstr "GiovedÃ¬"
+
+msgid "Time must be specified"
+msgstr "L'ora dev'essere specificata"
+
+msgid "Title"
+msgstr "Titolo"
+
+msgid "Title:"
+msgstr "Titolo:"
+
+msgid "To play the media you will need to either update your browser to a recent version or update your %sFlash plugin%s."
+msgstr "Per riproduzione media, avrÃ  bisogno di aggiornare il suo browser ad una recente versione o aggiornare il suo %sFlash plugin%s."
+
+msgid "Track Number"
+msgstr "Numero traccia"
+
+msgid "Track preview"
+msgstr "Anteprima traccia"
+
+msgid "Track:"
+msgstr "Traccia:"
+
+msgid "Tu"
+msgstr "Mar"
+
+msgid "Tue"
+msgstr "Mar"
+
+msgid "Tuesday"
+msgstr "MartedÃ¬"
+
+msgid "Type the characters you see in the picture below."
+msgstr "Digita le parole del riquadro."
+
+msgid "URL"
+msgstr "URL"
+
+msgid "URL should be 512 characters or less"
+msgstr "URL dove essere di 512 caratteri o meno"
+
+msgid "URL should be of form \"http://domain\""
+msgstr "URL deve essere nella forma \"http://domain\""
+
+msgid "URL:"
+msgstr "URL:"
+
+msgid "Unknown Playlist"
+msgstr "Playlist sconosciuta"
+
+msgid "Unknown type: "
+msgstr "Tipologia sconosciuta:"
+
+msgid "Unrecognized stream type: %s"
+msgstr "Tipo di stream sconosciuto: %s"
+
+msgid "Untitled Playlist"
+msgstr "Playlist senza nome"
+
+msgid "Untitled Show"
+msgstr "Show senza nome"
+
+msgid "Untitled Smart Block"
+msgstr "Blocco intelligente senza nome"
+
+msgid "Untitled Webstream"
+msgstr "Webstream senza titolo"
+
+msgid "Update Required"
+msgstr "Aggiornamenti richiesti"
+
+msgid "Update show"
+msgstr "Aggiorna show"
+
+msgid "Upload to SoundCloud"
+msgstr "Carica su SoundCloud"
+
+msgid "Uploaded"
+msgstr "Caricato"
+
+msgid "Uploading in progress..."
+msgstr "Caricamento in corso..."
+
+msgid "Uptime"
+msgstr "Durata"
+
+msgid "Use Airtime Authentication:"
+msgstr "Usa autenticazione Airtime:"
+
+msgid "Use Custom Authentication:"
+msgstr "Usa autenticazione clienti:"
+
+msgid "User Manual"
+msgstr "Manuale utente"
+
+msgid "User Type"
+msgstr "Tipo di utente"
+
+msgid "User Type:"
+msgstr "tipo di utente:"
+
+msgid "User added successfully!"
+msgstr "User aggiunto con successo!"
+
+msgid "User updated successfully!"
+msgstr "User aggiornato con successo!"
+
+msgid "Username"
+msgstr "Nome utente"
+
+msgid "Username field cannot be empty."
+msgstr "Il campo nome utente non puÃ² rimanere vuoto."
+
+msgid "Username:"
+msgstr "Username:"
+
+msgid "Users"
+msgstr "Utenti"
+
+msgid "Value cannot be empty"
+msgstr "Il valore non deve essere vuoto"
+
+msgid "Value is required and can't be empty"
+msgstr "Il calore richiesto non puÃ² rimanere vuoto"
+
+msgid "View / edit description"
+msgstr "Vedi/edita descrizione"
+
+msgid "View Recorded File Metadata"
+msgstr "Vedi file registrati Metadata"
+
+msgid "View on Soundcloud"
+msgstr "Vedi su SoundCloud"
+
+msgid "Watched Folders:"
+msgstr "Folder visionati:"
+
+msgid "We"
+msgstr "Mer"
+
+msgid "Web Stream"
+msgstr "Web Stream"
+
+msgid "Web Streams"
+msgstr "Web Streams"
+
+msgid "Website"
+msgstr "Sito web"
+
+msgid "Website:"
+msgstr "Sito web:"
+
+msgid "Webstream name cannot be empty"
+msgstr "Webstream non puÃ² essere vuoto"
+
+msgid "Webstream saved."
+msgstr "Webstream salvate."
+
+msgid "Wed"
+msgstr "Mer"
+
+msgid "Wednesday"
+msgstr "MercoledÃ¬"
+
+msgid "Week Starts On"
+msgstr "La settimana inizia il"
+
+msgid "Welcome to Airtime!"
+msgstr "Benvenuti in Airtime!"
+
+msgid "Welcome to the online Airtime demo! You can log in using the username 'admin' and the password 'admin'."
+msgstr "Benvenuti al demo online Airtime! PuÃ² accedere usando l'username 'consenti' e la password 'consenti'."
+
+msgid "What"
+msgstr "Cosa"
+
+msgid "When"
+msgstr "Quando"
+
+msgid "Who"
+msgstr "Chi"
+
+msgid "Work in progress"
+msgstr "Elaborazione in corso"
+
+msgid "Wrong username or password provided. Please try again."
+msgstr "Nome utente o  password forniti errati. Per favore riprovi."
+
+msgid "Year"
+msgstr "Anno"
+
+msgid "Year:"
+msgstr "Anno:"
+
+msgid "Yes, help Airtime"
+msgstr "Si, aiuta Airtime"
+
+msgid "You are currently uploading files. %sGoing to another screen will cancel the upload process. %sAre you sure you want to leave the page?"
+msgstr "Stai attualmente scaricando file. %sCambiando schermata cancellerÃ  il processo di caricamento. %sSei sicuro di voler abbandonare la pagina?"
+
+msgid "You are not allowed to access this resource."
+msgstr "Non Ã¨ permesso l'accesso  alla risorsa."
+
+msgid "You are not allowed to access this resource. "
+msgstr "Non Ã¨ permesso l'accesso alla risorsa."
+
+msgid "You are not allowed to schedule show %s."
+msgstr "Non Ã¨ abilitato all'elenco degli show%s"
+
+msgid "You are not watching any media folders."
+msgstr "Sta guardando i cataloghi media."
+
+msgid "You are running the latest version"
+msgstr "Sta gestendo l'ultima versione"
+
+msgid "You are viewing an older version of %s"
+msgstr "Sta visualizzando una versione precedente di %s"
+
+msgid "You can only add tracks to smart block."
+msgstr "PuÃ² solo aggiungere tracce al blocco intelligente."
+
+msgid "You can only add tracks to smart blocks."
+msgstr "Puoi solo aggiungere tracce ai blocchi intelligenti."
+
+msgid "You can only add tracks, smart blocks, and webstreams to playlists."
+msgstr "Puoi solo aggiungere tracce, blocchi intelligenti, e webstreams alle playlist."
+
+msgid "You cannot add files to recording shows."
+msgstr "Non puÃ² aggiungere file a show registrati."
+
+msgid "You cannot add tracks to dynamic blocks."
+msgstr "Non puÃ² aggiungere tracce al blocco dinamico."
+
+msgid "You cannot use same port as Master DJ port."
+msgstr "Non puÃ² usare lo stesso port del principale Dj port."
+
+msgid "You don't have permission to delete selected %s(s)."
+msgstr "Non ha i permessi per cancellare la selezione %s(s)."
+
+msgid "You don't have permission to delete selected items."
+msgstr "Non ha il permesso per cancellare gli elementi selezionati."
+
+msgid "You don't have permission to disconnect source."
+msgstr "Non Ã¨ consentito disconnettersi dalla fonte."
+
+msgid "You don't have permission to switch source."
+msgstr "Non ha il permesso per cambiare fonte."
+
+msgid "You have to agree to privacy policy."
+msgstr "Autorizzo il trattamento dei miei dati personali."
+
+msgid "You must select Criteria and Modifier"
+msgstr "Devi selezionare da Criteri e Modifica"
+
+msgid "Your browser does not support playing this file type: "
+msgstr "Il suo browser non sopporta la riproduzione di questa tipologia di file:"
+
+msgid "Your trial expires in"
+msgstr "La sua versione di prova scade entro"
+
+msgid "Zend Framework Default Application"
+msgstr "Zend Framework Default Application"
+
+msgid "bi-weekly"
+msgstr "bisettimanale"
+
+msgid "can't resize a past show"
+msgstr "Non puoi ridimensionare uno show passato"
+
+msgid "contains"
+msgstr "contiene"
+
+msgid "day"
+msgstr "giorno"
+
+msgid "days"
+msgstr "giorni"
+
+msgid "does not contain"
+msgstr "non contiene"
+
+msgid "ends with"
+msgstr "finisce con"
+
+msgid "enter a time in seconds 00{.000000}"
+msgstr "inserisci il tempo in secondi"
+
+msgid "enter a time in seconds 0{.0}"
+msgstr "inserisci il tempo in secondi 0{.0}"
+
+msgid "file meet the criteria"
+msgstr "File e criteri"
+
+msgid "files meet the criteria"
+msgstr "Files e criteri"
+
+msgid "hh:mm:ss.t"
+msgstr "hh:mm:ss.t"
+
+msgid "hours"
+msgstr "ore"
+
+msgid "id"
+msgstr "id"
+
+msgid "in use"
+msgstr "in uso"
+
+msgid "is"
+msgstr "Ã¨ "
+
+msgid "is greater than"
+msgstr "Ã¨ piÃ¹ di"
+
+msgid "is in the range"
+msgstr "nella seguenza"
+
+msgid "is less than"
+msgstr "Ã¨ meno di"
+
+msgid "is not"
+msgstr "non Ã¨"
+
+msgid "items"
+msgstr "elementi"
+
+msgid "kHz"
+msgstr "kHz"
+
+msgid "kbps"
+msgstr "kbps"
+
+msgid "max volume"
+msgstr "volume massimo"
+
+msgid "minutes"
+msgstr "minuti"
+
+msgid "month"
+msgstr "mese"
+
+msgid "monthly"
+msgstr "mensilmente"
+
+msgid "mute"
+msgstr "disattiva microfono"
+
+msgid "next"
+msgstr "next"
+
+msgid "path should be specified"
+msgstr "il percorso deve essere specificato"
+
+msgid "pause"
+msgstr "pausa"
+
+msgid "play"
+msgstr "riproduci"
+
+msgid "please put in a time '00:00:00 (.0)'"
+msgstr "inserisca per favore il tempo '00:00:00(.0)'"
+
+msgid "please put in a time in seconds '00 (.0)'"
+msgstr "inserisca per favore il tempo in secondi '00(.0)'"
+
+msgid "previous"
+msgstr "precedente"
+
+msgid "show does not exist"
+msgstr "lo show non esiste"
+
+msgid "starts with"
+msgstr "inizia con"
+
+msgid "stop"
+msgstr "stop"
+
+msgid "today"
+msgstr "oggi"
+
+msgid "unmute"
+msgstr "attiva microfono"
+
+msgid "week"
+msgstr "settimana"
+
+msgid "weekly"
+msgstr "settimanalmente"
+
+msgid "yyyy-mm-dd"
+msgstr "yyyy-mm-dd"
