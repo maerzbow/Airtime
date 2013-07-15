@@ -1,0 +1,2438 @@
+# AUSTRIAN (de_AT) translation for Airtime.
+# Copyright (C) 2013 Sourcefabric
+# This file is distributed under the same license as the Airtime package.
+# Sourcefabric <contact@sourcefabric.org>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Airtime 2.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-05-29 15:27-0400\n"
+"PO-Revision-Date: 2013-05-30 14:55+0100\n"
+"Last-Translator: Daniel James <daniel.james@sourcefabric.org>\n"
+"Language-Team: Austrian Localization <contact@sourcefabric.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+
+msgid " to "
+msgstr "到"
+
+msgid "%d files queued"
+msgstr "队列中有%d个文件"
+
+msgid "%s contains nested watched directory: %s"
+msgstr "%s 所含的子文件夹 %s 已经被监控"
+
+msgid "%s doesn't exist in the watched list."
+msgstr "监控文件夹名单里不存在 %s "
+
+msgid "%s is already set as the current storage dir or in the watched folders list"
+msgstr "%s 已经设置成媒体存储文件夹，或者监控文件夹。"
+
+msgid "%s is already set as the current storage dir or in the watched folders list."
+msgstr "%s 已经设置成媒体存储文件夹，或者监控文件夹。"
+
+msgid "%s is already watched."
+msgstr "%s 已经监控"
+
+msgid "%s is nested within existing watched directory: %s"
+msgstr "%s 无法监控，因为父文件夹 %s 已经监控"
+
+msgid "%s is not a valid directory."
+msgstr "%s 不是文件夹。"
+
+msgid "%s not found"
+msgstr "%s不存在"
+
+msgid "%s's Settings"
+msgstr "%s设置"
+
+msgid "%s-%s-%s is not a valid date"
+msgstr "%s-%s-%s采用了错误的日期格式"
+
+msgid "%s:%s:%s is not a valid time"
+msgstr "%s:%s:%s 采用了错误的时间格式"
+
+msgid "%sAirtime%s %s, the open radio software for scheduling and remote station management. %s"
+msgstr "%sAirtime%s %s， 提供内容编排及远程管理的开源电台软件。%s"
+
+msgid "%sPrint view%sPlease use your browser's print function to print this table. Press escape when finished."
+msgstr "%s打印预览%s请使用浏览器的打印功能进行打印。按下Esc键可以退出当前状态。"
+
+msgid "%sSourcefabric%s o.p.s. Airtime is distributed under the %sGNU GPL v.3%s"
+msgstr "%sSourcefabric%s o.p.s. Airtime遵循%sGNU GPL v.3%s"
+
+msgid "'%value%' does not fit the date format '%format%'"
+msgstr "'%value%' 不符合格式要求： '%format%'"
+
+msgid "'%value%' does not fit the time format 'HH:mm'"
+msgstr "'%value%' 不符合形如 '小时:分'的格式要求，例如，‘01：59’"
+
+msgid "'%value%' is less than %min% characters long"
+msgstr "'%value%' 小于最小长度要求 %min% "
+
+msgid "'%value%' is more than %max% characters long"
+msgstr "'%value%' 大于最大长度要求 %max%"
+
+msgid "'%value%' is no valid email address in the basic format local-part@hostname"
+msgstr "'%value%' 不是合法的电邮地址，应该类似于 local-part@hostname"
+
+msgid "'%value%' is not between '%min%' and '%max%', inclusively"
+msgstr "'%value%' 应该介于 '%min%' 和 '%max%'之间"
+
+msgid "'Length' should be in '00:00:00' format"
+msgstr "‘长度’格式应该为‘00:00:00’"
+
+msgid "(In order to promote your station, 'Send support feedback' must be enabled)."
+msgstr "（为了推广您的电台，请启用‘发送支持反馈’）"
+
+msgid "(Required)"
+msgstr "（必填）"
+
+msgid "(Your radio station website)"
+msgstr "（你电台的网站）"
+
+msgid "(for verification purposes only, will not be published)"
+msgstr "（仅作为验证目的使用，不会用于发布）"
+
+msgid "(hh:mm:ss.t)"
+msgstr "（时:分:秒.分秒）"
+
+msgid "(ss.t)"
+msgstr "（秒.分秒）"
+
+msgid "1 - Mono"
+msgstr "1 - 单声道"
+
+msgid "10m"
+msgstr "10分钟"
+
+msgid "15m"
+msgstr "15分钟"
+
+msgid "1m"
+msgstr "1分钟"
+
+msgid "2 - Stereo"
+msgstr "2 - 立体声"
+
+msgid "30m"
+msgstr "30分钟"
+
+msgid "500 is the max item limit value you can set"
+msgstr "最多只能允许500条内容"
+
+msgid "5m"
+msgstr "5分钟"
+
+msgid "60m"
+msgstr "60分钟"
+
+msgid "A dynamic smart block will only save the criteria. The block content will get generated upon adding it to a show. You will not be able to view and edit the content in the Library."
+msgstr "动态的智能模块将只保存条件设置。而模块的内容将在每次添加到节目中是动态生成。在媒体库中，你不能直接编辑和预览动态智能模块。"
+
+msgid "A selected File does not exist!"
+msgstr "某个选中的文件不存在。"
+
+msgid "A static smart block will save the criteria and generate the block content immediately. This allows you to edit and view it in the Library before adding it to a show."
+msgstr "静态的智能模块将会保存条件设置并且马上生成所有内容。这样就可以让你在添加到节目中前，还可以编辑和预览该智能模块。"
+
+msgid "About"
+msgstr "关于"
+
+msgid "Access playout history"
+msgstr "查看播放历史"
+
+msgid "Add"
+msgstr "添加"
+
+msgid "Add / Remove Content"
+msgstr "添加 / 删除内容"
+
+msgid "Add Files"
+msgstr "添加文件"
+
+msgid "Add Media"
+msgstr "添加媒体"
+
+msgid "Add files"
+msgstr "添加文件"
+
+msgid "Add files to the upload queue and click the start button."
+msgstr "添加需要上传的文件到传输队列中，然后点击开始上传。"
+
+msgid "Add media to the show by going to your show in the Schedule calendar, left-clicking on it and selecting 'Add / Remove Content'"
+msgstr "然后给你的节目添加内容，在日程表页面中选中节目，左键单击，在出现的菜单上选择‘添加/删除内容’"
+
+msgid "Add this show"
+msgstr "添加此节目"
+
+msgid "Add to Playlist"
+msgstr "添加到播放列表"
+
+msgid "Add to Smart Block"
+msgstr "添加到智能模块"
+
+msgid "Add to current playlist"
+msgstr "添加到播放列表"
+
+msgid "Add to current smart block"
+msgstr "添加到只能模块"
+
+msgid "Add to selected show"
+msgstr "添加到所选的节目"
+
+msgid "Adding %s Items"
+msgstr "添加%s项"
+
+msgid "Adding 1 Item"
+msgstr "添加1项"
+
+msgid "Additional Options"
+msgstr "附属选项"
+
+msgid "Admin"
+msgstr "系统管理员"
+
+msgid "Admin Password"
+msgstr "管理员密码"
+
+msgid "Admin User"
+msgstr "管理员用户名"
+
+msgid "Admins can do the following:"
+msgstr "管理员的权限包括："
+
+msgid "Advanced Search Options"
+msgstr "高级查询选项"
+
+msgid "Airtime Copyright &copy;Sourcefabric o.p.s. All rights reserved.%sMaintained and distributed under GNU GPL v.3 by %sSourcefabric o.p.s%s"
+msgstr "Airtime 遵循GPL第三版协议，%s由%sSourcefabric o.p.s%s版权所有。"
+
+msgid "Airtime Password Reset"
+msgstr "Airtime密码重置"
+
+msgid "Airtime Version"
+msgstr "Airtime版本"
+
+msgid "Airtime is unsure about the status of this file. This can happen when the file is on a remote drive that is unaccessible or the file is in a directory that isn't 'watched' anymore."
+msgstr "文件的状态不可知。这可能是由于文件位于远程存储位置，或者所在的文件夹已经不再监控。"
+
+msgid "Album"
+msgstr "专辑"
+
+msgid "Album:"
+msgstr "专辑名："
+
+msgid "All"
+msgstr "全部"
+
+msgid "All My Shows:"
+msgstr "我的全部节目："
+
+msgid "All rights are reserved"
+msgstr "版权所有"
+
+msgid "Allow Remote Websites To Access \"Schedule\" Info?%s (Enable this to make front-end widgets work.)"
+msgstr "允许远程访问节目表信息？%s （此项启用后才能使用“小工具”，既widgets）"
+
+msgid "Allow Repeat Tracks:"
+msgstr "允许重复选择歌曲："
+
+msgid "An email has been sent"
+msgstr "邮件已经发出"
+
+msgid "Application error"
+msgstr "应用程序错误"
+
+msgid "Apr"
+msgstr "四月"
+
+msgid "April"
+msgstr "四月"
+
+msgid "Are you sure you want to change the storage folder?\nThis will remove the files from your Airtime library!"
+msgstr "确定更改存储路径？\n这项操作将从媒体库中删除所有文件！"
+
+msgid "Are you sure you want to delete the selected item(s)?"
+msgstr "确定删除选择的项？"
+
+msgid "Are you sure you want to delete the selected item?"
+msgstr "确定删除所选项？"
+
+msgid "Are you sure you want to remove the watched folder?"
+msgstr "确定取消该文件夹的监控？"
+
+msgid "Artist - Title"
+msgstr "歌手 - 歌名"
+
+msgid "Audio Player"
+msgstr "音频播放器"
+
+msgid "Audio Track"
+msgstr "音频文件"
+
+msgid "Aug"
+msgstr "八月"
+
+msgid "August"
+msgstr "八月"
+
+msgid "Auto Switch Off"
+msgstr "当输入流断开时自动关闭"
+
+msgid "Auto Switch On"
+msgstr "当输入流连接时自动打开"
+
+msgid "Automatically Mark Files \"Downloadable\" on SoundCloud"
+msgstr "自动把上传到SoundCloud的文件标识为“Downloadable”"
+
+msgid "Automatically Upload Recorded Shows"
+msgstr "自动上传录制节目的内容"
+
+msgid "BPM"
+msgstr "每分钟拍子数"
+
+msgid "BPM:"
+msgstr "拍子（BPM）："
+
+msgid "Back to login screen"
+msgstr "返回登录页面"
+
+msgid "Background Colour:"
+msgstr "背景色："
+
+msgid "Bad request. 'mode' parameter is invalid"
+msgstr "请求错误。提供的‘模式’参数无效。"
+
+msgid "Bad request. no 'mode' parameter passed."
+msgstr "请求错误。没有提供‘模式’参数。"
+
+msgid "Begin by adding your files to the library using the 'Add Media' menu button. You can drag and drop your files to this window too."
+msgstr "首先把你的媒体文件通过‘添加媒体’导入到媒体库中。你也可以简单的拖拽文件到本窗口"
+
+msgid "Bit Rate"
+msgstr "比特率"
+
+msgid "Bit Rate (Kbps)"
+msgstr "比特率（Kbps）"
+
+msgid "Bit Rate:"
+msgstr "比特率："
+
+msgid "By checking this box, I agree to Sourcefabric's %sprivacy policy%s."
+msgstr "我同意Sourcefabric的%s隐私策略%s"
+
+msgid "By linking your repeating shows any media items scheduled in any repeat show will also get scheduled in the other repeat shows"
+msgstr "系列节目勾选绑定后，所有节目的内容都会一模一样，对任何未开始节目的更改都会影响到其他节目。"
+
+msgid "CPU"
+msgstr "处理器"
+
+msgid "Calendar"
+msgstr "节目日程"
+
+msgid "Can not connect to the streaming server"
+msgstr "无法连接流服务器"
+
+msgid "Can't drag and drop repeating shows"
+msgstr "系列中的节目无法拖拽"
+
+msgid "Can't move a past show"
+msgstr "已经结束的节目无法更改时间"
+
+msgid "Can't move a recorded show less than 1 hour before its rebroadcasts."
+msgstr "录音和重播节目之间的间隔必须大于等于1小时。"
+
+msgid "Can't move show into past"
+msgstr "节目不能设置到已过去的时间点"
+
+msgid "Can't set cue in to be larger than cue out."
+msgstr "切入点不能晚于切出点"
+
+msgid "Can't set cue out to be greater than file length."
+msgstr "切出点不能超出文件原长度"
+
+msgid "Can't set cue out to be smaller than cue in."
+msgstr "切出点不能早于切入点"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Cancel Current Show"
+msgstr "取消当前节目"
+
+msgid "Cancel Current Show?"
+msgstr "取消当前的节目？"
+
+msgid "Cancel current show"
+msgstr "取消当前的节目"
+
+msgid "Cannot create show in the past"
+msgstr "节目不能设置为过去的时间"
+
+msgid "Cannot have duration 00h 00m"
+msgstr "节目时长不能为0"
+
+msgid "Cannot have duration < 0m"
+msgstr "节目时长不能小于0"
+
+msgid "Cannot have duration greater than 24h"
+msgstr "节目时长不能超过24小时"
+
+msgid "Cannot modify start date/time of the show that is already started"
+msgstr "节目已经启动，无法修改开始时间/日期"
+
+msgid "Cannot move items out of linked shows"
+msgstr "不能从绑定的节目系列里移出项目"
+
+msgid "Cannot schedule outside a show."
+msgstr "没有指定节目，无法凭空安排内容。"
+
+msgid "Cannot schedule overlapping shows"
+msgstr "节目时间设置与其他节目有冲突"
+
+msgid "Cannot schedule overlapping shows.\nNote: Resizing a repeating show affects all of its repeats."
+msgstr "节目时间设置于其他的节目有冲突。\n提示：修改系列节目中的一个，将影响整个节目系列"
+
+msgid "Channels:"
+msgstr "声道："
+
+msgid "Check this box to automatically switch off Master/Show source upon source disconnection."
+msgstr "勾选此项后，在输入流断开时，主输入源和节目定制输入源将会自动切换为关闭状态。"
+
+msgid "Check this box to automatically switch on Master/Show source upon source connection."
+msgstr "勾选此项后，在输入流连接上时，主输入源和节目定制输入源将会自动切换到开启状态。"
+
+msgid "Check this option to enable metadata for OGG streams (stream metadata is the track title, artist, and show name that is displayed in an audio player). VLC and mplayer have a serious bug when playing an OGG/VORBIS stream that has metadata information enabled: they will disconnect from the stream after every song. If you are using an OGG stream and your listeners do not require support for these audio players, then feel free to enable this option."
+msgstr "勾选此项会启用OGG格式流媒体的元数据（流的元数据包括歌曲名，歌手/作者，节目名，这些都会显示在音频播放器中。）VLC和mplayer有个已知的问题，他们在播放OGG/VORBIS媒体流时，如果该流已启用元数据，那么在每首歌的间隙都会断开流。所以，如果你使用OGG媒体流，同时你的听众不使用上述媒体播放器的话，你可以随意地勾选此项。"
+
+msgid "Choose Days:"
+msgstr "选择天数："
+
+msgid "Choose Folder to Watch"
+msgstr "选择监控的文件夹"
+
+msgid "Choose Storage Folder"
+msgstr "选择存储文件夹"
+
+msgid "Choose folder"
+msgstr "选择文件夹"
+
+msgid "City:"
+msgstr "城市："
+
+msgid "Clear"
+msgstr "清除"
+
+msgid "Click the box below to advertise your station on %sSourcefabric.org%s. In order to promote your station, 'Send support feedback' must be enabled. This data will be collected in addition to the support feedback."
+msgstr "勾选下面的选项，就可以在%sSourcefabric.org%s上推广您的电台。前提是‘发送支持反馈’选项已经启用。这些数据将会被收集起来以作为支持反馈的信息。"
+
+msgid "Click the box below to promote your station on %sSourcefabric.org%s."
+msgstr "勾选随后的选项就可以在%sSourcefabric.org%s上推广您的电台。"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Composer"
+msgstr "作曲"
+
+msgid "Composer:"
+msgstr "编曲："
+
+msgid "Conductor"
+msgstr "指挥"
+
+msgid "Conductor:"
+msgstr "制作："
+
+msgid "Configure Mail Server"
+msgstr "邮件服务器"
+
+msgid "Confirm new password"
+msgstr "确认新密码"
+
+msgid "Connected to the streaming server"
+msgstr "流服务器已连接"
+
+msgid "Connection URL: "
+msgstr "链接地址："
+
+msgid "Content in linked shows must be scheduled before or after any one is broadcasted"
+msgstr "绑定的节目要么提前设置好，要么等待其中的任何一个节目结束后才能编辑内容"
+
+msgid "Contents of Show"
+msgstr "浏览节目内容"
+
+msgid "Copied %s row%s to the clipboard"
+msgstr "复制%s行%s到剪贴板"
+
+msgid "Copy of %s"
+msgstr "%s的副本"
+
+msgid "Copyright"
+msgstr "版权"
+
+msgid "Copyright:"
+msgstr "版权："
+
+msgid "Could not delete some scheduled files."
+msgstr "部分已经安排的节目内容不能删除。"
+
+msgid "Could not parse M3U playlist"
+msgstr "发现M3U格式的播放列表，但是格式错误"
+
+msgid "Could not parse PLS playlist"
+msgstr "发现PLS格式的播放列表，但是格式错误"
+
+msgid "Could not parse XSPF playlist"
+msgstr "发现XSPF格式的播放列表，但是格式错误"
+
+msgid "Country:"
+msgstr "国家："
+
+msgid "Create a show by going to 'Calendar' in the menu bar, and then clicking the '+ Show' icon. This can be either a one-time or repeating show. Only admins and program managers can add shows."
+msgstr "你可以创建一个节目，从菜单栏打开页面‘日程表’，点击按钮‘+ 节目’。这个节目可以是一次性的，也可以是系列性的。只有系统管理员"
+
+msgid "Create playlists, smart blocks, and webstreams"
+msgstr "创建播放列表，智能模块和网络流媒体"
+
+msgid "Creative Commons Attribution"
+msgstr "知识共享署名"
+
+msgid "Creative Commons Attribution No Derivative Works"
+msgstr "知识共享署名-不允许衍生"
+
+msgid "Creative Commons Attribution Noncommercial"
+msgstr "知识共享署名-非商业应用"
+
+msgid "Creative Commons Attribution Noncommercial Non Derivate Works"
+msgstr "知识共享署名-非商业应用且不允许衍生"
+
+msgid "Creative Commons Attribution Noncommercial Share Alike"
+msgstr "知识共享署名-非商业应用且相同方式共享"
+
+msgid "Creative Commons Attribution Share Alike"
+msgstr "知识共享署名-相同方式共享"
+
+msgid "Creator"
+msgstr "作者"
+
+msgid "Creator:"
+msgstr "作者："
+
+msgid "Cue Editor"
+msgstr "切入切出编辑器"
+
+msgid "Cue In"
+msgstr "切入"
+
+msgid "Cue In: "
+msgstr "切入："
+
+msgid "Cue Out"
+msgstr "切出"
+
+msgid "Cue Out: "
+msgstr "切出："
+
+msgid "Cue in and cue out are null."
+msgstr "切入点和切出点均为空"
+
+msgid "Current"
+msgstr "当前的"
+
+msgid "Current Import Folder:"
+msgstr "当前的导入文件夹："
+
+msgid "Current Show:"
+msgstr "当前节目："
+
+msgid "Cursor"
+msgstr "设置游标"
+
+msgid "Custom Password"
+msgstr "自定义密码"
+
+msgid "Custom Username"
+msgstr "自定义用户名"
+
+msgid "DJ"
+msgstr "节目编辑"
+
+msgid "DJs can do the following:"
+msgstr "节目编辑的权限包括："
+
+msgid "DJs:"
+msgstr "选择节目编辑："
+
+msgid "Date End:"
+msgstr "结束日期："
+
+msgid "Date Start:"
+msgstr "开始日期："
+
+msgid "Date/Time End:"
+msgstr "结束日期/时间"
+
+msgid "Date/Time Start:"
+msgstr "开始日期/时间"
+
+msgid "Day must be specified"
+msgstr "请指定天"
+
+msgid "Dec"
+msgstr "十二月"
+
+msgid "December"
+msgstr "十二月"
+
+msgid "Default Crossfade Duration (s):"
+msgstr "默认混合淡入淡出效果（秒）："
+
+msgid "Default Fade In (s):"
+msgstr "默认淡入效果（秒）："
+
+msgid "Default Fade Out (s):"
+msgstr "默认淡出效果（秒）："
+
+msgid "Default Genre:"
+msgstr "默认风格："
+
+msgid "Default Interface Language"
+msgstr "界面的默认语言"
+
+msgid "Default Interface Timezone"
+msgstr "界面默认时区"
+
+msgid "Default Length:"
+msgstr "默认长度："
+
+msgid "Default License:"
+msgstr "默认版权策略："
+
+msgid "Default Track Type:"
+msgstr "默认声音文件类型："
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "Delete This Instance"
+msgstr "删除当前节目"
+
+msgid "Delete This Instance and All Following"
+msgstr "删除当前以及随后的系列节目"
+
+msgid "Delete selected item(s)?"
+msgstr "删除选定的项目？"
+
+msgid "Demo"
+msgstr "小样"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "Description:"
+msgstr "描述："
+
+msgid "Deselect all"
+msgstr "全部取消"
+
+msgid "Deselect this page"
+msgstr "取消整页"
+
+msgid "Disabled"
+msgstr "禁用"
+
+msgid "Disk"
+msgstr "磁盘"
+
+msgid "Disk Space"
+msgstr "磁盘空间"
+
+msgid "Done"
+msgstr "设定"
+
+msgid "Download"
+msgstr "下载"
+
+msgid "Drag files here."
+msgstr "拖拽文件到此处。"
+
+msgid "Duplicate Playlist"
+msgstr "复制播放列表"
+
+msgid "Duration"
+msgstr "时长"
+
+msgid "Duration:"
+msgstr "时长："
+
+msgid "Dynamic"
+msgstr "动态"
+
+msgid "Dynamic Smart Block"
+msgstr "动态智能模块"
+
+msgid "Dynamic Smart Block Criteria: "
+msgstr "动态智能模块条件："
+
+msgid "Dynamic block is not previewable"
+msgstr "动态智能模块无法预览"
+
+msgid "E-mail"
+msgstr "电邮地址"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "Edit Metadata"
+msgstr "编辑元数据"
+
+msgid "Edit Show"
+msgstr "编辑节目"
+
+msgid "Edit This Instance"
+msgstr "编辑此节目"
+
+msgid "Email / Mail Server Settings"
+msgstr "邮件服务器设置"
+
+msgid "Email Address"
+msgstr "邮件地址"
+
+msgid "Email could not be sent. Check your mail server settings and ensure it has been configured properly."
+msgstr "邮件发送失败。请检查邮件服务器设置，并确定设置无误。"
+
+msgid "Email sent"
+msgstr "邮件已发送"
+
+msgid "Email:"
+msgstr "电邮："
+
+msgid "Empty playlist"
+msgstr "无内容的播放列表"
+
+msgid "Empty playlist content"
+msgstr "播放列表无内容"
+
+msgid "Empty smart block"
+msgstr "无内容的智能模块"
+
+msgid "Empty smart block content"
+msgstr "智能模块无内容"
+
+msgid "Enable Replay Gain"
+msgstr "启用回放增益"
+
+msgid "Enable SoundCloud Upload"
+msgstr "启用上传到SoundCloud功能"
+
+msgid "Enable System Emails (Password Reset)"
+msgstr "为密码重置启用邮件功能"
+
+msgid "Enabled"
+msgstr "启用"
+
+msgid "Enabled:"
+msgstr "启用："
+
+msgid "Encoded By"
+msgstr "编曲"
+
+msgid "End"
+msgstr "结束"
+
+msgid "End date must be after start date"
+msgstr "结束日期应晚于开始日期"
+
+msgid "End date/time cannot be in the past"
+msgstr "节目结束的时间或日期不能设置为过去的时间"
+
+msgid "Error code: "
+msgstr "错误代码："
+
+msgid "Error msg: "
+msgstr "错误信息："
+
+msgid "Error: File too large: "
+msgstr "错误：文件过大："
+
+msgid "Error: Invalid file extension: "
+msgstr "错误：无效的文件后缀名："
+
+msgid "Expand Dynamic Block"
+msgstr "展开动态智能模块"
+
+msgid "Expand Static Block"
+msgstr "展开静态智能模块"
+
+msgid "Fade Editor"
+msgstr "淡入淡出编辑器"
+
+msgid "Fade In"
+msgstr "淡入"
+
+msgid "Fade Out"
+msgstr "淡出"
+
+msgid "Fade in: "
+msgstr "淡入："
+
+msgid "Fade out: "
+msgstr "淡出："
+
+msgid "Failed to create 'organize' directory."
+msgstr "创建‘organize’目录失败"
+
+msgid "Feb"
+msgstr "二月"
+
+msgid "February"
+msgstr "二月"
+
+msgid "File Path:"
+msgstr "文件路径："
+
+msgid "File count error."
+msgstr "发生文件统计错误。"
+
+msgid "File does not exist in Airtime"
+msgstr "Airtime中不存在该文件。"
+
+msgid "File does not exist in Airtime."
+msgstr "Airtime中不存在该文件。"
+
+msgid "File doesn't exist in Airtime."
+msgstr "Airtime中不存在该文件。"
+
+msgid "File extension error."
+msgstr "文件后缀名出错。"
+
+msgid "File import in progress..."
+msgstr "导入文件进行中..."
+
+msgid "File size error."
+msgstr "文件大小出错。"
+
+msgid "File: %f, size: %s, max file size: %m"
+msgstr "文件：%f，大小：%s，最大的文件大小：%m"
+
+msgid "File: %s"
+msgstr "文件：%s"
+
+msgid "Files"
+msgstr "文件"
+
+msgid "Filter By Show:"
+msgstr "节目过滤器"
+
+msgid "Filter History"
+msgstr "历史记录过滤"
+
+msgid "Find Shows"
+msgstr "查找节目"
+
+msgid "First Name"
+msgstr "名"
+
+msgid "Firstname:"
+msgstr "名："
+
+msgid "For more detailed help, read the %suser manual%s."
+msgstr "详细的指导，可以参考%s用户手册%s。"
+
+msgid "For more details, please read the %sAirtime Manual%s"
+msgstr "更多的细节可以参阅%sAirtime用户手册%s"
+
+msgid "Fr"
+msgstr "周五"
+
+msgid "Fri"
+msgstr "周五"
+
+msgid "Friday"
+msgstr "周五"
+
+msgid "From {from} to {to}"
+msgstr "从{from}到{to}"
+
+msgid "Generate"
+msgstr "开始生成"
+
+msgid "Generate playlist content and save criteria"
+msgstr "保存条件设置并生成播放列表内容"
+
+msgid "Generic error."
+msgstr "发生通用类型的错误。"
+
+msgid "Genre"
+msgstr "风格"
+
+msgid "Genre:"
+msgstr "风格："
+
+msgid "Get new password"
+msgstr "获取新密码"
+
+msgid "Getting Started"
+msgstr "基本用法"
+
+msgid "Getting information from the server..."
+msgstr "从服务器加载中..."
+
+msgid "Given email not found."
+msgstr "邮件地址没有找到。"
+
+msgid "Global Settings"
+msgstr "全局设定"
+
+msgid "Guest"
+msgstr "游客"
+
+msgid "Guests can do the following:"
+msgstr "游客的权限包括："
+
+msgid "HTTP Error."
+msgstr "发生HTTP类型的错误"
+
+msgid "Hardware Audio Output"
+msgstr "硬件声音输出"
+
+msgid "Help"
+msgstr "帮助"
+
+msgid "Help Airtime improve by letting Sourcefabric know how you are using it. This information will be collected regularly in order to enhance your user experience.%sClick the 'Send support feedback' box and we'll make sure the features you use are constantly improving."
+msgstr "通过告诉Sourcefabric您是如何使用Airtime的，可以帮助我们改进Airtime。这些信息将会被手机起来用于提高您的客户体验。%s只要勾选‘发送支持反馈’，就能确保让我们持续改进您所使用"
+
+msgid "Help Airtime improve by letting us know how you are using it. This info will be collected regularly in order to enhance your user experience.%sClick 'Yes, help Airtime' and we'll make sure the features you use are constantly improving."
+msgstr "通过告诉我们您使用Airtime的方式，可以帮助我们改进Airtime。这些信息会周期性的收集起来，并且提高您的用户体验。%s点击‘是的，帮助Airtime’，就能让我们确保你所使用的功能持续地得到改进。"
+
+msgid "Here's how you can get started using Airtime to automate your broadcasts: "
+msgstr "简单介绍如何使用Airtime来自动完成播放："
+
+msgid "Hi %s, \n\nClick this link to reset your password: "
+msgstr "%s 你好, \n\n    请点击链接以重置你的密码： "
+
+msgid "Hour"
+msgstr "小时"
+
+msgid "IO error."
+msgstr "输入输出错误。"
+
+msgid "ISRC"
+msgstr "ISRC码"
+
+msgid "ISRC Number:"
+msgstr "ISRC编号："
+
+msgid "Icecast Vorbis Metadata"
+msgstr "Icecast的Vorbis元数据"
+
+msgid "If Airtime is behind a router or firewall, you may need to configure port forwarding and this field information will be incorrect. In this case you will need to manually update this field so it shows the correct host/port/mount that your DJ's need to connect to. The allowed range is between 1024 and 49151."
+msgstr "如果Airtime配置在路由器或者防火墙之后，你可能需要配置端口转发，所以当前文本框内的信息需要调整。在这种情况下，就需要人工指定该信息以确定所显示的主机名/端口/加载点的正确性，从而让节目编辑能连接的上。端口所允许的范围，介于1024到49151之间。"
+
+msgid "If you change the username or password values for an enabled stream the playout engine will be rebooted and your listeners will hear silence for 5-10 seconds. Changing the following fields will NOT cause a reboot: Stream Label (Global Settings), and Switch Transition Fade(s), Master Username, and Master Password (Input Stream Settings). If Airtime is recording, and if the change causes a playout engine restart, the recording will be interrupted."
+msgstr "如果你更改了一个已经启用了的输出流的用户名或者密码，那么内置的播放输出引擎模块将会重启，你的听众将会听到一段时间的空白，大概持续5到10秒。而改变如下的模块将不会导致该模块重启：流标签（全局设置里）和流切换淡入淡出效果（秒），主输入流用户名和密码（输入流设置）。如果Airtime正在录制过程中，而且改变设置导致引擎模块重启后，当前的录制进程将会被打断。"
+
+msgid "If your Icecast server expects a username of 'source', this field can be left blank."
+msgstr "如果你的Icecast服务器所要求的用户名是‘source’，那么当前项可以留空。"
+
+msgid "If your live streaming client does not ask for a username, this field should be 'source'."
+msgstr "如果你的流客户端不需要用户名，那么当前项可以留空"
+
+msgid "Image must be one of jpg, jpeg, png, or gif"
+msgstr "图像文件格式只能是jpg，jpeg，png或者gif"
+
+msgid "Import Folder:"
+msgstr "导入文件夹："
+
+msgid "Import media files"
+msgstr "导入媒体文件"
+
+msgid "Init error."
+msgstr "发生初始化错误。"
+
+msgid "Input Stream Settings"
+msgstr "输入流设置"
+
+msgid "Input must be a number"
+msgstr "只允许数字输入"
+
+msgid "Input must be a positive number"
+msgstr "输入只能为正数"
+
+msgid "Input must be in the format: hh:mm:ss.t"
+msgstr "输入格式应为：时:分:秒 （hh:mm:ss.t）"
+
+msgid "Input must be in the format: yyyy-mm-dd"
+msgstr "输入格式应为：年-月-日（yyyy-mm-dd）"
+
+msgid "Invalid character entered"
+msgstr "输入的字符不合要求"
+
+msgid "Invalid form values."
+msgstr "无效的表格内容。"
+
+msgid "Invalid webstream - This appears to be a file download."
+msgstr "媒体流格式错误，当前“媒体流”只是一个可下载的文件"
+
+msgid "Isrc Number:"
+msgstr "ISRC编号："
+
+msgid "Jabber:"
+msgstr "Jabber帐号："
+
+msgid "Jan"
+msgstr "一月"
+
+msgid "January"
+msgstr "一月"
+
+msgid "Jul"
+msgstr "七月"
+
+msgid "July"
+msgstr "七月"
+
+msgid "Jump to the current playing track"
+msgstr "跳转到当前播放的项目"
+
+msgid "Jun"
+msgstr "六月"
+
+msgid "June"
+msgstr "六月"
+
+msgid "Label"
+msgstr "标签"
+
+msgid "Label:"
+msgstr "标签："
+
+msgid "Language"
+msgstr "语种"
+
+msgid "Language:"
+msgstr "语言："
+
+msgid "Last Modified"
+msgstr "最近更新于"
+
+msgid "Last Name"
+msgstr "姓"
+
+msgid "Last Played"
+msgstr "上次播放于"
+
+msgid "Lastname:"
+msgstr "姓："
+
+msgid "Length"
+msgstr "时长"
+
+msgid "Length needs to be greater than 0 minutes"
+msgstr "节目时长必须大于0分钟"
+
+msgid "Length should be of form \"00h 00m\""
+msgstr "时间的格式应该是 \"00h 00m\""
+
+msgid "Length:"
+msgstr "长度："
+
+msgid "Library"
+msgstr "媒体库"
+
+msgid "Limit cannot be empty or smaller than 0"
+msgstr "限制的设置不能比0小"
+
+msgid "Limit cannot be more than 24 hrs"
+msgstr "限制的设置不能大于24小时"
+
+msgid "Limit to"
+msgstr "限制在"
+
+msgid "Limit to "
+msgstr "限制到"
+
+msgid "Limit to: "
+msgstr "限制在："
+
+msgid "Link:"
+msgstr "绑定："
+
+msgid "Listen"
+msgstr "收听"
+
+msgid "Listener Count Over Time"
+msgstr "听众统计报告"
+
+msgid "Listener Count on %s: %s"
+msgstr "听众统计%s：%s"
+
+msgid "Listener Stats"
+msgstr "收听状态"
+
+msgid "Live"
+msgstr "实况"
+
+msgid "Live Stream"
+msgstr "节目定制输入源"
+
+msgid "Live Stream Input"
+msgstr "输入流设置"
+
+msgid "Live stream"
+msgstr "插播流"
+
+msgid "Loading..."
+msgstr "加载中..."
+
+msgid "Login"
+msgstr "登录"
+
+msgid "Login name is not unique."
+msgstr "帐号重名。"
+
+msgid "Logout"
+msgstr "登出"
+
+msgid "Look in"
+msgstr "查询"
+
+msgid "Looks like the page you were looking for doesn't exist!"
+msgstr "你所寻找的页面不存在！"
+
+msgid "Loop"
+msgstr "循环"
+
+msgid "Mail Server"
+msgstr "邮件服务器地址"
+
+msgid "Manage Media Folders"
+msgstr "管理媒体文件夹"
+
+msgid "Manage Users"
+msgstr "用户管理"
+
+msgid "Manage all library content"
+msgstr "管理媒体库的所有内容"
+
+msgid "Manage assigned show content"
+msgstr "为指派的节目管理节目内容"
+
+msgid "Manage preferences"
+msgstr "属性管理"
+
+msgid "Manage their own library content"
+msgstr "管理媒体库中属于自己的内容"
+
+msgid "Manage users"
+msgstr "管理用户"
+
+msgid "Manage watched folders"
+msgstr "管理监控文件夹"
+
+msgid "Mar"
+msgstr "三月"
+
+msgid "March"
+msgstr "三月"
+
+msgid "Master Password"
+msgstr "主输入流的密码"
+
+msgid "Master Source"
+msgstr "主输入流"
+
+msgid "Master Source Connection URL"
+msgstr "主输入流的链接地址"
+
+msgid "Master Source Connection URL:"
+msgstr "主输入流的链接地址："
+
+msgid "Master Source Mount Point"
+msgstr "主输入流的加载点"
+
+msgid "Master Source Port"
+msgstr "主输入流的端口"
+
+msgid "Master Stream"
+msgstr "主输入源"
+
+msgid "Master Username"
+msgstr "主输入流的用户名"
+
+msgid "May"
+msgstr "五月"
+
+msgid "Media Folders"
+msgstr "存储路径"
+
+msgid "Memory"
+msgstr "内存"
+
+msgid "Mime"
+msgstr "MIME信息"
+
+msgid "Minute"
+msgstr "分钟"
+
+msgid "Mo"
+msgstr "周一"
+
+msgid "Mobile Phone:"
+msgstr "手机："
+
+msgid "Mon"
+msgstr "周一"
+
+msgid "Monday"
+msgstr "周一"
+
+msgid "Mood"
+msgstr "风格"
+
+msgid "Mood:"
+msgstr "情怀："
+
+msgid "Mount Point"
+msgstr "加载点"
+
+msgid "Mount cannot be empty with Icecast server."
+msgstr "请填写“加载点”。"
+
+msgid "Moving %s Items"
+msgstr "移动%s个项目"
+
+msgid "Moving 1 Item"
+msgstr "移动1个项目"
+
+msgid "Must wait 1 hour to rebroadcast."
+msgstr "重播节目必须设置于1小时之后。"
+
+msgid "Must wait at least 1 hour to rebroadcast"
+msgstr "至少间隔一个小时"
+
+msgid "My Account"
+msgstr "我的账户"
+
+msgid "N/A"
+msgstr "未知"
+
+msgid "Name"
+msgstr "名字"
+
+msgid "Name:"
+msgstr "名字："
+
+msgid "New"
+msgstr "新建"
+
+msgid "New Playlist"
+msgstr "新建播放列表"
+
+msgid "New Smart Block"
+msgstr "新建智能模块"
+
+msgid "New User"
+msgstr "新建用户"
+
+msgid "New Webstream"
+msgstr "新建网络流媒体"
+
+msgid "New password"
+msgstr "新密码"
+
+msgid "New version available: "
+msgstr "版本有更新："
+
+msgid "Next:"
+msgstr "之后的："
+
+msgid "No End?"
+msgstr "无休止？"
+
+msgid "No MIME type found for webstream."
+msgstr "这个媒体流不存在MIME属性，无法添加"
+
+msgid "No Records"
+msgstr "无记录"
+
+msgid "No action available"
+msgstr "没有操作选择"
+
+msgid "No open playlist"
+msgstr "没有打开的播放列表"
+
+msgid "No open smart block"
+msgstr "没有打开的智能模块"
+
+msgid "No result found"
+msgstr "搜索无结果"
+
+msgid "No webstream"
+msgstr "没有网络流媒体"
+
+msgid "Not a valid Directory"
+msgstr "无效的路径"
+
+msgid "Note: Anything larger than 600x600 will be resized."
+msgstr "注意：大于600x600的图片将会被缩放"
+
+msgid "Nothing Scheduled"
+msgstr "没有安排节目内容"
+
+msgid "Nov"
+msgstr "十一月"
+
+msgid "November"
+msgstr "十一月"
+
+msgid "Now Playing"
+msgstr "直播室"
+
+msgid "OK"
+msgstr "确定"
+
+msgid "ON AIR"
+msgstr "直播中"
+
+msgid "Oct"
+msgstr "十月"
+
+msgid "October"
+msgstr "十月"
+
+msgid "Off Air Metadata"
+msgstr "非直播状态下的输出流元数据"
+
+msgid "Ok"
+msgstr "确定"
+
+msgid "One Shot Sample"
+msgstr "样本"
+
+msgid "Only numbers are allowed."
+msgstr "只允许输入数字"
+
+msgid "Open"
+msgstr "打开"
+
+msgid "Open Media Builder"
+msgstr "打开媒体编辑器"
+
+msgid "Open library to add or remove content"
+msgstr "打开媒体库，添加或者删除节目内容"
+
+msgid "Original"
+msgstr "原版"
+
+msgid "Original Length:"
+msgstr "原始长度："
+
+msgid "Other"
+msgstr "其他"
+
+msgid "Output Stream Settings"
+msgstr "输出流设定"
+
+msgid "Output Type"
+msgstr "输出类型"
+
+msgid "Override"
+msgstr "覆盖"
+
+msgid "Owner"
+msgstr "所有者"
+
+msgid "Page not found"
+msgstr "页面不存在"
+
+msgid "Page not found!"
+msgstr "页面不存在！"
+
+msgid "Password"
+msgstr "密码"
+
+msgid "Password confirmation does not match your password."
+msgstr "新密码不匹配"
+
+msgid "Password field cannot be empty."
+msgstr "请填写密码"
+
+msgid "Password:"
+msgstr "密码："
+
+msgid "Passwords do not match"
+msgstr "两次密码输入不匹配"
+
+msgid "Permission denied"
+msgstr "没有编辑权限"
+
+msgid "Phone:"
+msgstr "电话："
+
+msgid "Play"
+msgstr "试听"
+
+msgid "Played"
+msgstr "已播放"
+
+msgid "Playlist / Block"
+msgstr "播放列表/智能模块"
+
+msgid "Playlist Contents: "
+msgstr "播放列表内容："
+
+msgid "Playlist crossfade"
+msgstr "播放列表交错淡入淡出效果"
+
+msgid "Playlist saved"
+msgstr "播放列表已存储"
+
+msgid "Playlist shuffled"
+msgstr "播放列表已经随机化"
+
+msgid "Playlists"
+msgstr "播放列表"
+
+msgid "Playout History"
+msgstr "播出历史"
+
+msgid "Please enter and confirm your new password in the fields below."
+msgstr "请再次输入你的新密码。"
+
+msgid "Please enter your account e-mail address. You will receive a link to create a new password via e-mail."
+msgstr "请输入你帐号的邮件地址，然后你将收到一封邮件，其中有一个链接，用来创建你的新密码。"
+
+msgid "Please enter your user name and password"
+msgstr "请输入用户名和密码"
+
+msgid "Please make sure admin user/password is correct on System->Streams page."
+msgstr "请检查系统->媒体流设置中，管理员用户/密码的设置是否正确。"
+
+msgid "Please select a cursor position on timeline."
+msgstr "请在右部的时间表视图中选择一个游标位置。"
+
+msgid "Please selection an option"
+msgstr "请选择一项"
+
+msgid "Please upgrade to "
+msgstr "请升级到"
+
+msgid "Podcast"
+msgstr "播客"
+
+msgid "Port"
+msgstr "端口号"
+
+msgid "Port %s is not available"
+msgstr "%s端口已被占用"
+
+msgid "Port cannot be empty."
+msgstr "请填写“端口”。"
+
+msgid "Preferences"
+msgstr "系统属性"
+
+msgid "Preferences updated."
+msgstr "属性已更新。"
+
+msgid "Preview"
+msgstr "预览"
+
+msgid "Previous:"
+msgstr "之前的："
+
+msgid "Problem with Liquidsoap..."
+msgstr "Liquidsoap出错..."
+
+msgid "Processing..."
+msgstr "加载中..."
+
+msgid "Progam Managers can do the following:"
+msgstr "节目主管的权限是："
+
+msgid "Program Manager"
+msgstr "节目主管"
+
+msgid "Promote my station on Sourcefabric.org"
+msgstr "在Sourcefabric.org上推广我的电台"
+
+msgid "Purchase your copy of Airtime"
+msgstr "购买你使用的Airtime"
+
+msgid "RESET"
+msgstr "重置"
+
+msgid "Re-upload to SoundCloud"
+msgstr "重新上传到SoundCloud"
+
+msgid "Rebroadcast of %s from %s"
+msgstr "%s是%s的重播"
+
+msgid "Rebroadcast of show %s from %s at %s"
+msgstr "节目%s是节目%s的重播，时间是%s"
+
+msgid "Rebroadcast?"
+msgstr "重播？"
+
+msgid "Record & Rebroadcast"
+msgstr "录制与重播"
+
+msgid "Record from Line In?"
+msgstr "从线路输入录制？"
+
+msgid "Recording"
+msgstr "录制"
+
+msgid "Recording From Line In"
+msgstr "从线路输入录制"
+
+msgid "Recording:"
+msgstr "录制："
+
+msgid "Register Airtime"
+msgstr "注册Airtime"
+
+msgid "Remind me in 1 week"
+msgstr "一周以后再提醒我"
+
+msgid "Remind me never"
+msgstr "不再提醒"
+
+msgid "Remix"
+msgstr "重编版"
+
+msgid "Remove"
+msgstr "移除"
+
+msgid "Remove All Content"
+msgstr "清空全部内容"
+
+msgid "Remove all content?"
+msgstr "清空全部内容？"
+
+msgid "Remove cursor"
+msgstr "删除游标"
+
+msgid "Remove overbooked tracks"
+msgstr "移除安排多余的内容"
+
+msgid "Remove selected scheduled items"
+msgstr "移除所选的项目"
+
+msgid "Remove watched directory"
+msgstr "移除监控文件夹"
+
+msgid "Repeat By:"
+msgstr "重复类型："
+
+msgid "Repeat Days:"
+msgstr "重复天数："
+
+msgid "Repeat Type:"
+msgstr "类型："
+
+msgid "Repeats?"
+msgstr "是否设置为系列节目？"
+
+msgid "Replay Gain"
+msgstr "回放增益"
+
+msgid "Replay Gain Modifier"
+msgstr "回放增益调整"
+
+msgid "Requires Authentication"
+msgstr "需要身份验证"
+
+msgid "Rescan watched directory (This is useful if it is network mount and may be out of sync with Airtime)"
+msgstr "重新扫描监控的文件夹（针对于需要手动更新的网络存储路径）"
+
+msgid "Reset Password 'From' Email"
+msgstr "密码重置邮件发送于"
+
+msgid "Reset password"
+msgstr "重置密码"
+
+msgid "Restore password"
+msgstr "找回密码"
+
+msgid "Retreiving data from the server..."
+msgstr "从服务器下载数据中..."
+
+msgid "Retrieving data from the server..."
+msgstr "数据正在从服务器下载中..."
+
+msgid "Sa"
+msgstr "周六"
+
+msgid "Sample Rate"
+msgstr "样本率"
+
+msgid "Sample Rate (kHz)"
+msgstr "样本率（KHz）"
+
+msgid "Sample Rate:"
+msgstr "样本率："
+
+msgid "Sat"
+msgstr "周六"
+
+msgid "Saturday"
+msgstr "周六"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Save playlist"
+msgstr "保存播放列表"
+
+msgid "Schedule shows"
+msgstr "安排节目日程"
+
+msgid "Scheduled"
+msgstr "已安排进日程"
+
+msgid "Scheduled Play"
+msgstr "预先安排的节目流"
+
+msgid "Search Users:"
+msgstr "查找用户："
+
+msgid "Security error."
+msgstr "发生安全性错误。"
+
+msgid "Select"
+msgstr "选择"
+
+msgid "Select Country"
+msgstr "选择国家"
+
+msgid "Select Days:"
+msgstr "选择天数："
+
+msgid "Select all"
+msgstr "全选"
+
+msgid "Select criteria"
+msgstr "选择属性"
+
+msgid "Select cursor"
+msgstr "选择游标"
+
+msgid "Select files"
+msgstr "选择文件"
+
+msgid "Select modifier"
+msgstr "选择操作符"
+
+msgid "Select none"
+msgstr "全不选"
+
+msgid "Select stream:"
+msgstr "选择流："
+
+msgid "Select this page"
+msgstr "选择此页"
+
+msgid "Select your media from the left pane and drag them to your show in the right pane."
+msgstr "在页面左半部分选择媒体文件，然后拖拽到右半部分。"
+
+msgid "Send support feedback"
+msgstr "提交反馈意见"
+
+msgid "Sep"
+msgstr "九月"
+
+msgid "September"
+msgstr "九月"
+
+msgid "Server"
+msgstr "服务器"
+
+msgid "Server cannot be empty."
+msgstr "请填写“服务器”。"
+
+msgid "Service"
+msgstr "服务名称"
+
+msgid "Service Type:"
+msgstr "服务类型："
+
+msgid "Set"
+msgstr "设置"
+
+msgid "Set Cue In"
+msgstr "设为切入时间"
+
+msgid "Set Cue Out"
+msgstr "设为切出时间"
+
+msgid "Set smart block type:"
+msgstr "设置智能模块类型："
+
+msgid "Settings updated successfully!"
+msgstr "设置更新成功！"
+
+msgid "Share"
+msgstr "共享"
+
+msgid "Should not overlap shows"
+msgstr "节目时间不能有重合"
+
+msgid "Show"
+msgstr "节目"
+
+msgid "Show - Artist - Title"
+msgstr "节目 - 歌手 - 歌名"
+
+msgid "Show / hide columns"
+msgstr "显示/隐藏栏"
+
+msgid "Show Content"
+msgstr "显示内容"
+
+msgid "Show Empty"
+msgstr "节目无内容"
+
+msgid "Show Source"
+msgstr "节目定制的输入流"
+
+msgid "Show Source Connection URL"
+msgstr "节目定制输入流的链接地址"
+
+msgid "Show Source Connection URL:"
+msgstr "节目定制输入流的链接地址："
+
+msgid "Show Source Mount Point"
+msgstr "节目定制输入流的加载点"
+
+msgid "Show Source Port"
+msgstr "节目定制输入流的端口"
+
+msgid "Show Waveform"
+msgstr "显示波形图"
+
+msgid "Show is empty"
+msgstr "节目内容为空"
+
+msgid "Show me what I am sending "
+msgstr "显示我所发送的信息"
+
+msgid "Show was deleted because recorded show does not exist!"
+msgstr "录音节目不存在，节目已删除！"
+
+msgid "Show:"
+msgstr "节目："
+
+msgid "Shows can have a max length of 24 hours."
+msgstr "节目时长只能设置在24小时以内"
+
+msgid "Shows longer than their scheduled time will be cut off by a following show."
+msgstr "超出的节目内容将被随后的节目所取代。"
+
+msgid "Shuffle"
+msgstr "随机"
+
+msgid "Shuffle playlist"
+msgstr "随机打乱播放列表"
+
+msgid "Shuffle playlist content"
+msgstr "随机打乱歌曲次序"
+
+msgid "Skype:"
+msgstr "Skype帐号："
+
+msgid "Smart Block Options"
+msgstr "智能模块选项"
+
+msgid "Smart Blocks"
+msgstr "智能模块"
+
+msgid "Smart block generated and criteria saved"
+msgstr "智能模块已经生成，条件设置已经保存"
+
+msgid "Smart block saved"
+msgstr "智能模块已经保存"
+
+msgid "Smart block shuffled"
+msgstr "智能模块已经随机排列"
+
+msgid "Some stream types require extra configuration. Details about enabling %sAAC+ Support%s or %sOpus Support%s are provided."
+msgstr "某些类型的输出流需要第三方软件的设置，具体步骤如下：%sAAC+%s 和 %sOpus%s。"
+
+msgid "Something went wrong."
+msgstr "未知错误。"
+
+msgid "Sound Effect"
+msgstr "声效"
+
+msgid "SoundCloud Email"
+msgstr "SoundCloud邮件地址"
+
+msgid "SoundCloud Password"
+msgstr "SoundCloud密码"
+
+msgid "SoundCloud Settings"
+msgstr "SoundCloud设置"
+
+msgid "SoundCloud Tags: (separate tags with spaces)"
+msgstr "SoundCloud标签：（以空格分隔不同标签）"
+
+msgid "Soundcloud"
+msgstr "Soundcloud"
+
+msgid "Source Streams"
+msgstr "输入流"
+
+msgid "Sourcefabric Privacy Policy"
+msgstr "Sourcefabric隐私策略"
+
+msgid "Specify custom authentication which will work only for this show."
+msgstr "所设置的自定义认证设置只对当前的节目有效。"
+
+msgid "Spoken"
+msgstr "谈话"
+
+msgid "Start"
+msgstr "开始"
+
+msgid "Start upload"
+msgstr "开始上传"
+
+msgid "Static"
+msgstr "静态"
+
+msgid "Static Smart Block"
+msgstr "静态智能模块"
+
+msgid "Static Smart Block Contents: "
+msgstr "静态智能模块条件："
+
+msgid "Station Description:"
+msgstr "电台描述："
+
+msgid "Station Logo:"
+msgstr "电台标志："
+
+msgid "Station Name"
+msgstr "电台名称"
+
+msgid "Station Web Site:"
+msgstr "电台网址："
+
+msgid "Station name - Show name"
+msgstr "电台名 - 节目名"
+
+msgid "Station time"
+msgstr "电台当前时间"
+
+msgid "Status"
+msgstr "系统状态"
+
+msgid "Stem"
+msgstr "主干"
+
+msgid "Stop"
+msgstr "暂停"
+
+msgid "Stop Upload"
+msgstr "停止上传"
+
+msgid "Stop recording current show?"
+msgstr "停止录制当前的节目？"
+
+msgid "Stream "
+msgstr "流"
+
+msgid "Stream Label:"
+msgstr "流标签："
+
+msgid "Stream Setting Updated."
+msgstr "流设置已更新。"
+
+msgid "Stream Settings"
+msgstr "流设定"
+
+msgid "Stream Type:"
+msgstr "流格式："
+
+msgid "Stream URL:"
+msgstr "流的链接地址："
+
+msgid "Stream URL: "
+msgstr "流的链接地址："
+
+msgid "Streams"
+msgstr "媒体流设置"
+
+msgid "Style"
+msgstr "风格"
+
+msgid "Su"
+msgstr "周天"
+
+msgid "Sun"
+msgstr "周日"
+
+msgid "Sunday"
+msgstr "周日"
+
+msgid "Support Feedback"
+msgstr "意见反馈"
+
+msgid "Support setting updated."
+msgstr "支持设定已更新。"
+
+msgid "Switch Transition Fade (s)"
+msgstr "切换时的淡入淡出效果（秒）"
+
+msgid "System"
+msgstr "系统"
+
+msgid "Terms and Conditions"
+msgstr "使用条款"
+
+msgid "Text Colour:"
+msgstr "文字颜色："
+
+msgid "Th"
+msgstr "周四"
+
+msgid "The desired block length will not be reached if Airtime cannot find enough unique tracks to match your criteria. Enable this option if you wish to allow tracks to be added multiple times to the smart block."
+msgstr "因为满足条件的声音文件数量有限，只能播放列表指定的时长可能无法达成。如果你不介意出现重复的项目，你可以启用此项。"
+
+msgid "The file was not uploaded, there is %s MB of disk space left and the file you are uploading has a size of %s MB."
+msgstr "磁盘空间不足，文件上传失败，剩余空间只有 %s 兆，尝试上传 %s 兆的文件"
+
+msgid "The file was not uploaded, this error can occur if the computer hard drive does not have enough disk space or the stor directory does not have correct write permissions."
+msgstr "文件上传失败，可能的原因：磁盘空间不足目录权限设置错误"
+
+msgid "The following info will be displayed to listeners in their media player:"
+msgstr "以下内容将会在听众的媒体播放器上显示："
+
+msgid "The schedule you're viewing is out of date!"
+msgstr "当前节目内容需要刷新！"
+
+msgid "The schedule you're viewing is out of date! (instance mismatch)"
+msgstr "当前节目内容表（节目已更改）需要刷新"
+
+msgid "The schedule you're viewing is out of date! (sched mismatch)"
+msgstr "当前节目内容表（内容部分）需要刷新"
+
+msgid "The show %s has been previously updated!"
+msgstr "节目%s已经更改，需要刷新后再尝试。"
+
+msgid "The show %s is over and cannot be scheduled."
+msgstr "节目%s已结束，不能在添加任何内容。"
+
+msgid "The show instance doesn't exist anymore!"
+msgstr "此节目已不存在"
+
+msgid "The soundcloud id for this file is: "
+msgstr "文件的SoundCloud编号是："
+
+msgid "The stream is disabled"
+msgstr "输出流已禁用"
+
+msgid "The value has to be numeric"
+msgstr "应该为数字"
+
+msgid "The value should be an integer"
+msgstr "值只能为整数"
+
+msgid "The value should be in timestamp format (e.g. 0000-00-00 or 0000-00-00 00:00:00)"
+msgstr "时间格式错误，应该为形如0000-00-00 或 0000-00-00 00:00:00的格式"
+
+msgid "The value should be less than %s characters"
+msgstr "不能小于%s个字符"
+
+msgid "The value should be less then 2147483648"
+msgstr "不能大于2147483648"
+
+msgid "The work is in the public domain"
+msgstr "公开"
+
+msgid "The year %s must be within the range of 1753 - 9999"
+msgstr "1753 - 9999 是可以接受的年代值，而不是“%s”"
+
+msgid "Then you're good to go!"
+msgstr "然后就大功告成啦！"
+
+msgid "There is no source connected to this input."
+msgstr "没有连接上的输入源。"
+
+msgid "There was an error while uploading to soundcloud."
+msgstr "文件上传到SoundCloud时发生错误"
+
+msgid "This file appears to be corrupted and will not be added to media library."
+msgstr "媒体文件不符合媒体库要求或者已经损坏，该文件将不会上传到媒体库"
+
+msgid "This follows the same security pattern for the shows: only users assigned to the show can connect."
+msgstr "当前遵循与节目同样的安全模式：只有指定到当前节目的用户才能连接的上。"
+
+msgid "This is the admin username and password for Icecast/SHOUTcast to get listener statistics."
+msgstr "此处填写Icecast或者SHOUTcast的管理员用户名和密码，用于获取收听数据的统计。"
+
+msgid "This path is currently not accessible."
+msgstr "指定的路径无法访问。"
+
+msgid "This show has no scheduled content."
+msgstr "此节目没有安排内容。"
+
+msgid "This show is not completely filled with content."
+msgstr "节目内容只填充了一部分。"
+
+msgid "This version is no longer supported."
+msgstr "这个版本即将停支持。"
+
+msgid "This version will soon be obsolete."
+msgstr "这个版本即将过时。"
+
+msgid "Thu"
+msgstr "周四"
+
+msgid "Thursday"
+msgstr "周四"
+
+msgid "Time must be specified"
+msgstr "请指定时间"
+
+msgid "Timezone:"
+msgstr "时区"
+
+msgid "Title"
+msgstr "标题"
+
+msgid "Title:"
+msgstr "歌曲名："
+
+msgid "To play the media you will need to either update your browser to a recent version or update your %sFlash plugin%s."
+msgstr "想要播放媒体，需要更新你的浏览器到最新的版本，或者更新你的%sFalsh插件%s。"
+
+msgid "Track Number"
+msgstr "曲目"
+
+msgid "Track preview"
+msgstr "试听媒体"
+
+msgid "Track:"
+msgstr "曲目编号："
+
+msgid "Tu"
+msgstr "周二"
+
+msgid "Tue"
+msgstr "周二"
+
+msgid "Tuesday"
+msgstr "周二"
+
+msgid "Type the characters you see in the picture below."
+msgstr "请输入图像里的字符。"
+
+msgid "URL"
+msgstr "链接地址"
+
+msgid "URL should be 512 characters or less"
+msgstr "地址的最大长度不能超过512字节"
+
+msgid "URL should be of form \"http://domain\""
+msgstr "地址的格式应该是 \"http://domain\""
+
+msgid "URL:"
+msgstr "链接地址："
+
+msgid "Unknown Playlist"
+msgstr "位置播放列表"
+
+msgid "Unknown type: "
+msgstr "位置类型："
+
+msgid "Unrecognized stream type: %s"
+msgstr "未知的媒体流格式： %s"
+
+msgid "Untitled Playlist"
+msgstr "未命名的播放列表"
+
+msgid "Untitled Show"
+msgstr "未命名节目"
+
+msgid "Untitled Smart Block"
+msgstr "未命名的智能模块"
+
+msgid "Untitled Webstream"
+msgstr "未命名的网络流媒体"
+
+msgid "Update Required"
+msgstr "需要更新升级"
+
+msgid "Update show"
+msgstr "更新节目"
+
+msgid "Upload URL might be wrong or doesn't exist"
+msgstr "用于上传的地址有误或者不存在"
+
+msgid "Upload to SoundCloud"
+msgstr "上传到SoundCloud"
+
+msgid "Uploaded"
+msgstr "上传于"
+
+msgid "Uploaded %d/%d files"
+msgstr "已经上传%d/%d个文件"
+
+msgid "Uploading in progress..."
+msgstr "正在上传..."
+
+msgid "Uptime"
+msgstr "在线时间"
+
+msgid "Use Airtime Authentication:"
+msgstr "使用Airtime的用户认证："
+
+msgid "Use Custom Authentication:"
+msgstr "使用自定义的用户认证："
+
+msgid "User Manual"
+msgstr "用户手册"
+
+msgid "User Type"
+msgstr "用户类型"
+
+msgid "User Type:"
+msgstr "用户类型："
+
+msgid "User added successfully!"
+msgstr "用户已添加成功！"
+
+msgid "User updated successfully!"
+msgstr "用于已成功更新！"
+
+msgid "Username"
+msgstr "用户名"
+
+msgid "Username field cannot be empty."
+msgstr "请填写用户名"
+
+msgid "Username:"
+msgstr "用户名："
+
+msgid "Users"
+msgstr "用户管理"
+
+msgid "Value cannot be empty"
+msgstr "不能为空"
+
+msgid "Value is required and can't be empty"
+msgstr "不能为空"
+
+msgid "Verify Password:"
+msgstr "再次输入密码："
+
+msgid "View / edit description"
+msgstr "查看/编辑描述"
+
+msgid "View Recorded File Metadata"
+msgstr "查看录制文件的元数据"
+
+msgid "View and manage show content"
+msgstr "查看和管理节目内容"
+
+msgid "View listener stats"
+msgstr "显示收听统计数据"
+
+msgid "View on Soundcloud"
+msgstr "在Soundcloud中查看"
+
+msgid "View schedule"
+msgstr "显示节目日程"
+
+msgid "View show content"
+msgstr "显示节目内容"
+
+msgid "View system status"
+msgstr "显示系统状态"
+
+msgid "Warning: Shows cannot be re-linked"
+msgstr "注意：节目取消绑定后无法再次绑定"
+
+msgid "Watched Folders:"
+msgstr "监控文件夹："
+
+msgid "Waveform features are available in a browser supporting the Web Audio API"
+msgstr "想要启用波形图功能，需要支持Web Audio API的浏览器。"
+
+msgid "We"
+msgstr "周三"
+
+msgid "Web Stream"
+msgstr "网络流媒体"
+
+msgid "Web Streams"
+msgstr "网络流媒体"
+
+msgid "Website"
+msgstr "网址"
+
+msgid "Website:"
+msgstr "网站："
+
+msgid "Webstream name cannot be empty"
+msgstr "媒体流的名字不能为空"
+
+msgid "Webstream saved."
+msgstr "网络流媒体已保存。"
+
+msgid "Wed"
+msgstr "周三"
+
+msgid "Wednesday"
+msgstr "周三"
+
+msgid "Week Starts On"
+msgstr "一周开始于"
+
+msgid "Welcome to Airtime!"
+msgstr "欢迎使用Airtime！"
+
+msgid "Welcome to the online Airtime demo! You can log in using the username 'admin' and the password 'admin'."
+msgstr "欢迎来到在线Airtime演示！你可以用‘admin’和‘admin’作为用户名和密码登录。"
+
+msgid "What"
+msgstr "名称"
+
+msgid "When"
+msgstr "时间"
+
+msgid "Who"
+msgstr "管理和编辑"
+
+msgid "Work in progress"
+msgstr "未完成"
+
+msgid "Wrong username or password provided. Please try again."
+msgstr "用户名或密码错误，请重试。"
+
+msgid "Year"
+msgstr "年代"
+
+msgid "Year:"
+msgstr "年份："
+
+msgid "Yes, help Airtime"
+msgstr "是的，帮助Airtime"
+
+msgid "You are currently uploading files. %sGoing to another screen will cancel the upload process. %sAre you sure you want to leave the page?"
+msgstr "你正在上传文件。%s如果离开此页，上传过程将被打断。%s确定离开吗？"
+
+msgid "You are not allowed to access this resource."
+msgstr "你没有访问该资源的权限"
+
+msgid "You are not allowed to access this resource. "
+msgstr "你没有访问该资源的权限"
+
+msgid "You are not allowed to schedule show %s."
+msgstr "没有赋予修改节目 %s 的权限。"
+
+msgid "You are not watching any media folders."
+msgstr "你没有正在监控的文件夹。"
+
+msgid "You are running the latest version"
+msgstr "你已经在使用最新版"
+
+msgid "You are viewing an older version of %s"
+msgstr "你所查看的%s已更改"
+
+msgid "You can only add tracks to smart block."
+msgstr "智能模块只能添加媒体文件。"
+
+msgid "You can only add tracks to smart blocks."
+msgstr "智能模块只能添加声音文件。"
+
+msgid "You can only add tracks, smart blocks, and webstreams to playlists."
+msgstr "播放列表只能添加声音文件，只能模块和网络流媒体。"
+
+msgid "You cannot add files to recording shows."
+msgstr "录音节目不能添加别的内容。"
+
+msgid "You cannot add tracks to dynamic blocks."
+msgstr "动态智能模块不能添加声音文件。"
+
+msgid "You cannot use same port as Master DJ port."
+msgstr "端口设置不能重复"
+
+msgid "You don't have permission to delete selected %s(s)."
+msgstr "你没有删除所选%s的权限。"
+
+msgid "You don't have permission to delete selected items."
+msgstr "你没有删除选定项目的权限。"
+
+msgid "You don't have permission to disconnect source."
+msgstr "你没有断开输入源的权限。"
+
+msgid "You don't have permission to switch source."
+msgstr "你没有切换的权限。"
+
+msgid "You have to agree to privacy policy."
+msgstr "请先接受隐私策略"
+
+msgid "You must select Criteria and Modifier"
+msgstr "条件和操作符不能为空"
+
+msgid "Your browser does not support playing this file type: "
+msgstr "你的浏览器不支持这种文件类型："
+
+msgid "Your trial expires in"
+msgstr "你的试用天数还剩"
+
+msgid "Zend Framework Default Application"
+msgstr "Zend框架默认程序"
+
+msgid "and"
+msgstr "和"
+
+msgid "bi-weekly"
+msgstr "每两周"
+
+msgid "can't resize a past show"
+msgstr "已结束的节目不能调整时长"
+
+msgid "contains"
+msgstr "包含"
+
+msgid "dB"
+msgstr "分贝"
+
+msgid "day"
+msgstr "日"
+
+msgid "day of the month"
+msgstr "按月的同一日期"
+
+msgid "day of the week"
+msgstr "一个星期的同一日子"
+
+msgid "days"
+msgstr "天"
+
+msgid "does not contain"
+msgstr "不包含"
+
+msgid "ends with"
+msgstr "结束于"
+
+msgid "enter a time in seconds 00{.000000}"
+msgstr "请输入秒数00{.000000}"
+
+msgid "enter a time in seconds 0{.0}"
+msgstr "请输入秒数，格式为0{.0}"
+
+msgid "file meet the criteria"
+msgstr "个文件符合条件"
+
+msgid "files meet the criteria"
+msgstr "个文件符合条件"
+
+msgid "hh:mm:ss.t"
+msgstr "时:分:秒"
+
+msgid "hours"
+msgstr "小时"
+
+msgid "id"
+msgstr "编号"
+
+msgid "in use"
+msgstr "使用中"
+
+msgid "is"
+msgstr "是"
+
+msgid "is greater than"
+msgstr "大于"
+
+msgid "is in the range"
+msgstr "处于"
+
+msgid "is less than"
+msgstr "小于"
+
+msgid "is not"
+msgstr "不是"
+
+msgid "items"
+msgstr "个数"
+
+msgid "kHz"
+msgstr "千赫兹"
+
+msgid "kbps"
+msgstr "千比特每秒"
+
+msgid "max volume"
+msgstr "最大音量"
+
+msgid "minutes"
+msgstr "分钟"
+
+msgid "month"
+msgstr "月"
+
+msgid "monthly"
+msgstr "每月"
+
+msgid "mute"
+msgstr "静音"
+
+msgid "next"
+msgstr "往后"
+
+msgid "or"
+msgstr "或"
+
+msgid "path should be specified"
+msgstr "请指定路径"
+
+msgid "pause"
+msgstr "暂停"
+
+msgid "play"
+msgstr "播放"
+
+msgid "please put in a time '00:00:00 (.0)'"
+msgstr "请输入时间‘00:00:00（.0）’"
+
+msgid "please put in a time in seconds '00 (.0)'"
+msgstr "请输入秒数‘00（.0）’"
+
+msgid "previous"
+msgstr "往前"
+
+msgid "show does not exist"
+msgstr "节目不存在"
+
+msgid "starts with"
+msgstr "起始于"
+
+msgid "stop"
+msgstr "停止"
+
+msgid "today"
+msgstr "今天"
+
+msgid "unmute"
+msgstr "取消静音"
+
+msgid "week"
+msgstr "星期"
+
+msgid "weekly"
+msgstr "每周"
+
+msgid "yyyy-mm-dd"
+msgstr "年-月-日"
